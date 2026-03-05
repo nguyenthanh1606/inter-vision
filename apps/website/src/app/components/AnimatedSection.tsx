@@ -1,35 +1,35 @@
-'use client';
+'use client'
 
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useRef, type ReactNode } from 'react'
 
 export function AnimatedSection({
   children,
   className = '',
-  delay = 0,
+  delay = 0
 }: {
-  children: ReactNode;
-  className?: string;
-  delay?: number;
+  children: ReactNode
+  className?: string
+  delay?: number
 }) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
+    const el = ref.current
+    if (!el) return
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          el.classList.add('is-visible');
-          observer.unobserve(el);
+          el.classList.add('is-visible')
+          observer.unobserve(el)
         }
       },
       { threshold: 0.1 }
-    );
+    )
 
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <div
@@ -39,5 +39,5 @@ export function AnimatedSection({
     >
       {children}
     </div>
-  );
+  )
 }

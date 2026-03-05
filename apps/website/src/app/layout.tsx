@@ -1,15 +1,15 @@
-import './global.css';
+import './global.css'
 
 export const metadata = {
   title: 'Intervision - AI Lead Generation',
   description:
-    'Create AI-powered quiz funnels that capture real customer intent, qualify prospects instantly, and skyrocket your conversion rates.',
-};
+    'Create AI-powered quiz funnels that capture real customer intent, qualify prospects instantly, and skyrocket your conversion rates.'
+}
 
 export default function RootLayout({
-  children,
+  children
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -24,7 +24,7 @@ export default function RootLayout({
         />
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark');}}catch(e){}})();`,
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark');}}catch(e){}})();`
           }}
         />
       </head>
@@ -32,5 +32,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }

@@ -13,20 +13,12 @@
       {
         "id": "q2",
         "text": "Hiện tại bạn đang gặp khó khăn gì về răng ạ?",
-        "options": [
-          "🤕 Đau răng 🤕",
-          "🦷 Mất răng 😔",
-          "🤔 Chưa rõ 🤔"
-        ]
+        "options": ["🤕 Đau răng 🤕", "🦷 Mất răng 😔", "🤔 Chưa rõ 🤔"]
       },
       {
         "id": "q3",
         "text": "Nếu mình tìm được giải pháp phù hợp, bạn muốn bắt đầu khi nào nhỉ?",
-        "options": [
-          "📅 Hôm nay 📅",
-          "🕒 Tuần này 🕒",
-          "🤔 Mình chưa chắc 🤔"
-        ]
+        "options": ["📅 Hôm nay 📅", "🕒 Tuần này 🕒", "🤔 Mình chưa chắc 🤔"]
       }
     ],
     "pageTitle": "Nha Khoa I-Dent | Hệ Thống Nha Khoa Tiêu Chuẩn Quốc Tế",
@@ -39,20 +31,12 @@
       {
         "id": "q1",
         "text": "Mình thấy bạn đang tìm hiểu về mài gồ xương ổ răng — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
-        "options": [
-          "👀 Răng hô",
-          "😁 Cười hở lợi",
-          "🤔 Mình chỉ xem thử thôi"
-        ]
+        "options": ["👀 Răng hô", "😁 Cười hở lợi", "🤔 Mình chỉ xem thử thôi"]
       },
       {
         "id": "q2",
         "text": "Bạn đang gặp khó khăn gì về răng hô hoặc cười hở lợi ạ?",
-        "options": [
-          "🤕 Đau nhức",
-          "👀 Ảnh hưởng thẩm mỹ",
-          "😔 Tự ti khi cười"
-        ]
+        "options": ["🤕 Đau nhức", "👀 Ảnh hưởng thẩm mỹ", "😔 Tự ti khi cười"]
       },
       {
         "id": "q3",
@@ -83,11 +67,7 @@
       {
         "id": "q2",
         "text": "Bạn đang gặp khó khăn gì về chăm sóc răng miệng cho bản thân hoặc người thân nữ giới nhỉ? 🤕",
-        "options": [
-          "🦷 Răng yếu",
-          "💔 Đau răng",
-          "🤔 Mình chỉ xem thử thôi"
-        ]
+        "options": ["🦷 Răng yếu", "💔 Đau răng", "🤔 Mình chỉ xem thử thôi"]
       },
       {
         "id": "q3",
@@ -109,29 +89,17 @@
       {
         "id": "q1",
         "text": "Mình thấy bạn đang tìm hiểu về chương trình \"Cùng em đến lớp\" — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
-        "options": [
-          "🌟 Tình thương",
-          "📚 Học tập",
-          "🤔 Mình chỉ xem thử thôi"
-        ]
+        "options": ["🌟 Tình thương", "📚 Học tập", "🤔 Mình chỉ xem thử thôi"]
       },
       {
         "id": "q2",
         "text": "Hiện tại bạn đang gặp khó khăn gì về việc hỗ trợ trẻ em không may mắn ạ? 🤗",
-        "options": [
-          "💸 Tài chính",
-          "🕒 Thời gian",
-          "😔 Không biết bắt đầu"
-        ]
+        "options": ["💸 Tài chính", "🕒 Thời gian", "😔 Không biết bắt đầu"]
       },
       {
         "id": "q3",
         "text": "Nếu mình tìm được cách hỗ trợ phù hợp, bạn muốn tham gia khi nào nhỉ? 📅",
-        "options": [
-          "🔜 Ngay bây giờ",
-          "📆 Sắp tới",
-          "🤔 Mình chỉ xem thử thôi"
-        ]
+        "options": ["🔜 Ngay bây giờ", "📆 Sắp tới", "🤔 Mình chỉ xem thử thôi"]
       }
     ],
     "pageTitle": "Nha Khoa I-Dent Và Hành Trình Thiện Nguyện “Cùng Em Đến Lớp”",
@@ -144,20 +112,12 @@
       {
         "id": "q1",
         "text": "Mình thấy bạn đang tìm hiểu về trám răng mòn cổ — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
-        "options": [
-          "🤩Giá cả",
-          "👀Hiệu quả",
-          "🤔 Mình chỉ xem thử thôi"
-        ]
+        "options": ["🤩Giá cả", "👀Hiệu quả", "🤔 Mình chỉ xem thử thôi"]
       },
       {
         "id": "q2",
         "text": "Bạn đang gặp khó khăn gì về răng mòn cổ hiện tại ạ?",
-        "options": [
-          "🦷 Đau nhức",
-          "👀 Tìm giải pháp",
-          "🙅‍♂️ Chưa rõ"
-        ]
+        "options": ["🦷 Đau nhức", "👀 Tìm giải pháp", "🙅‍♂️ Chưa rõ"]
       },
       {
         "id": "q3",
@@ -284,11 +244,7 @@
       {
         "id": "q1",
         "text": "Mình thấy bạn đang tìm hiểu về sâu răng — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
-        "options": [
-          "🤕 Đau răng",
-          "😷 Hôi miệng",
-          "🤔 Mình chỉ xem thử thôi"
-        ]
+        "options": ["🤕 Đau răng", "😷 Hôi miệng", "🤔 Mình chỉ xem thử thôi"]
       },
       {
         "id": "q2",

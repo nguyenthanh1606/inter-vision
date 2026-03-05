@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import Dashboard from './pages/Dashboard';
-import ViewLeads from './pages/ViewLeads';
+import { useState } from 'react'
+import Dashboard from './pages/Dashboard'
+import ViewLeads from './pages/ViewLeads'
 
-type Page = 'dashboard' | 'leads';
+type Page = 'dashboard' | 'leads'
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState<Page>('dashboard');
+  const [currentPage, setCurrentPage] = useState<Page>('dashboard')
 
   return (
     <div className="app">
@@ -36,5 +36,5 @@ export default function App() {
         {currentPage === 'leads' && <ViewLeads />}
       </main>
     </div>
-  );
+  )
 }

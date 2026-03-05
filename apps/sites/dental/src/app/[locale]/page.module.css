@@ -1,4 +1,5 @@
-.home {}
+.home {
+}
 
 .container {
   max-width: 1200px;
@@ -130,7 +131,8 @@
   gap: 24px;
 }
 
-.videoCard {}
+.videoCard {
+}
 
 .videoThumb {
   background: linear-gradient(135deg, #025899, #01416f);
@@ -185,7 +187,9 @@
   border-radius: 12px;
   overflow: hidden;
   text-decoration: none;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
 }
 
@@ -279,7 +283,7 @@
 }
 
 .leadDetails li::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   left: 0;
   color: #dfaa23;
@@ -314,7 +318,9 @@
   border-radius: 12px;
   text-decoration: none;
   display: block;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -452,7 +458,7 @@
 }
 
 .awardText li::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   left: 0;
   color: #dfaa23;
@@ -517,7 +523,9 @@
   overflow: hidden;
   text-decoration: none;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .storyCard:hover {
@@ -591,7 +599,9 @@
   text-align: center;
   text-decoration: none;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .mediaCard:hover {
@@ -704,7 +714,9 @@
   overflow: hidden;
   text-decoration: none;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .blogCard:hover {

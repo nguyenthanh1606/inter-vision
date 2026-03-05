@@ -1,7 +1,21 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
-  "organizeImports": {
-    "enabled": true
+  "$schema": "https://biomejs.dev/schemas/2.4.4/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!**/.next/**",
+      "!**/dist/**",
+      "!**/dist-widget/**",
+      "!**/node_modules/**",
+      "!pnpm-lock.yaml"
+    ]
   },
   "linter": {
     "enabled": true,
@@ -13,7 +27,7 @@
     "enabled": true,
     "formatWithErrors": false,
     "indentStyle": "space",
-    "indentSize": 2,
+    "indentWidth": 2,
     "lineWidth": 80,
     "lineEnding": "lf"
   },
@@ -23,14 +37,22 @@
       "bracketSameLine": false,
       "bracketSpacing": true,
       "quoteProperties": "asNeeded",
-      "quoteStyle": "double",
+      "quoteStyle": "single",
       "semicolons": "asNeeded",
-      "trailingComma": "es5"
+      "trailingCommas": "none"
     }
   },
   "json": {
     "formatter": {
-      "indentSize": 2
+      "indentWidth": 2
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": false
+    },
+    "linter": {
+      "enabled": false
     }
   }
 }

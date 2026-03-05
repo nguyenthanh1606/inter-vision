@@ -273,5 +273,5 @@ export function getWidgetStyles(primaryColor: string): string {
         font-size: 24px;
       }
     }
-  `;
+  `
 }

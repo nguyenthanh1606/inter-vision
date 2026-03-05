@@ -1,27 +1,27 @@
-import { defineConfig } from 'vite';
-import path from 'path';
-import obfuscatorPlugin from 'rollup-plugin-obfuscator';
+import { defineConfig } from 'vite'
+import path from 'path'
+import obfuscatorPlugin from 'rollup-plugin-obfuscator'
 
 // Builds the embeddable widget as a single obfuscated IIFE JS file
 export default defineConfig({
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
+      '@': path.resolve(__dirname, './src')
+    }
   },
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/widget/smart-popup.ts'),
       name: 'SmartPopup',
       formats: ['iife'],
-      fileName: () => 'smart-popup.js',
+      fileName: () => 'smart-popup.js'
     },
     outDir: 'dist-widget',
     emptyOutDir: true,
     minify: 'terser',
     rollupOptions: {
       output: {
-        inlineDynamicImports: true,
+        inlineDynamicImports: true
       },
       plugins: [
         obfuscatorPlugin({
@@ -52,10 +52,10 @@ export default defineConfig({
             stringArrayThreshold: 0.75,
             target: 'browser',
             transformObjectKeys: true,
-            unicodeEscapeSequence: false,
-          },
-        }),
-      ],
-    },
-  },
-});
+            unicodeEscapeSequence: false
+          }
+        })
+      ]
+    }
+  }
+})

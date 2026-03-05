@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "postinstall": "node scripts/fix-next-jsonc.js",
     "dev": "nx dev website",
     "build": "nx build website",
     "start": "nx start website",

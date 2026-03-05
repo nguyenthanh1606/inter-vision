@@ -1,19 +1,19 @@
-'use client';
+'use client'
 
-import { useEffect } from 'react';
+import { useEffect } from 'react'
 
 export function NavbarEffect() {
   useEffect(() => {
-    const nav = document.getElementById('main-nav');
-    if (!nav) return;
+    const nav = document.getElementById('main-nav')
+    if (!nav) return
 
     const onScroll = () => {
-      nav.classList.toggle('nav-scrolled', window.scrollY > 30);
-    };
+      nav.classList.toggle('nav-scrolled', window.scrollY > 30)
+    }
 
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
-  return null;
+  return null
 }

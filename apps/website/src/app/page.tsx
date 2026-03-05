@@ -1,6 +1,6 @@
-import { ThemeToggle } from './components/ThemeToggle';
-import { NavbarEffect } from './components/NavbarEffect';
-import { AnimatedSection } from './components/AnimatedSection';
+import { ThemeToggle } from './components/ThemeToggle'
+import { NavbarEffect } from './components/NavbarEffect'
+import { AnimatedSection } from './components/AnimatedSection'
 
 export default function HomePage() {
   return (
@@ -15,7 +15,9 @@ export default function HomePage() {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center animate-neon-pulse">
-                <span className="material-icons-outlined text-white text-xl">smart_toy</span>
+                <span className="material-icons-outlined text-white text-xl">
+                  smart_toy
+                </span>
               </div>
               <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
                 Intervision
@@ -24,7 +26,7 @@ export default function HomePage() {
 
             {/* Nav links */}
             <div className="hidden md:flex items-center space-x-8">
-              {['Product', 'Features', 'Use Cases', 'Pricing'].map((label) => (
+              {['Product', 'Features', 'Use Cases', 'Pricing'].map(label => (
                 <a
                   key={label}
                   className="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
@@ -89,15 +91,16 @@ export default function HomePage() {
             style={{ animationDelay: '200ms' }}
           >
             Turn Conversations Into <br className="hidden md:block" />
-            <span className="text-gradient-animated">Qualified Leads</span> — Automatically
+            <span className="text-gradient-animated">Qualified Leads</span> —
+            Automatically
           </h1>
 
           <p
             className="animate-fade-in-up mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-300"
             style={{ animationDelay: '350ms' }}
           >
-            Create AI-powered quiz funnels that capture real customer intent, qualify prospects
-            instantly, and skyrocket your conversion rates.
+            Create AI-powered quiz funnels that capture real customer intent,
+            qualify prospects instantly, and skyrocket your conversion rates.
           </p>
 
           {/* CTA buttons */}
@@ -118,7 +121,9 @@ export default function HomePage() {
               className="px-8 py-4 bg-white dark:bg-transparent border border-gray-300 dark:border-white/20 text-slate-700 dark:text-white font-semibold rounded-full hover:bg-gray-50 dark:hover:bg-white/5 transition-all flex items-center justify-center"
               href="#"
             >
-              <span className="material-icons-outlined mr-2 text-lg">play_circle_filled</span>
+              <span className="material-icons-outlined mr-2 text-lg">
+                play_circle_filled
+              </span>
               See Demo
             </a>
           </div>
@@ -145,26 +150,30 @@ export default function HomePage() {
                       label: 'Total Visitors',
                       value: '12,450',
                       change: '+14% vs last week',
-                      delay: '900ms',
+                      delay: '900ms'
                     },
                     {
                       label: 'Qualified Leads',
                       value: '3,892',
                       change: '+28% vs last week',
-                      delay: '1000ms',
-                    },
+                      delay: '1000ms'
+                    }
                   ].map(({ label, value, change, delay }) => (
                     <div
                       key={label}
                       className="animate-fade-in-up p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5"
                       style={{ animationDelay: delay }}
                     >
-                      <div className="text-sm text-slate-500 dark:text-slate-400">{label}</div>
+                      <div className="text-sm text-slate-500 dark:text-slate-400">
+                        {label}
+                      </div>
                       <div className="text-2xl font-bold text-slate-900 dark:text-white mt-1">
                         {value}
                       </div>
                       <div className="text-xs text-green-400 mt-2 flex items-center">
-                        <span className="material-icons-outlined text-sm mr-1">trending_up</span>
+                        <span className="material-icons-outlined text-sm mr-1">
+                          trending_up
+                        </span>
                         {change}
                       </div>
                     </div>
@@ -173,7 +182,9 @@ export default function HomePage() {
                     className="animate-fade-in-up p-4 rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20"
                     style={{ animationDelay: '1100ms' }}
                   >
-                    <div className="text-sm text-primary dark:text-blue-300">Revenue Estimate</div>
+                    <div className="text-sm text-primary dark:text-blue-300">
+                      Revenue Estimate
+                    </div>
                     <div className="text-2xl font-bold text-slate-900 dark:text-white mt-1">
                       $45,200
                     </div>
@@ -187,7 +198,7 @@ export default function HomePage() {
                     style={{
                       backgroundImage:
                         'linear-gradient(#3B82F6 1px, transparent 1px), linear-gradient(90deg, #3B82F6 1px, transparent 1px)',
-                      backgroundSize: '20px 20px',
+                      backgroundSize: '20px 20px'
                     }}
                   />
                   <div className="flex justify-between items-center mb-6 relative z-10">
@@ -211,8 +222,8 @@ export default function HomePage() {
                         </span>
                       </div>
                       <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-slate-700 dark:text-slate-200 shadow-sm">
-                        Hi! I see you&apos;re looking to scale your sales. What is your primary
-                        bottleneck right now?
+                        Hi! I see you&apos;re looking to scale your sales. What
+                        is your primary bottleneck right now?
                       </div>
                     </div>
 
@@ -242,8 +253,9 @@ export default function HomePage() {
                         </span>
                       </div>
                       <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-slate-700 dark:text-slate-200 shadow-sm">
-                        Understood. Based on our data, automating initial outreach can save
-                        15h/week. Would you like a custom demo?
+                        Understood. Based on our data, automating initial
+                        outreach can save 15h/week. Would you like a custom
+                        demo?
                       </div>
                     </div>
                   </div>
@@ -267,7 +279,7 @@ export default function HomePage() {
                 { icon: 'cloud', name: 'Google' },
                 { icon: 'workspaces', name: 'Slack' },
                 { icon: 'hub', name: 'HubSpot' },
-                { icon: 'bolt', name: 'Zapier' },
+                { icon: 'bolt', name: 'Zapier' }
               ].map(({ icon, name }) => (
                 <div
                   key={name}
@@ -314,8 +326,8 @@ export default function HomePage() {
                     'Increase Lead Volume',
                     'Improve Lead Quality',
                     'Automate Support',
-                    'Reduce Churn',
-                  ].map((option) => (
+                    'Reduce Churn'
+                  ].map(option => (
                     <button
                       key={option}
                       className="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all duration-200 text-left flex items-center space-x-3 hover:scale-[1.02] active:scale-[0.98]"
@@ -333,7 +345,9 @@ export default function HomePage() {
                 </div>
 
                 <div className="mt-8 text-sm text-slate-400 dark:text-slate-500 flex items-center">
-                  <span className="material-icons-outlined text-sm mr-1">lock</span>
+                  <span className="material-icons-outlined text-sm mr-1">
+                    lock
+                  </span>
                   Powered by Intervision AI
                 </div>
               </div>
@@ -361,22 +375,23 @@ export default function HomePage() {
                 icon: 'auto_fix_high',
                 color: 'bg-blue-100 dark:bg-primary/20 text-primary',
                 title: 'Generate with AI',
-                desc: 'Simply describe your business. Our AI engine builds the perfect conversation flow, questions, and logic instantly.',
+                desc: 'Simply describe your business. Our AI engine builds the perfect conversation flow, questions, and logic instantly.'
               },
               {
                 step: '2',
                 icon: 'code',
                 color: 'bg-purple-100 dark:bg-secondary/20 text-secondary',
                 title: 'Embed with 1 Line',
-                desc: 'Copy a single line of JavaScript and paste it onto your website, landing page, or within your app.',
+                desc: 'Copy a single line of JavaScript and paste it onto your website, landing page, or within your app.'
               },
               {
                 step: '3',
                 icon: 'rocket_launch',
-                color: 'bg-green-100 dark:bg-green-500/20 text-green-600 dark:text-green-400',
+                color:
+                  'bg-green-100 dark:bg-green-500/20 text-green-600 dark:text-green-400',
                 title: 'Get Qualified Leads',
-                desc: 'Watch as visitors engage, self-qualify, and book meetings directly into your calendar automatically.',
-              },
+                desc: 'Watch as visitors engage, self-qualify, and book meetings directly into your calendar automatically.'
+              }
             ].map(({ step, icon, color, title, desc }, index) => (
               <AnimatedSection key={step} delay={index * 150}>
                 <div className="relative group p-8 rounded-2xl bg-background-light dark:bg-surface-dark border border-gray-200 dark:border-white/5 hover:border-primary/50 hover:shadow-neon transition-all duration-300 hover:-translate-y-1">
@@ -386,12 +401,16 @@ export default function HomePage() {
                   <div
                     className={`w-16 h-16 rounded-full ${color} flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110`}
                   >
-                    <span className="material-icons-outlined text-3xl">{icon}</span>
+                    <span className="material-icons-outlined text-3xl">
+                      {icon}
+                    </span>
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
                     {title}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{desc}</p>
+                  <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    {desc}
+                  </p>
                 </div>
               </AnimatedSection>
             ))}
@@ -407,16 +426,20 @@ export default function HomePage() {
               format_quote
             </span>
             <blockquote className="text-2xl md:text-3xl font-medium text-slate-800 dark:text-slate-100 leading-relaxed mb-8">
-              &quot;We replaced our static contact forms with Intervision&apos;s AI chat. Our lead
-              volume doubled in the first week, and the sales team stopped wasting time on
-              unqualified prospects.&quot;
+              &quot;We replaced our static contact forms with Intervision&apos;s
+              AI chat. Our lead volume doubled in the first week, and the sales
+              team stopped wasting time on unqualified prospects.&quot;
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
               <div className="w-12 h-12 rounded-full border-2 border-primary bg-gradient-to-tr from-primary to-secondary flex items-center justify-center">
-                <span className="material-icons-outlined text-white text-sm">person</span>
+                <span className="material-icons-outlined text-white text-sm">
+                  person
+                </span>
               </div>
               <div className="text-left">
-                <div className="font-bold text-slate-900 dark:text-white">Sarah Jensen</div>
+                <div className="font-bold text-slate-900 dark:text-white">
+                  Sarah Jensen
+                </div>
                 <div className="text-sm text-slate-500 dark:text-slate-400">
                   VP of Marketing at TechFlow
                 </div>
@@ -437,7 +460,8 @@ export default function HomePage() {
               Ready to automate your growth?
             </h2>
             <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
-              Join 10,000+ marketers generating higher quality leads with conversational AI.
+              Join 10,000+ marketers generating higher quality leads with
+              conversational AI.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
@@ -469,18 +493,20 @@ export default function HomePage() {
               <div className="col-span-2 lg:col-span-2">
                 <div className="flex items-center space-x-2 mb-4">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center">
-                    <span className="material-icons-outlined text-white text-sm">smart_toy</span>
+                    <span className="material-icons-outlined text-white text-sm">
+                      smart_toy
+                    </span>
                   </div>
                   <span className="text-lg font-bold text-slate-900 dark:text-white">
                     Intervision
                   </span>
                 </div>
                 <p className="text-slate-500 dark:text-slate-400 text-sm max-w-xs mb-6">
-                  Empowering businesses to scale personal conversations with AI technology. Turn
-                  traffic into revenue.
+                  Empowering businesses to scale personal conversations with AI
+                  technology. Turn traffic into revenue.
                 </p>
                 <div className="flex space-x-4">
-                  {['facebook', 'public', 'post_add'].map((icon) => (
+                  {['facebook', 'public', 'post_add'].map(icon => (
                     <a
                       key={icon}
                       className="text-slate-400 hover:text-primary transition-colors hover:scale-110 transform"
@@ -496,23 +522,28 @@ export default function HomePage() {
               {[
                 {
                   heading: 'Product',
-                  items: ['Features', 'Integrations', 'Pricing', 'Changelog'],
+                  items: ['Features', 'Integrations', 'Pricing', 'Changelog']
                 },
                 {
                   heading: 'Resources',
-                  items: ['Documentation', 'API Reference', 'Community', 'Blog'],
+                  items: ['Documentation', 'API Reference', 'Community', 'Blog']
                 },
                 {
                   heading: 'Company',
-                  items: ['About', 'Careers', 'Legal', 'Contact'],
-                },
+                  items: ['About', 'Careers', 'Legal', 'Contact']
+                }
               ].map(({ heading, items }) => (
                 <div key={heading}>
-                  <h4 className="font-bold text-slate-900 dark:text-white mb-4">{heading}</h4>
+                  <h4 className="font-bold text-slate-900 dark:text-white mb-4">
+                    {heading}
+                  </h4>
                   <ul className="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-                    {items.map((item) => (
+                    {items.map(item => (
                       <li key={item}>
-                        <a className="hover:text-primary transition-colors" href="#">
+                        <a
+                          className="hover:text-primary transition-colors"
+                          href="#"
+                        >
                           {item}
                         </a>
                       </li>
@@ -528,10 +559,16 @@ export default function HomePage() {
                 © 2024 Intervision AI Inc. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-slate-400">
-                <a className="hover:text-slate-600 dark:hover:text-slate-200 transition-colors" href="#">
+                <a
+                  className="hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+                  href="#"
+                >
                   Privacy Policy
                 </a>
-                <a className="hover:text-slate-600 dark:hover:text-slate-200 transition-colors" href="#">
+                <a
+                  className="hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+                  href="#"
+                >
                   Terms of Service
                 </a>
               </div>
@@ -540,5 +577,5 @@ export default function HomePage() {
         </div>
       </footer>
     </>
-  );
+  )
 }

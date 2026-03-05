@@ -1,26 +1,26 @@
-'use client';
+'use client'
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
 export function ThemeToggle() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
-    setIsDark(document.documentElement.classList.contains('dark'));
-  }, []);
+    setIsDark(document.documentElement.classList.contains('dark'))
+  }, [])
 
   const toggle = () => {
-    const html = document.documentElement;
+    const html = document.documentElement
     if (html.classList.contains('dark')) {
-      html.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      setIsDark(false);
+      html.classList.remove('dark')
+      localStorage.setItem('theme', 'light')
+      setIsDark(false)
     } else {
-      html.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-      setIsDark(true);
+      html.classList.add('dark')
+      localStorage.setItem('theme', 'dark')
+      setIsDark(true)
     }
-  };
+  }
 
   return (
     <button
@@ -32,5 +32,5 @@ export function ThemeToggle() {
         {isDark ? 'light_mode' : 'dark_mode'}
       </span>
     </button>
-  );
+  )
 }

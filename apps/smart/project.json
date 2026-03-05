@@ -3,10 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/smart/src",
   "projectType": "application",
-  "tags": [
-    "scope:app",
-    "type:tool"
-  ],
+  "tags": ["scope:app", "type:tool"],
   "targets": {
     "dev": {
       "executor": "nx:run-commands",

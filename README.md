@@ -1,187 +1,204 @@
 # Inter-Vision
 
-A modern monorepo project built with Nx, Next.js, TypeScript, and Tailwind CSS.
-
-## Overview
-
-Inter-Vision is a monorepo workspace that uses Nx for managing multiple projects efficiently. It includes a Next.js website application built with TypeScript, styled with Tailwind CSS, linted with Biome, and enhanced with TanStack libraries for state management and data tables.
+A monorepo built with Nx, Next.js 16, TypeScript, and Tailwind CSS — housing multiple sites and applications.
 
 ## Tech Stack
 
-- **Monorepo**: [Nx](https://nx.dev)
-- **Runtime**: [Node.js](https://nodejs.org)
-- **Framework**: [Next.js 16](https://nextjs.org)
-- **Language**: [TypeScript](https://www.typescriptlang.org)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com)
-- **Code Quality**: [Biome](https://biomejs.dev)
-- **State Management**: [TanStack React Query](https://tanstack.com/query)
-- **Data Tables**: [TanStack React Table](https://tanstack.com/table)
-- **Package Manager**: npm
+| Layer | Tool |
+|---|---|
+| Monorepo | [Nx](https://nx.dev) |
+| Package Manager | [pnpm](https://pnpm.io) |
+| Framework | [Next.js 16](https://nextjs.org) (Turbopack) |
+| Language | [TypeScript](https://www.typescriptlang.org) |
+| Styling | [Tailwind CSS](https://tailwindcss.com) |
+| Code Quality | [Biome](https://biomejs.dev) |
+| State / Tables | [TanStack Query](https://tanstack.com/query) · [TanStack Table](https://tanstack.com/table) |
 
 ## Project Structure
 
 ```
 inter-vision/
 ├── apps/
-│   └── website/              # Next.js website application
-├── packages/                 # Shared libraries (future use)
-├── biome.json                # Biome configuration
-├── nx.json                   # Nx configuration
-├── package.json              # Root dependencies
-└── README.md                 # This file
+│   ├── sites/
+│   │   └── dental/          # Dental clinic site (Next.js 16, next-intl i18n)
+│   ├── smart/               # Smart popup widget + dashboard (Vite + React)
+│   └── website/             # Main marketing website (Next.js)
+├── packages/                # Shared libraries (future use)
+├── scripts/
+│   └── fix-next-jsonc.js    # Postinstall fix for Next.js 16 / Turbopack bug
+├── biome.json               # Biome formatter / linter config
+├── nx.json                  # Nx workspace config
+├── pnpm-workspace.yaml      # pnpm workspaces config
+└── package.json             # Root scripts & dependencies
 ```
 
-## Getting Started
+---
 
-### Prerequisites
+## Prerequisites
 
-- Node.js 18+
-- npm 9+
+| Tool | Version |
+|---|---|
+| [Node.js](https://nodejs.org) | 20+ |
+| [pnpm](https://pnpm.io/installation) | 9+ |
 
-### Installation
+Install pnpm if you don't have it:
 
 ```bash
-npm install
+npm install -g pnpm
 ```
 
-### Development
+---
 
-Start the development server for the website app:
+## Setup
 
 ```bash
-npm run dev
+# 1. Clone the repository
+git clone <repo-url>
+cd inter-vision
+
+# 2. Install all dependencies (postinstall patch runs automatically)
+pnpm install
 ```
 
-Or using Nx directly:
+> **Note:** `pnpm install` automatically runs `scripts/fix-next-jsonc.js` which patches a
+> Next.js 16 / Turbopack bug where `server-external-packages.jsonc` is incorrectly
+> expected as `.json`. No manual action needed.
+
+---
+
+## Running Apps
+
+### Dental Site (`apps/sites/dental`)
 
 ```bash
-npx nx dev website
+pnpm dental:dev        # Dev server → http://localhost:3000
+pnpm dental:build      # Production build
 ```
 
-The website will be available at `http://localhost:3000`
-
-### Building
-
-Build the website for production:
+### Main Website (`apps/website`)
 
 ```bash
-npx nx build website
+pnpm dev               # Dev server → http://localhost:3000
+pnpm build             # Production build
+pnpm start             # Start production server
 ```
 
-The build output will be in `apps/website/.next`
-
-## Available Commands
-
-### Quick Commands (npm scripts)
+### Smart Popup Widget (`apps/smart`)
 
 ```bash
-npm run dev              # Start development server
-npm run build            # Build for production
-npm start                # Start production server
-npm run format           # Format code with Biome
-npm run format:check     # Check code formatting
-npm run lint             # Lint website project
+pnpm smart:dev          # Dev server (Vite) → http://localhost:5173
+pnpm smart:build        # Build dashboard
+pnpm smart:build-widget # Build embeddable widget → apps/smart/dist-widget/
 ```
 
-### Nx Commands (direct)
+---
 
-### Dev
+## All Available Scripts
+
 ```bash
-npx nx dev website         # Start development server
+# Development
+pnpm dev                  # website dev server
+pnpm dental:dev           # dental site dev server
+pnpm smart:dev            # smart popup dev server
+
+# Build
+pnpm build                # build website
+pnpm dental:build         # build dental site
+pnpm smart:build          # build smart dashboard
+pnpm smart:build-widget   # build embeddable smart-popup.js widget
+
+# Code quality
+pnpm format               # format all files with Biome
+pnpm format:check         # check formatting without writing
+pnpm lint                 # lint website project
 ```
 
-### Build
+### Nx commands (run any target directly)
+
 ```bash
-npx nx build website       # Build for production
+pnpm nx dev dental         # same as pnpm dental:dev
+pnpm nx build dental       # same as pnpm dental:build
+pnpm nx graph              # visualize project dependency graph
 ```
 
-### Format
-```bash
-npx nx format:check        # Check formatting with Biome
-npx nx format:write        # Format code with Biome
-```
+---
 
-### Lint
-```bash
-npx nx lint website        # Lint website project
-```
+## Apps Overview
 
-### Run Graph
-```bash
-npx nx graph               # Visualize project dependencies
-```
+### `apps/sites/dental`
+
+Dental clinic website with:
+- **Next.js 16** App Router + Turbopack
+- **next-intl** for Vietnamese / English i18n (`/vi`, `/en` locales)
+- **Tailwind CSS v4** for styling
+- Routes: home, about, services, pricing, knowledge, patient stories, contact
+
+### `apps/website`
+
+Main marketing / landing website with:
+- **Next.js** App Router
+- Tailwind CSS, TanStack Query & Table
+- Dark/light theme toggle
+
+### `apps/smart`
+
+Embeddable smart popup widget and management dashboard:
+- **Vite** + React for the dashboard
+- Standalone `smart-popup.js` widget built separately (no React dependency in output)
+- AI-powered lead capture via Groq
+
+---
 
 ## Code Quality
 
-### Formatting with Biome
+### Biome (formatter + linter)
 
-This project uses Biome for code formatting and linting. Configuration is in `biome.json`.
-
-Format all code:
 ```bash
-npx biome format . --write
-```
-
-Check formatting:
-```bash
-npx biome check .
+pnpm format               # format
+pnpm format:check         # check only
 ```
 
 ### TypeScript
 
-TypeScript is configured for strict type checking. Check for type errors:
 ```bash
-npx nx check:types
+pnpm nx typecheck dental   # type-check dental site
+pnpm nx typecheck website  # type-check website
 ```
 
-## Styling with Tailwind CSS
+---
 
-Tailwind CSS is pre-configured for the website app. Customize the theme in `apps/website/tailwind.config.js`.
+## Troubleshooting
 
-### Tailwind Configuration
-- Content: `apps/website/src/**/*.{js,jsx,ts,tsx}`
-- Theme: Extendable in `tailwind.config.js`
-- Plugins: Can be added in `tailwind.config.js`
+### `TurbopackInternalError: Expected file content at …/server-external-packages.json`
 
-## TanStack Libraries
+This is a Next.js 16 bug — Turbopack looks for `server-external-packages.json` but the
+package ships `server-external-packages.jsonc`. The `postinstall` script fixes this
+automatically. If it recurs after a manual `node_modules` wipe:
 
-### React Query
-Used for managing server state and synchronization with APIs.
+```bash
+pnpm install   # postinstall runs the fix automatically
+```
 
-Documentation: [TanStack Query](https://tanstack.com/query)
+### Port already in use / lock file error
 
-### React Table
-Used for building and managing complex data tables.
+```bash
+pkill -f "next dev"
+rm -f apps/sites/dental/.next/dev/lock
+pnpm dental:dev
+```
 
-Documentation: [TanStack Table](https://tanstack.com/table)
-
-## Project Walkthrough
-
-### Website App (`apps/website`)
-
-The main Next.js application with:
-- App Router with TypeScript
-- Tailwind CSS for styling
-- Global styles in `src/app/global.css`
-- API routes in `src/app/api/`
-- Pages in `src/app/`
-
-### Configuration Files
-
-- `next.config.js` - Next.js configuration
-- `tsconfig.json` - TypeScript configuration
-- `tailwind.config.js` - Tailwind CSS configuration
-- `postcss.config.js` - PostCSS configuration
-- `.swcrc` - SWC compiler configuration
-- `biome.json` - Biome formatter/linter configuration
+---
 
 ## Useful Resources
 
 - [Nx Documentation](https://nx.dev)
 - [Next.js Documentation](https://nextjs.org/docs)
+- [next-intl Documentation](https://next-intl-docs.vercel.app)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs)
 - [Biome Documentation](https://biomejs.dev)
+- [Vite Documentation](https://vite.dev)
+
+---
 
 ## License
 
