@@ -1,0 +1,40 @@
+{
+  "name": "smart",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/smart/src",
+  "projectType": "application",
+  "tags": [
+    "scope:app",
+    "type:tool"
+  ],
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx vite",
+        "cwd": "apps/smart"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx tsc -b && npx vite build",
+        "cwd": "apps/smart"
+      }
+    },
+    "build-widget": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx vite build --config vite.widget.config.ts",
+        "cwd": "apps/smart"
+      }
+    },
+    "preview": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx vite preview",
+        "cwd": "apps/smart"
+      }
+    }
+  }
+}

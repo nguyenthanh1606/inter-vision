@@ -1,0 +1,255 @@
+.footer {
+  background: #025899;
+  color: #fff;
+}
+
+.footerMain {
+  padding: 50px 0 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1fr 1fr;
+  gap: 30px;
+}
+
+.col {}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logoIcon {
+  font-size: 32px;
+}
+
+.logoName {
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.logoSub {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.social h4,
+.payment h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #dfaa23;
+  text-transform: uppercase;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.socialIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.socialIcon:hover {
+  background: #dfaa23;
+  color: #025899;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.payCard {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.colTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #dfaa23;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.branch {
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.branch p {
+  margin: 2px 0;
+}
+
+.hotline {
+  font-size: 15px;
+  margin-top: 8px;
+  color: #dfaa23;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 8px;
+}
+
+.footerLinks a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footerLinks a:hover {
+  color: #dfaa23;
+}
+
+/* Copyright */
+.copyright {
+  background: linear-gradient(90deg, #dfaa23 0%, #fbf08d 48%, #dfaa23 100%);
+  padding: 12px 0;
+  text-align: center;
+}
+
+.copyright p {
+  color: #025899;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 2px 0;
+}
+
+/* Footer Contact Form */
+.footerForm {
+  background: #01416f;
+  padding: 25px 0;
+}
+
+.formLabel {
+  font-size: 16px;
+  font-weight: 700;
+  color: #dfaa23;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.formRow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.formInput {
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 14px;
+  width: 200px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.formInput::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.formInput:focus {
+  border-color: #dfaa23;
+}
+
+.formTextarea {
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 14px;
+  width: 250px;
+  outline: none;
+  resize: none;
+  transition: border-color 0.3s;
+}
+
+.formTextarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.formTextarea:focus {
+  border-color: #dfaa23;
+}
+
+.formBtn {
+  background: linear-gradient(90deg, #dfaa23 0%, #fbf08d 48%, #dfaa23 100%);
+  color: #025899;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: filter 0.3s;
+  white-space: nowrap;
+}
+
+.formBtn:hover {
+  filter: brightness(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .formRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .formInput,
+  .formTextarea {
+    width: 100%;
+  }
+}

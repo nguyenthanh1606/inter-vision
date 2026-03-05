@@ -1,0 +1,352 @@
+{
+  "/": {
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Mình thấy bạn đang tìm hiểu về nha khoa — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
+        "options": [
+          "💫 Trồng răng đẹp 🌟",
+          "🦷 Chữa cười duyên 😁",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q2",
+        "text": "Hiện tại bạn đang gặp khó khăn gì về răng ạ?",
+        "options": [
+          "🤕 Đau răng 🤕",
+          "🦷 Mất răng 😔",
+          "🤔 Chưa rõ 🤔"
+        ]
+      },
+      {
+        "id": "q3",
+        "text": "Nếu mình tìm được giải pháp phù hợp, bạn muốn bắt đầu khi nào nhỉ?",
+        "options": [
+          "📅 Hôm nay 📅",
+          "🕒 Tuần này 🕒",
+          "🤔 Mình chưa chắc 🤔"
+        ]
+      }
+    ],
+    "pageTitle": "Nha Khoa I-Dent | Hệ Thống Nha Khoa Tiêu Chuẩn Quốc Tế",
+    "pageDescription": "I-DENT là một trong những phòng khám nha khoa uy tín tại Thành phố Hồ Chí Minh. Chuyên sâu về cấy ghép Implant với đội ngũ bác sĩ dày dặn kinh nghiệm chuyên môn, có tay nghề tốt.",
+    "generatedAt": "2026-03-04T09:44:57.084Z",
+    "language": "vi"
+  },
+  "/kien-thuc-nha-khoa/mai-go-xuong-o-rang": {
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Mình thấy bạn đang tìm hiểu về mài gồ xương ổ răng — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
+        "options": [
+          "👀 Răng hô",
+          "😁 Cười hở lợi",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q2",
+        "text": "Bạn đang gặp khó khăn gì về răng hô hoặc cười hở lợi ạ?",
+        "options": [
+          "🤕 Đau nhức",
+          "👀 Ảnh hưởng thẩm mỹ",
+          "😔 Tự ti khi cười"
+        ]
+      },
+      {
+        "id": "q3",
+        "text": "Nếu mình tìm được giải pháp phù hợp, bạn muốn bắt đầu khi nào nhỉ?",
+        "options": [
+          "📅 Ngay hôm nay",
+          "🕒 Trong tuần này",
+          "🤔 Mình chưa chắc chắn 😊"
+        ]
+      }
+    ],
+    "pageTitle": "Tác Dụng Khi Mài Gồ Xương Ổ Răng Và Khi Nào Cần Mài Gồ",
+    "pageDescription": "Mài gồ xương ổ răng được chỉ định thực hiện khi phần xương quá dày và gồ, gây nên tình trạng hô răng. Đây là phương pháp mang lại hiệu quả điều trị cao.",
+    "generatedAt": "2026-03-04T09:44:59.271Z",
+    "language": "vi"
+  },
+  "/kien-thuc-nha-khoa/chao-8-3-i-dent-dep-cung-phai-nu": {
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Mình thấy bạn đang tìm hiểu về ngày 8/3 — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
+        "options": [
+          "💕 Tình yêu",
+          "👩‍👩‍👧‍👦 Gia đình",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q2",
+        "text": "Bạn đang gặp khó khăn gì về chăm sóc răng miệng cho bản thân hoặc người thân nữ giới nhỉ? 🤕",
+        "options": [
+          "🦷 Răng yếu",
+          "💔 Đau răng",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q3",
+        "text": "Nếu tìm được chương trình chăm sóc răng miệng phù hợp cho phụ nữ, bạn muốn đăng ký khi nào nhỉ? 📅",
+        "options": [
+          "🔜 Ngay hôm nay",
+          "💆‍♀️ Cuối tuần",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      }
+    ],
+    "pageTitle": "Chào 8-3 - I-DENT Đẹp Cùng Phái Nữ",
+    "pageDescription": "8/3 là ngày Quốc tế Phụ nữ được cả thế giới công nhận. Đây cũng là ngày để vinh danh, thể hiện lòng biết ơn đến các bà, các mẹ, vợ, bạn gái và cả bạn bè.",
+    "generatedAt": "2026-03-04T09:45:03.416Z",
+    "language": "vi"
+  },
+  "/kien-thuc-nha-khoa/nha-khoa-i-dent-va-hanh-trinh-thien-nguyen-cung-em-den-lop": {
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Mình thấy bạn đang tìm hiểu về chương trình \"Cùng em đến lớp\" — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
+        "options": [
+          "🌟 Tình thương",
+          "📚 Học tập",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q2",
+        "text": "Hiện tại bạn đang gặp khó khăn gì về việc hỗ trợ trẻ em không may mắn ạ? 🤗",
+        "options": [
+          "💸 Tài chính",
+          "🕒 Thời gian",
+          "😔 Không biết bắt đầu"
+        ]
+      },
+      {
+        "id": "q3",
+        "text": "Nếu mình tìm được cách hỗ trợ phù hợp, bạn muốn tham gia khi nào nhỉ? 📅",
+        "options": [
+          "🔜 Ngay bây giờ",
+          "📆 Sắp tới",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      }
+    ],
+    "pageTitle": "Nha Khoa I-Dent Và Hành Trình Thiện Nguyện “Cùng Em Đến Lớp”",
+    "pageDescription": "Tin Tức",
+    "generatedAt": "2026-03-04T09:45:10.679Z",
+    "language": "vi"
+  },
+  "/kien-thuc-nha-khoa/mon-co-chan-rang": {
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Mình thấy bạn đang tìm hiểu về trám răng mòn cổ — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
+        "options": [
+          "🤩Giá cả",
+          "👀Hiệu quả",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q2",
+        "text": "Bạn đang gặp khó khăn gì về răng mòn cổ hiện tại ạ?",
+        "options": [
+          "🦷 Đau nhức",
+          "👀 Tìm giải pháp",
+          "🙅‍♂️ Chưa rõ"
+        ]
+      },
+      {
+        "id": "q3",
+        "text": "Nếu mình tìm được giải pháp phù hợp, bạn muốn bắt đầu khi nào nhỉ?",
+        "options": [
+          "🕒 Ngay hôm nay",
+          "📅 Trong tuần này",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      }
+    ],
+    "pageTitle": "Trám Răng Mòn Cổ Có Ưu Nhược Điểm Gì?",
+    "pageDescription": "Trám cổ chân răng bị mòn là phương án khắc phục được tình trạng răng bị mòn cổ.Với chi phí trám thấp nhưng hiệu quả mà nó mang lại rất tốt và được đánh giá cao",
+    "generatedAt": "2026-03-04T09:45:13.198Z",
+    "language": "vi"
+  },
+  "/kien-thuc-nha-khoa/nieng-rang-can-chu-y-gi": {
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Mình thấy bạn đang tìm hiểu về niềng răng — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
+        "options": [
+          "💸 Giá cả hợp lý 🤑",
+          "🦷 Cải thiện nụ cười 😁",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q2",
+        "text": "Bạn đang gặp khó khăn gì về niềng răng hiện tại ạ?",
+        "options": [
+          "🤕 Đau răng thường xuyên 😓",
+          "👀 Muốn cải thiện hình dạng răng 🦷",
+          "🤔 Chưa rõ về quy trình"
+        ]
+      },
+      {
+        "id": "q3",
+        "text": "Nếu mình tìm được giải pháp phù hợp, bạn muốn bắt đầu khi nào nhỉ?",
+        "options": [
+          "📅 Ngay hôm nay rồi 🕒",
+          "📆 Trong vài tuần tới 📆",
+          "🤔 Mình chưa quyết định 🤔"
+        ]
+      }
+    ],
+    "pageTitle": "Niềng Răng Cần Chú Ý Gì?",
+    "pageDescription": "Có rất nhiều yếu tố ảnh hưởng đến kết quả niềng răng. Nắm rõ những điều cần biết khi niềng răng sẽ giúp bạn hạn chế gặp biến chứng và tiết kiệm chi phí hơn.",
+    "generatedAt": "2026-03-04T09:45:18.672Z",
+    "language": "vi"
+  },
+  "/kien-thuc-nha-khoa/an-gi-sau-lay-tuy-rang": {
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Mình thấy bạn đang tìm hiểu về lấy tủy răng — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
+        "options": [
+          "👀 Sức khỏe răng",
+          "💉 Lo lắng vết thương",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q2",
+        "text": "Bạn đang gặp khó khăn gì về vấn đề chăm sóc răng sau lấy tủy? 🤕",
+        "options": [
+          "🤢 Đau nhức kéo dài",
+          "🤷‍♀️ Không biết kiêng gì",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q3",
+        "text": "Nếu mình tìm được giải pháp phù hợp, bạn muốn bắt đầu khi nào nhỉ? 📅",
+        "options": [
+          "🕒 Ngay hôm nay",
+          "📆 Tuần tới",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      }
+    ],
+    "pageTitle": "Lấy Tủy Răng Kiêng Ăn Gì Để Tốt Cho Răng Miệng?",
+    "pageDescription": "Sau khi lấy tủy răng kiêng ăn gì? Là câu hỏi nhiều người đang gặp phải tình trạng này thắc mắc để không bị ảnh hưởng đến vết thương chưa lành.",
+    "generatedAt": "2026-03-04T09:45:21.832Z",
+    "language": "vi"
+  },
+  "/kien-thuc-nha-khoa/chay-mau-chan-rang": {
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Mình thấy bạn đang tìm hiểu về chảy máu chân răng — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
+        "options": [
+          "🤕 Lo lắng về sức khỏe",
+          "👀 Tìm hiểu cho người thân",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q2",
+        "text": "Hiện tại bạn đang gặp khó khăn gì về chảy máu chân răng ạ?",
+        "options": [
+          "🤕 Đau nhức khi đánh răng",
+          "😷 Chảy máu thường xuyên",
+          "🤔 Chưa rõ nguyên nhân"
+        ]
+      },
+      {
+        "id": "q3",
+        "text": "Nếu mình tìm được giải pháp phù hợp, bạn muốn bắt đầu khi nào nhỉ?",
+        "options": [
+          "📅 Ngay hôm nay",
+          "🕒 Trong tuần này",
+          "🤔 Mình chưa quyết định"
+        ]
+      }
+    ],
+    "pageTitle": "Các nguyên nhân chính gây chảy máu chân răng và cách điều trị",
+    "pageDescription": "Chảy máu chân răng là bệnh lý khá phổ biến ở mọi độ tuổi. Nếu chủ quan không điều trị sẽ ảnh hưởng lớn đến sức khỏe răng miệng",
+    "generatedAt": "2026-03-04T09:45:26.275Z",
+    "language": "vi"
+  },
+  "/kien-thuc-nha-khoa/rang-sau-nang": {
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Mình thấy bạn đang tìm hiểu về sâu răng — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
+        "options": [
+          "🤕 Đau răng",
+          "😷 Hôi miệng",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q2",
+        "text": "Hiện tại bạn đang gặp khó khăn gì về sâu răng ạ?",
+        "options": [
+          "🦷 Răng bị lỗ đen",
+          "💉 Đau khi ăn",
+          "🤔 Chưa biết bắt đầu"
+        ]
+      },
+      {
+        "id": "q3",
+        "text": "Nếu mình tìm được giải pháp phù hợp, bạn muốn bắt đầu khi nào nhỉ?",
+        "options": [
+          "🕒 Ngay hôm nay",
+          "📅 Trong tuần này",
+          "🤔 Mình chưa chắc chắn"
+        ]
+      }
+    ],
+    "pageTitle": "Sâu Răng Nặng Nguy Hiểm Như Thế Nào? Cách Điều Trị Ra Sao?",
+    "pageDescription": "Sâu răng là bệnh lý diễn ra âm thầm mà vẫn gây tổn thương răng nghiêm trọng. Đặc biệt, sâu răng nặng có thể dẫn tới nhiều biến chứng nguy hiểm đối với sức khỏe.",
+    "generatedAt": "2026-03-04T09:45:28.684Z",
+    "language": "vi"
+  },
+  "/kien-thuc-nha-khoa/co-nen-tram-rang-sua-cho-be": {
+    "questions": [
+      {
+        "id": "q1",
+        "text": "Mình thấy bạn đang tìm hiểu về trám răng sữa cho bé — điều gì khiến bạn quan tâm nhất nhỉ? 😊",
+        "options": [
+          "👶 Sức khỏe răng bé",
+          "💉 Loại bỏ đau răng 🤕",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q2",
+        "text": "Hiện tại bạn đang gặp khó khăn gì về trám răng sữa cho bé ạ?",
+        "options": [
+          "🤕 Bé bị đau răng thường xuyên 🤕",
+          "🤷‍♀️ Không biết cách chăm sóc răng sữa",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      },
+      {
+        "id": "q3",
+        "text": "Nếu mình tìm được giải pháp phù hợp, bạn muốn bắt đầu khi nào nhỉ?",
+        "options": [
+          "📅 Ngay hôm nay 📅",
+          "🕒 Trong tuần này 🕒",
+          "🤔 Mình chỉ xem thử thôi"
+        ]
+      }
+    ],
+    "pageTitle": "Trám Răng Sữa Cho Bé Có Nên Không",
+    "pageDescription": "Có nên trám răng sữa cho bé không luôn là thắc mắc của nhiều bậc cha mẹ. Bởi răng sữa chỉ là răng mọc tạm và sẽ được thay thế hoàn toàn bằng răng vĩnh viễn.",
+    "generatedAt": "2026-03-04T09:45:32.452Z",
+    "language": "vi"
+  }
+}
