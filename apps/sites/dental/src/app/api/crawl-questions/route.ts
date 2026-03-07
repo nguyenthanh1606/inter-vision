@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { writeFile, readFile, mkdir } from 'fs/promises'
+import { mkdir, readFile, writeFile } from 'fs/promises'
+import { type NextRequest, NextResponse } from 'next/server'
 import path from 'path'
 
 const GROQ_API_KEY = process.env.GROQ_API_KEY || ''

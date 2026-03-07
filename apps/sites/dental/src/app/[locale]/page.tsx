@@ -1,12 +1,12 @@
 'use client'
 
-import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import styles from './page.module.css'
-import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
+import styles from './page.module.css'
 
 export default function HomePage() {
   const t = useTranslations('home')
@@ -301,7 +301,9 @@ export default function HomePage() {
               placeholder={tc('phone')}
               className={styles.appointmentInput}
             />
-            <button className="btn-gold">{t('appointment.button')}</button>
+            <button type="button" className="btn-gold">
+              {t('appointment.button')}
+            </button>
           </div>
         </div>
       </section>

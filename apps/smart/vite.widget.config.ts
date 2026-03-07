@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
 import path from 'path'
 import obfuscatorPlugin from 'rollup-plugin-obfuscator'
+import { defineConfig } from 'vite'
 
 // Builds the embeddable widget as a single obfuscated IIFE JS file
 export default defineConfig({

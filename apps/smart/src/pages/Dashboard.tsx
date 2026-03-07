@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import type { WidgetConfig } from '@/types'
 import ScriptGenerator from '@/components/ScriptGenerator'
+import type { WidgetConfig } from '@/types'
 
 const DEFAULT_CONFIG: WidgetConfig = {
   domain: '',

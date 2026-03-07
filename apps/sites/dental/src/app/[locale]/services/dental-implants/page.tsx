@@ -1,6 +1,6 @@
-import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
+import { Link } from '@/i18n/navigation'
 import styles from '../../inner.module.css'
 
 export default async function DentalImplantsPage({
@@ -119,7 +119,11 @@ function Content() {
             <form className={styles.ctaForm}>
               <input type="text" placeholder={tc('fullName')} />
               <input type="tel" placeholder={tc('phone')} />
-              <button className="btn-gold" style={{ width: '100%' }}>
+              <button
+                type="submit"
+                className="btn-gold"
+                style={{ width: '100%' }}
+              >
                 {tc('registerConsult')}
               </button>
             </form>

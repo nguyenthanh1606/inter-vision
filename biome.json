@@ -10,16 +10,20 @@
   "files": {
     "includes": [
       "**",
-      "!**/.next/**",
-      "!**/dist/**",
-      "!**/dist-widget/**",
-      "!**/node_modules/**",
+      "!**/.next",
+      "!**/dist",
+      "!**/dist-widget",
+      "!**/node_modules",
+      "!**/*.html",
       "!pnpm-lock.yaml"
     ]
   },
   "linter": {
     "enabled": true,
     "rules": {
+      "suspicious": {
+        "noArrayIndexKey": "off"
+      },
       "recommended": true
     }
   },

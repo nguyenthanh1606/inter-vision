@@ -1,6 +1,6 @@
-import { ThemeToggle } from './components/ThemeToggle'
-import { NavbarEffect } from './components/NavbarEffect'
 import { AnimatedSection } from './components/AnimatedSection'
+import { NavbarEffect } from './components/NavbarEffect'
+import { ThemeToggle } from './components/ThemeToggle'
 
 export default function HomePage() {
   return (

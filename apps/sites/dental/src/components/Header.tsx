@@ -1,7 +1,7 @@
 'use client'
 
-import { useState } from 'react'
 import { useLocale, useTranslations } from 'next-intl'
+import { useState } from 'react'
 import { Link, usePathname, useRouter } from '@/i18n/navigation'
 import styles from './Header.module.css'
 
@@ -229,11 +229,16 @@ export default function Header() {
                 {tc('hotlineNumber')}
               </span>
             </a>
-            <button onClick={handleSwitchLocale} className={styles.langSwitch}>
+            <button
+              type="button"
+              onClick={handleSwitchLocale}
+              className={styles.langSwitch}
+            >
               {t('langSwitch')}
             </button>
           </div>
           <button
+            type="button"
             className={styles.mobileToggle}
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menu"
