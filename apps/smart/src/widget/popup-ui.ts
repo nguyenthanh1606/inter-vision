@@ -3,12 +3,12 @@
  * Pure vanilla JS, no framework dependencies.
  */
 
-import { detectPageContext, buildContextSummary } from './detector'
+import { buildContextSummary, detectPageContext } from './detector'
 import {
+  type AIQuestion,
   fetchPreGeneratedQuestions,
   generateQuestions,
-  generateSummary,
-  type AIQuestion
+  generateSummary
 } from './groq'
 import { getWidgetStyles } from './styles'
 

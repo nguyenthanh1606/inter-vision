@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Intervision - AI Lead Generation</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
-<script>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Intervision - AI Lead Generation</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -15,7 +18,7 @@
                         primary: "#3B82F6", // Neon Blue-ish for primary actions
                         "primary-hover": "#2563EB",
                         "secondary": "#8B5CF6", // Purple accent
-                        "background-light": "#F8FAFC", 
+                        "background-light": "#F8FAFC",
                         "background-dark": "#0B0F19", // Deep Navy/Black
                         "surface-dark": "#151B2B",
                         "accent-glow": "rgba(59, 130, 246, 0.5)",
@@ -42,345 +45,443 @@
             },
         };
     </script>
-<style>
+    <style>
         body {
             font-family: 'Inter', sans-serif;
         }
+
         .glass-panel {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
+
         .text-gradient {
             background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .bg-mesh {
             background-color: #0B0F19;
-            background-image: 
-                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-                radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
-                radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+            background-image:
+                radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%),
+                radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-300 font-body antialiased selection:bg-primary selection:text-white">
-<nav class="fixed w-full z-50 top-0 left-0 border-b border-gray-200 dark:border-white/10 glass-panel">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center h-20">
-<div class="flex items-center space-x-3">
-<div class="w-10 h-10 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shadow-neon">
-<span class="material-icons-outlined text-white text-xl">smart_toy</span>
-</div>
-<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Intervision</span>
-</div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors" href="#">Product</a>
-<a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors" href="#">Features</a>
-<a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors" href="#">Use Cases</a>
-<a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors" href="#">Pricing</a>
-</div>
-<div class="flex items-center space-x-4">
-<a class="hidden md:block text-sm font-medium text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors" href="#">Log in</a>
-<a class="px-5 py-2.5 bg-primary hover:bg-primary-hover text-white text-sm font-semibold rounded-full shadow-neon transition-all transform hover:scale-105" href="#">Start Free</a>
-</div>
-<div class="md:hidden flex items-center">
-<button class="text-slate-500 dark:text-slate-300 hover:text-white focus:outline-none">
-<span class="material-icons-outlined text-2xl">menu</span>
-</button>
-</div>
-</div>
-</div>
-</nav>
-<section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-background-light dark:bg-background-dark">
-<div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
-<div class="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] mix-blend-screen"></div>
-<div class="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[100px] mix-blend-screen"></div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-100/50 dark:bg-white/5 border border-blue-200 dark:border-white/10 backdrop-blur-sm mb-8">
-<span class="flex h-2 w-2 rounded-full bg-green-400"></span>
-<span class="text-xs font-medium text-blue-700 dark:text-blue-200">New: GPT-4 Integration Live</span>
-</div>
-<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
-                Turn Conversations Into <br class="hidden md:block"/>
-<span class="text-gradient">Qualified Leads</span> — Automatically
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-300 font-body antialiased selection:bg-primary selection:text-white">
+    <nav class="fixed w-full z-50 top-0 left-0 border-b border-gray-200 dark:border-white/10 glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shadow-neon">
+                        <span class="material-icons-outlined text-white text-xl">smart_toy</span>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Intervision</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                        href="#">Product</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                        href="#">Features</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                        href="#">Use Cases</a>
+                    <a class="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                        href="#">Pricing</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a class="hidden md:block text-sm font-medium text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors"
+                        href="#">Log in</a>
+                    <a class="px-5 py-2.5 bg-primary hover:bg-primary-hover text-white text-sm font-semibold rounded-full shadow-neon transition-all transform hover:scale-105"
+                        href="#">Start Free</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 dark:text-slate-300 hover:text-white focus:outline-none">
+                        <span class="material-icons-outlined text-2xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-background-light dark:bg-background-dark">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+            <div
+                class="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] mix-blend-screen">
+            </div>
+            <div
+                class="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[100px] mix-blend-screen">
+            </div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div
+                class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-100/50 dark:bg-white/5 border border-blue-200 dark:border-white/10 backdrop-blur-sm mb-8">
+                <span class="flex h-2 w-2 rounded-full bg-green-400"></span>
+                <span class="text-xs font-medium text-blue-700 dark:text-blue-200">New: GPT-4 Integration Live</span>
+            </div>
+            <h1
+                class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
+                Turn Conversations Into <br class="hidden md:block" />
+                <span class="text-gradient">Qualified Leads</span> — Automatically
             </h1>
-<p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-300">
-                Create AI-powered quiz funnels that capture real customer intent, qualify prospects instantly, and skyrocket your conversion rates.
+            <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-300">
+                Create AI-powered quiz funnels that capture real customer intent, qualify prospects instantly, and
+                skyrocket your conversion rates.
             </p>
-<div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-<a class="px-8 py-4 bg-primary hover:bg-primary-hover text-white font-semibold rounded-full shadow-neon-strong transition-all transform hover:scale-105 flex items-center justify-center group" href="#">
+            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                <a class="px-8 py-4 bg-primary hover:bg-primary-hover text-white font-semibold rounded-full shadow-neon-strong transition-all transform hover:scale-105 flex items-center justify-center group"
+                    href="#">
                     Start Free
-                    <span class="material-icons-outlined ml-2 group-hover:translate-x-1 transition-transform text-lg">arrow_forward</span>
-</a>
-<a class="px-8 py-4 bg-white dark:bg-transparent border border-gray-300 dark:border-white/20 text-slate-700 dark:text-white font-semibold rounded-full hover:bg-gray-50 dark:hover:bg-white/5 transition-all flex items-center justify-center" href="#">
-<span class="material-icons-outlined mr-2 text-lg">play_circle_filled</span>
+                    <span
+                        class="material-icons-outlined ml-2 group-hover:translate-x-1 transition-transform text-lg">arrow_forward</span>
+                </a>
+                <a class="px-8 py-4 bg-white dark:bg-transparent border border-gray-300 dark:border-white/20 text-slate-700 dark:text-white font-semibold rounded-full hover:bg-gray-50 dark:hover:bg-white/5 transition-all flex items-center justify-center"
+                    href="#">
+                    <span class="material-icons-outlined mr-2 text-lg">play_circle_filled</span>
                     See Demo
                 </a>
-</div>
-<div class="mt-20 relative mx-auto max-w-5xl">
-<div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-30 animate-pulse"></div>
-<div class="relative rounded-2xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 shadow-2xl overflow-hidden">
-<div class="h-8 bg-gray-100 dark:bg-[#0f1420] border-b border-gray-200 dark:border-white/5 flex items-center px-4 space-x-2">
-<div class="w-3 h-3 rounded-full bg-red-500/80"></div>
-<div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
-<div class="w-3 h-3 rounded-full bg-green-500/80"></div>
-</div>
-<div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="space-y-4">
-<div class="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5">
-<div class="text-sm text-slate-500 dark:text-slate-400">Total Visitors</div>
-<div class="text-2xl font-bold text-slate-900 dark:text-white mt-1">12,450</div>
-<div class="text-xs text-green-400 mt-2 flex items-center">
-<span class="material-icons-outlined text-sm mr-1">trending_up</span> +14% vs last week
+            </div>
+            <div class="mt-20 relative mx-auto max-w-5xl">
+                <div
+                    class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-30 animate-pulse">
+                </div>
+                <div
+                    class="relative rounded-2xl bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 shadow-2xl overflow-hidden">
+                    <div
+                        class="h-8 bg-gray-100 dark:bg-[#0f1420] border-b border-gray-200 dark:border-white/5 flex items-center px-4 space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                    </div>
+                    <div class="p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="space-y-4">
+                            <div
+                                class="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5">
+                                <div class="text-sm text-slate-500 dark:text-slate-400">Total Visitors</div>
+                                <div class="text-2xl font-bold text-slate-900 dark:text-white mt-1">12,450</div>
+                                <div class="text-xs text-green-400 mt-2 flex items-center">
+                                    <span class="material-icons-outlined text-sm mr-1">trending_up</span> +14% vs last
+                                    week
                                 </div>
-</div>
-<div class="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5">
-<div class="text-sm text-slate-500 dark:text-slate-400">Qualified Leads</div>
-<div class="text-2xl font-bold text-slate-900 dark:text-white mt-1">3,892</div>
-<div class="text-xs text-green-400 mt-2 flex items-center">
-<span class="material-icons-outlined text-sm mr-1">trending_up</span> +28% vs last week
+                            </div>
+                            <div
+                                class="p-4 rounded-xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5">
+                                <div class="text-sm text-slate-500 dark:text-slate-400">Qualified Leads</div>
+                                <div class="text-2xl font-bold text-slate-900 dark:text-white mt-1">3,892</div>
+                                <div class="text-xs text-green-400 mt-2 flex items-center">
+                                    <span class="material-icons-outlined text-sm mr-1">trending_up</span> +28% vs last
+                                    week
                                 </div>
-</div>
-<div class="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20">
-<div class="text-sm text-primary dark:text-blue-300">Revenue Estimate</div>
-<div class="text-2xl font-bold text-slate-900 dark:text-white mt-1">$45,200</div>
-</div>
-</div>
-<div class="md:col-span-2 rounded-xl bg-gray-50 dark:bg-[#0B0F19] border border-gray-100 dark:border-white/5 p-6 relative overflow-hidden">
-<div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#3B82F6 1px, transparent 1px), linear-gradient(90deg, #3B82F6 1px, transparent 1px); background-size: 20px 20px;"></div>
-<div class="flex justify-between items-center mb-6 relative z-10">
-<h3 class="font-semibold text-slate-800 dark:text-white">Live Conversion Funnel</h3>
-<select class="bg-white dark:bg-white/10 border-none text-xs rounded px-2 py-1 text-slate-600 dark:text-slate-300 outline-none">
-<option>Last 7 Days</option>
-</select>
-</div>
-<div class="flex flex-col space-y-3 relative z-10 max-w-[80%] mx-auto mt-4">
-<div class="flex items-start space-x-3">
-<div class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shrink-0">
-<span class="material-icons-outlined text-white text-xs">smart_toy</span>
-</div>
-<div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-slate-700 dark:text-slate-200 shadow-sm">
-                                        Hi! I see you're looking to scale your sales. What is your primary bottleneck right now?
+                            </div>
+                            <div
+                                class="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20">
+                                <div class="text-sm text-primary dark:text-blue-300">Revenue Estimate</div>
+                                <div class="text-2xl font-bold text-slate-900 dark:text-white mt-1">$45,200</div>
+                            </div>
+                        </div>
+                        <div
+                            class="md:col-span-2 rounded-xl bg-gray-50 dark:bg-[#0B0F19] border border-gray-100 dark:border-white/5 p-6 relative overflow-hidden">
+                            <div class="absolute inset-0 opacity-10"
+                                style="background-image: linear-gradient(#3B82F6 1px, transparent 1px), linear-gradient(90deg, #3B82F6 1px, transparent 1px); background-size: 20px 20px;">
+                            </div>
+                            <div class="flex justify-between items-center mb-6 relative z-10">
+                                <h3 class="font-semibold text-slate-800 dark:text-white">Live Conversion Funnel</h3>
+                                <select
+                                    class="bg-white dark:bg-white/10 border-none text-xs rounded px-2 py-1 text-slate-600 dark:text-slate-300 outline-none">
+                                    <option>Last 7 Days</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col space-y-3 relative z-10 max-w-[80%] mx-auto mt-4">
+                                <div class="flex items-start space-x-3">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shrink-0">
+                                        <span class="material-icons-outlined text-white text-xs">smart_toy</span>
                                     </div>
-</div>
-<div class="flex items-start justify-end space-x-3">
-<div class="bg-primary p-3 rounded-2xl rounded-tr-none text-sm text-white shadow-neon">
+                                    <div
+                                        class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-slate-700 dark:text-slate-200 shadow-sm">
+                                        Hi! I see you're looking to scale your sales. What is your primary bottleneck
+                                        right now?
+                                    </div>
+                                </div>
+                                <div class="flex items-start justify-end space-x-3">
+                                    <div
+                                        class="bg-primary p-3 rounded-2xl rounded-tr-none text-sm text-white shadow-neon">
                                         Lead qualification takes too much time.
                                     </div>
-<div class="w-8 h-8 rounded-full bg-gray-200 dark:bg-white/20 flex items-center justify-center shrink-0">
-<span class="material-icons-outlined text-gray-500 dark:text-white text-xs">person</span>
-</div>
-</div>
-<div class="flex items-start space-x-3">
-<div class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shrink-0">
-<span class="material-icons-outlined text-white text-xs">smart_toy</span>
-</div>
-<div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-slate-700 dark:text-slate-200 shadow-sm">
-                                        Understood. Based on our data, automating initial outreach can save 15h/week. Would you like a custom demo?
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-gray-200 dark:bg-white/20 flex items-center justify-center shrink-0">
+                                        <span
+                                            class="material-icons-outlined text-gray-500 dark:text-white text-xs">person</span>
                                     </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-10 border-y border-gray-200 dark:border-white/5 bg-white dark:bg-[#0d121f]">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<p class="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-8">Trusted by growth teams at</p>
-<div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-<div class="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white">
-<span class="material-icons-outlined">token</span> <span>Stripe</span>
-</div>
-<div class="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white">
-<span class="material-icons-outlined">cloud</span> <span>Google</span>
-</div>
-<div class="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white">
-<span class="material-icons-outlined">workspaces</span> <span>Slack</span>
-</div>
-<div class="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white">
-<span class="material-icons-outlined">hub</span> <span>HubSpot</span>
-</div>
-<div class="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white">
-<span class="material-icons-outlined">bolt</span> <span>Zapier</span>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-background-light dark:bg-background-dark relative overflow-hidden">
-<div class="absolute top-1/4 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px] mix-blend-screen pointer-events-none"></div>
-<div class="absolute bottom-1/4 left-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] mix-blend-screen pointer-events-none"></div>
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-<div class="text-center mb-12">
-<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Experience the Flow</h2>
-<p class="mt-4 text-slate-600 dark:text-slate-300">Interact with a live demo of what your customers will see.</p>
-</div>
-<div class="glass-panel rounded-3xl p-1 md:p-2 shadow-2xl bg-gradient-to-b from-white/10 to-transparent dark:from-white/5 dark:to-transparent">
-<div class="bg-white dark:bg-[#111827] rounded-2xl p-8 md:p-12 min-h-[400px] flex flex-col items-center justify-center border border-gray-100 dark:border-white/5 relative">
-<div class="w-full max-w-md h-1.5 bg-gray-100 dark:bg-gray-800 rounded-full mb-8">
-<div class="w-1/3 h-full bg-primary rounded-full shadow-neon"></div>
-</div>
-<h3 class="text-2xl font-bold text-slate-900 dark:text-white text-center mb-8">What is your primary business goal for this quarter?</h3>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
-<button class="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all text-left flex items-center space-x-3">
-<span class="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary flex items-center justify-center">
-<span class="material-icons-outlined text-white text-[10px] opacity-0 group-hover:opacity-100">check</span>
-</span>
-<span class="text-slate-700 dark:text-slate-200 font-medium">Increase Lead Volume</span>
-</button>
-<button class="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all text-left flex items-center space-x-3">
-<span class="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary flex items-center justify-center">
-<span class="material-icons-outlined text-white text-[10px] opacity-0 group-hover:opacity-100">check</span>
-</span>
-<span class="text-slate-700 dark:text-slate-200 font-medium">Improve Lead Quality</span>
-</button>
-<button class="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all text-left flex items-center space-x-3">
-<span class="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary flex items-center justify-center">
-<span class="material-icons-outlined text-white text-[10px] opacity-0 group-hover:opacity-100">check</span>
-</span>
-<span class="text-slate-700 dark:text-slate-200 font-medium">Automate Support</span>
-</button>
-<button class="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all text-left flex items-center space-x-3">
-<span class="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary flex items-center justify-center">
-<span class="material-icons-outlined text-white text-[10px] opacity-0 group-hover:opacity-100">check</span>
-</span>
-<span class="text-slate-700 dark:text-slate-200 font-medium">Reduce Churn</span>
-</button>
-</div>
-<div class="mt-8 text-sm text-slate-400 dark:text-slate-500 flex items-center">
-<span class="material-icons-outlined text-sm mr-1">lock</span> Powered by Intervision AI
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <div
+                                        class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shrink-0">
+                                        <span class="material-icons-outlined text-white text-xs">smart_toy</span>
+                                    </div>
+                                    <div
+                                        class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-slate-700 dark:text-slate-200 shadow-sm">
+                                        Understood. Based on our data, automating initial outreach can save 15h/week.
+                                        Would you like a custom demo?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-white dark:bg-[#0d121f]">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-16">
-<h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Three Steps to Automation</h2>
-<p class="mt-4 text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Get up and running in minutes, not months. No coding required.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="relative group p-8 rounded-2xl bg-background-light dark:bg-surface-dark border border-gray-200 dark:border-white/5 hover:border-primary/50 transition-all duration-300">
-<div class="absolute -top-4 -left-4 w-12 h-12 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center font-bold text-xl shadow-lg">1</div>
-<div class="w-16 h-16 rounded-full bg-blue-100 dark:bg-primary/20 text-primary flex items-center justify-center mb-6">
-<span class="material-icons-outlined text-3xl">auto_fix_high</span>
-</div>
-<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Generate with AI</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Simply describe your business. Our AI engine builds the perfect conversation flow, questions, and logic instantly.</p>
-</div>
-<div class="relative group p-8 rounded-2xl bg-background-light dark:bg-surface-dark border border-gray-200 dark:border-white/5 hover:border-primary/50 transition-all duration-300">
-<div class="absolute -top-4 -left-4 w-12 h-12 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center font-bold text-xl shadow-lg">2</div>
-<div class="w-16 h-16 rounded-full bg-purple-100 dark:bg-secondary/20 text-secondary flex items-center justify-center mb-6">
-<span class="material-icons-outlined text-3xl">code</span>
-</div>
-<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Embed with 1 Line</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Copy a single line of JavaScript and paste it onto your website, landing page, or within your app.</p>
-</div>
-<div class="relative group p-8 rounded-2xl bg-background-light dark:bg-surface-dark border border-gray-200 dark:border-white/5 hover:border-primary/50 transition-all duration-300">
-<div class="absolute -top-4 -left-4 w-12 h-12 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center font-bold text-xl shadow-lg">3</div>
-<div class="w-16 h-16 rounded-full bg-green-100 dark:bg-green-500/20 text-green-600 dark:text-green-400 flex items-center justify-center mb-6">
-<span class="material-icons-outlined text-3xl">rocket_launch</span>
-</div>
-<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Get Qualified Leads</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed">Watch as visitors engage, self-qualify, and book meetings directly into your calendar automatically.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 bg-background-light dark:bg-background-dark relative">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-<span class="material-icons-outlined text-6xl text-primary/20 mb-6">format_quote</span>
-<blockquote class="text-2xl md:text-3xl font-medium text-slate-800 dark:text-slate-100 leading-relaxed mb-8">
-                "We replaced our static contact forms with Intervision's AI chat. Our lead volume doubled in the first week, and the sales team stopped wasting time on unqualified prospects."
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-10 border-y border-gray-200 dark:border-white/5 bg-white dark:bg-[#0d121f]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-8">Trusted
+                by growth teams at</p>
+            <div
+                class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white">
+                    <span class="material-icons-outlined">token</span> <span>Stripe</span>
+                </div>
+                <div class="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white">
+                    <span class="material-icons-outlined">cloud</span> <span>Google</span>
+                </div>
+                <div class="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white">
+                    <span class="material-icons-outlined">workspaces</span> <span>Slack</span>
+                </div>
+                <div class="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white">
+                    <span class="material-icons-outlined">hub</span> <span>HubSpot</span>
+                </div>
+                <div class="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white">
+                    <span class="material-icons-outlined">bolt</span> <span>Zapier</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-background-light dark:bg-background-dark relative overflow-hidden">
+        <div
+            class="absolute top-1/4 right-0 w-[400px] h-[400px] bg-secondary/10 rounded-full blur-[100px] mix-blend-screen pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-1/4 left-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] mix-blend-screen pointer-events-none">
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Experience the Flow</h2>
+                <p class="mt-4 text-slate-600 dark:text-slate-300">Interact with a live demo of what your customers will
+                    see.</p>
+            </div>
+            <div
+                class="glass-panel rounded-3xl p-1 md:p-2 shadow-2xl bg-gradient-to-b from-white/10 to-transparent dark:from-white/5 dark:to-transparent">
+                <div
+                    class="bg-white dark:bg-[#111827] rounded-2xl p-8 md:p-12 min-h-[400px] flex flex-col items-center justify-center border border-gray-100 dark:border-white/5 relative">
+                    <div class="w-full max-w-md h-1.5 bg-gray-100 dark:bg-gray-800 rounded-full mb-8">
+                        <div class="w-1/3 h-full bg-primary rounded-full shadow-neon"></div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white text-center mb-8">What is your primary
+                        business goal for this quarter?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-2xl">
+                        <button
+                            class="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all text-left flex items-center space-x-3">
+                            <span
+                                class="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary flex items-center justify-center">
+                                <span
+                                    class="material-icons-outlined text-white text-[10px] opacity-0 group-hover:opacity-100">check</span>
+                            </span>
+                            <span class="text-slate-700 dark:text-slate-200 font-medium">Increase Lead Volume</span>
+                        </button>
+                        <button
+                            class="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all text-left flex items-center space-x-3">
+                            <span
+                                class="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary flex items-center justify-center">
+                                <span
+                                    class="material-icons-outlined text-white text-[10px] opacity-0 group-hover:opacity-100">check</span>
+                            </span>
+                            <span class="text-slate-700 dark:text-slate-200 font-medium">Improve Lead Quality</span>
+                        </button>
+                        <button
+                            class="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all text-left flex items-center space-x-3">
+                            <span
+                                class="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary flex items-center justify-center">
+                                <span
+                                    class="material-icons-outlined text-white text-[10px] opacity-0 group-hover:opacity-100">check</span>
+                            </span>
+                            <span class="text-slate-700 dark:text-slate-200 font-medium">Automate Support</span>
+                        </button>
+                        <button
+                            class="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all text-left flex items-center space-x-3">
+                            <span
+                                class="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary flex items-center justify-center">
+                                <span
+                                    class="material-icons-outlined text-white text-[10px] opacity-0 group-hover:opacity-100">check</span>
+                            </span>
+                            <span class="text-slate-700 dark:text-slate-200 font-medium">Reduce Churn</span>
+                        </button>
+                    </div>
+                    <div class="mt-8 text-sm text-slate-400 dark:text-slate-500 flex items-center">
+                        <span class="material-icons-outlined text-sm mr-1">lock</span> Powered by Intervision AI
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-[#0d121f]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Three Steps to Automation</h2>
+                <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Get up and running in minutes, not
+                    months. No coding required.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="relative group p-8 rounded-2xl bg-background-light dark:bg-surface-dark border border-gray-200 dark:border-white/5 hover:border-primary/50 transition-all duration-300">
+                    <div
+                        class="absolute -top-4 -left-4 w-12 h-12 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center font-bold text-xl shadow-lg">
+                        1</div>
+                    <div
+                        class="w-16 h-16 rounded-full bg-blue-100 dark:bg-primary/20 text-primary flex items-center justify-center mb-6">
+                        <span class="material-icons-outlined text-3xl">auto_fix_high</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Generate with AI</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Simply describe your business. Our AI
+                        engine builds the perfect conversation flow, questions, and logic instantly.</p>
+                </div>
+                <div
+                    class="relative group p-8 rounded-2xl bg-background-light dark:bg-surface-dark border border-gray-200 dark:border-white/5 hover:border-primary/50 transition-all duration-300">
+                    <div
+                        class="absolute -top-4 -left-4 w-12 h-12 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center font-bold text-xl shadow-lg">
+                        2</div>
+                    <div
+                        class="w-16 h-16 rounded-full bg-purple-100 dark:bg-secondary/20 text-secondary flex items-center justify-center mb-6">
+                        <span class="material-icons-outlined text-3xl">code</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Embed with 1 Line</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Copy a single line of JavaScript and
+                        paste it onto your website, landing page, or within your app.</p>
+                </div>
+                <div
+                    class="relative group p-8 rounded-2xl bg-background-light dark:bg-surface-dark border border-gray-200 dark:border-white/5 hover:border-primary/50 transition-all duration-300">
+                    <div
+                        class="absolute -top-4 -left-4 w-12 h-12 rounded-xl bg-slate-900 dark:bg-white text-white dark:text-slate-900 flex items-center justify-center font-bold text-xl shadow-lg">
+                        3</div>
+                    <div
+                        class="w-16 h-16 rounded-full bg-green-100 dark:bg-green-500/20 text-green-600 dark:text-green-400 flex items-center justify-center mb-6">
+                        <span class="material-icons-outlined text-3xl">rocket_launch</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">Get Qualified Leads</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Watch as visitors engage,
+                        self-qualify, and book meetings directly into your calendar automatically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-background-light dark:bg-background-dark relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="material-icons-outlined text-6xl text-primary/20 mb-6">format_quote</span>
+            <blockquote
+                class="text-2xl md:text-3xl font-medium text-slate-800 dark:text-slate-100 leading-relaxed mb-8">
+                "We replaced our static contact forms with Intervision's AI chat. Our lead volume doubled in the first
+                week, and the sales team stopped wasting time on unqualified prospects."
             </blockquote>
-<div class="flex items-center justify-center space-x-4">
-<img alt="Portrait of Sarah Jensen" class="w-12 h-12 rounded-full border-2 border-primary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnrVPje2tQYO4I-v1Xi2epRL1SKHx1piDk4Qhvt1aiIzccAHQcgIih8AIvsTfoO2rtAHVda2qWuUbxgwsBxTxBk7YM_9Irhe0vr2GhsZbLmDJrEbbNVusohXRyftUONaf2fYYIKklypT5_9h3BenCmVtwzct_IWAljhIRLncgGQDONnBWP8NsDnz1kP4qdnEpTjdkHr33tMnf6Gm8XNbdKLq0qLILZDBNptuIuow6hvZrx8HSY-Sr9Se1c-zzQcIFpELEe4FpAVeS7"/>
-<div class="text-left">
-<div class="font-bold text-slate-900 dark:text-white">Sarah Jensen</div>
-<div class="text-sm text-slate-500 dark:text-slate-400">VP of Marketing at TechFlow</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 relative overflow-hidden">
-<div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-slate-900 dark:from-surface-dark dark:to-black"></div>
-<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
-<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/10 to-transparent"></div>
-<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-<h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Ready to automate your growth?</h2>
-<p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">Join 10,000+ marketers generating higher quality leads with conversational AI.</p>
-<div class="flex flex-col sm:flex-row justify-center gap-4">
-<a class="px-8 py-4 bg-primary hover:bg-primary-hover text-white font-semibold rounded-full shadow-neon transition-all transform hover:scale-105" href="#">
+            <div class="flex items-center justify-center space-x-4">
+                <img alt="Portrait of Sarah Jensen" class="w-12 h-12 rounded-full border-2 border-primary"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnrVPje2tQYO4I-v1Xi2epRL1SKHx1piDk4Qhvt1aiIzccAHQcgIih8AIvsTfoO2rtAHVda2qWuUbxgwsBxTxBk7YM_9Irhe0vr2GhsZbLmDJrEbbNVusohXRyftUONaf2fYYIKklypT5_9h3BenCmVtwzct_IWAljhIRLncgGQDONnBWP8NsDnz1kP4qdnEpTjdkHr33tMnf6Gm8XNbdKLq0qLILZDBNptuIuow6hvZrx8HSY-Sr9Se1c-zzQcIFpELEe4FpAVeS7" />
+                <div class="text-left">
+                    <div class="font-bold text-slate-900 dark:text-white">Sarah Jensen</div>
+                    <div class="text-sm text-slate-500 dark:text-slate-400">VP of Marketing at TechFlow</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-slate-900 dark:from-surface-dark dark:to-black">
+        </div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10">
+        </div>
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/10 to-transparent"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Ready to automate your growth?</h2>
+            <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">Join 10,000+ marketers generating higher quality
+                leads with conversational AI.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a class="px-8 py-4 bg-primary hover:bg-primary-hover text-white font-semibold rounded-full shadow-neon transition-all transform hover:scale-105"
+                    href="#">
                     Start Free Trial
                 </a>
-<a class="px-8 py-4 bg-transparent border border-white/30 hover:bg-white/10 text-white font-semibold rounded-full transition-all" href="#">
+                <a class="px-8 py-4 bg-transparent border border-white/30 hover:bg-white/10 text-white font-semibold rounded-full transition-all"
+                    href="#">
                     Talk to Sales
                 </a>
-</div>
-<p class="mt-6 text-sm text-blue-200/60">No credit card required. 14-day free trial.</p>
-</div>
-</section>
-<footer class="bg-white dark:bg-[#05080f] border-t border-gray-200 dark:border-white/5 pt-16 pb-8">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
-<div class="col-span-2 lg:col-span-2">
-<div class="flex items-center space-x-2 mb-4">
-<div class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center">
-<span class="material-icons-outlined text-white text-sm">smart_toy</span>
-</div>
-<span class="text-lg font-bold text-slate-900 dark:text-white">Intervision</span>
-</div>
-<p class="text-slate-500 dark:text-slate-400 text-sm max-w-xs mb-6">
-                        Empowering businesses to scale personal conversations with AI technology. Turn traffic into revenue.
+            </div>
+            <p class="mt-6 text-sm text-blue-200/60">No credit card required. 14-day free trial.</p>
+        </div>
+    </section>
+    <footer class="bg-white dark:bg-[#05080f] border-t border-gray-200 dark:border-white/5 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
+                <div class="col-span-2 lg:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div
+                            class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center">
+                            <span class="material-icons-outlined text-white text-sm">smart_toy</span>
+                        </div>
+                        <span class="text-lg font-bold text-slate-900 dark:text-white">Intervision</span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm max-w-xs mb-6">
+                        Empowering businesses to scale personal conversations with AI technology. Turn traffic into
+                        revenue.
                     </p>
-<div class="flex space-x-4">
-<a class="text-slate-400 hover:text-primary transition-colors" href="#"><i class="material-icons-outlined">facebook</i></a> 
-<a class="text-slate-400 hover:text-primary transition-colors" href="#"><i class="material-icons-outlined">public</i></a> 
-<a class="text-slate-400 hover:text-primary transition-colors" href="#"><i class="material-icons-outlined">post_add</i></a> 
-</div>
-</div>
-<div>
-<h4 class="font-bold text-slate-900 dark:text-white mb-4">Product</h4>
-<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="#">Features</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Pricing</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Changelog</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-slate-900 dark:text-white mb-4">Resources</h4>
-<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">API Reference</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Community</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-slate-900 dark:text-white mb-4">Company</h4>
-<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="#">About</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Legal</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
-</ul>
-</div>
-</div>
-<div class="pt-8 border-t border-gray-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center">
-<p class="text-sm text-slate-400">© 2023 Intervision AI Inc. All rights reserved.</p>
-<div class="flex space-x-6 mt-4 md:mt-0 text-sm text-slate-400">
-<a class="hover:text-slate-600 dark:hover:text-slate-200" href="#">Privacy Policy</a>
-<a class="hover:text-slate-600 dark:hover:text-slate-200" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
+                    <div class="flex space-x-4">
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><i
+                                class="material-icons-outlined">facebook</i></a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><i
+                                class="material-icons-outlined">public</i></a>
+                        <a class="text-slate-400 hover:text-primary transition-colors" href="#"><i
+                                class="material-icons-outlined">post_add</i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-4">Product</h4>
+                    <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">Features</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Pricing</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">API Reference</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Community</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 dark:text-white mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">About</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Legal</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="pt-8 border-t border-gray-200 dark:border-white/5 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-slate-400">© 2023 Intervision AI Inc. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0 text-sm text-slate-400">
+                    <a class="hover:text-slate-600 dark:hover:text-slate-200" href="#">Privacy Policy</a>
+                    <a class="hover:text-slate-600 dark:hover:text-slate-200" href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-</body></html>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
-import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
+import { Link } from '@/i18n/navigation'
 import styles from '../../inner.module.css'
 
 export default async function QualityCommitmentPage({

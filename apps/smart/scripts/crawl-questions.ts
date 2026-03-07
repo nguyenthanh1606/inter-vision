@@ -140,7 +140,7 @@ async function discoverLinksFromPage(
     let match
 
     while ((match = linkRegex.exec(html)) !== null) {
-      let href = match[1].trim()
+      const href = match[1].trim()
 
       // Skip non-page URLs
       if (

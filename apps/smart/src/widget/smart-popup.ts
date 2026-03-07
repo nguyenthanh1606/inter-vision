@@ -12,7 +12,7 @@
 
 import { createPopup } from './popup-ui'
 
-;(function () {
+;(() => {
   const scripts = document.querySelectorAll('script[data-smart-config]')
   const scriptEl = scripts[scripts.length - 1]
 

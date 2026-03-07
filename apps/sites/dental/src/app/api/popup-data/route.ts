@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from 'next/server'
 import { readFile } from 'fs/promises'
+import { type NextRequest, NextResponse } from 'next/server'
 import path from 'path'
 
 const DATA_FILE = path.join(process.cwd(), 'public', 'popup-questions.json')

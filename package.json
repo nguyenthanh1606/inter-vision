@@ -12,7 +12,7 @@
     "smart:dev": "nx dev smart",
     "smart:build": "nx build smart",
     "smart:build-widget": "nx build-widget smart",
-    "format": "biome format . --write",
+    "format": "biome check --write .",
     "format:check": "biome check .",
     "lint": "nx lint website"
   },

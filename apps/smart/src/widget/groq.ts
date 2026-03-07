@@ -7,7 +7,7 @@
  * with AI fallback when no pre-generated data is available.
  */
 
-import { encrypt, decrypt } from './crypto'
+import { decrypt, encrypt } from './crypto'
 
 export interface AIQuestion {
   id: string
