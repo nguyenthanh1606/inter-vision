@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chi tiết bài viết - Intervision</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#256af4",
+                "background-light": "#f5f6f8",
+                "background-dark": "#101622",
+              },
+              fontFamily: {
+                "display": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">insight_spark</span>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">Intervision</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Trang chủ</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Dịch vụ</a>
+<a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors" href="#">Dự án</a>
+<a class="text-slate-900 dark:text-white border-b-2 border-primary text-sm font-medium" href="#">Tin tức</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+<input class="bg-slate-100 dark:bg-slate-800 border-none rounded-lg py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary w-64 placeholder:text-slate-500" placeholder="Tìm kiếm bài viết..." type="text"/>
+</div>
+<button class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">dark_mode</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-8">
+<a class="hover:text-primary" href="#">Trang chủ</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<a class="hover:text-primary" href="#">Tin tức</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-slate-900 dark:text-slate-200 font-medium">Chi tiết bài viết</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Article Content -->
+<article class="lg:col-span-8">
+<!-- Article Header -->
+<header class="mb-8">
+<span class="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-4">Công nghệ AI</span>
+<h1 class="text-4xl md:text-5xl font-black text-slate-900 dark:text-white leading-tight mb-6">
+                        Tương lai của Trí tuệ nhân tạo trong Thiết kế đồ họa và Sáng tạo số
+                    </h1>
+<div class="flex flex-wrap items-center gap-6 py-6 border-y border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-3">
+<div class="h-12 w-12 rounded-full bg-primary/20 flex items-center justify-center overflow-hidden border-2 border-primary">
+<img alt="Avatar" class="w-full h-full object-cover" data-alt="Portrait photo of a creative professional man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNyVCcPNImSpGELay52Z8QO2suYTvlvhIV3d05WHBIPXZ-__7SAQbwhDE8sS71Mt11gAU7JHgezTl_vOtFkGDwOzPf8TyYhe6AE1Q1C7aB0BxxQHVFFj4YD2GQL2nlLKTAgYz2HZ608Ia2WmSWm3LlzstZ8Tx_piEif0kY8zOOi28gmlCiHgiSF2BndsbgNPnHBptHMkLg039rtjq_WtUvaYQuc6iB_8cvDui2p805jg9Gs2uZW7NOeNL6aPWs-vaIlrArdFu6YhSk"/>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white font-bold text-sm">Nguyễn Văn A</p>
+<p class="text-slate-500 text-xs tracking-wide">Chuyên gia thiết kế</p>
+</div>
+</div>
+<div class="flex items-center gap-4 text-slate-500 dark:text-slate-400 text-sm">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-lg">calendar_today</span>
+<span>15 tháng 10, 2023</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-lg">schedule</span>
+<span>8 phút đọc</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Featured Image -->
+<div class="rounded-xl overflow-hidden mb-10 shadow-2xl shadow-primary/10">
+<img alt="AI art" class="w-full h-auto object-cover max-h-[500px]" data-alt="Futuristic digital art representing artificial intelligence neural networks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzs3dY0RR0sOlwBCxf0rgzrc6569Nc-N0hEwgQaCEPguv08f1ymJSUX6ZH3jwWKOgbTYJj-FjokI58BHoA_aB3fHp9yjsazwyyEyP7d3ZogKwEteoD_dtfRZRoQUlRDx7GaGGuuU1zGR9DIrt6w9oMNslyoP0fZmzNSE8w1QIFBL63SR5jkpGQsK129NiQruyyEKQC5HwrzYEuULHYrO2QM-MMl-t18sM21OgghN5oinWOIvC6G27EDfhQDzDjSU-xSQrXCUhnVuSl"/>
+</div>
+<!-- Article Body -->
+<div class="prose prose-slate dark:prose-invert max-w-none space-y-6 text-slate-700 dark:text-slate-300 leading-relaxed text-lg">
+<p class="text-xl font-medium text-slate-900 dark:text-slate-100 italic border-l-4 border-primary pl-6 py-2 bg-primary/5 rounded-r-lg">
+                        Trong thập kỷ qua, chúng ta đã chứng kiến sự bùng nổ của trí tuệ nhân tạo (AI) trong hầu hết các lĩnh vực. Tuy nhiên, lĩnh vực thiết kế đồ họa đang trải qua một cuộc cách mạng sâu sắc nhất.
+                    </p>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white pt-4">Sự trỗi dậy của các công cụ Generative AI</h2>
+<p>
+                        Từ Midjourney đến DALL-E 3, các công cụ tạo hình ảnh từ văn bản đã không còn là một khái niệm xa vời. Những công cụ này cho phép các nhà thiết kế nhanh chóng phác thảo ý tưởng, tạo ra các layout phức tạp chỉ trong vài giây thay vì hàng giờ đồng hồ như trước đây. Điều này không có nghĩa là AI sẽ thay thế con người, mà là một cộng sự đắc lực giúp tối ưu hóa quy trình làm việc.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+<img alt="AI Work" class="rounded-lg h-64 w-full object-cover" data-alt="Close up of a digital designer working with AI software" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcdEuP4MbOSsTDHWk07AyDBa7o6iv4tehXgHbVqCAS-ac9s2Geu8VOHcJ7wuGSEJWzCPVSsFbRcQls2O3gQeFNbAw7g52wm3nwmMcVtOW5Qs3w3hykggeA0MDN7LKRBGhPLVWI3aNRTACHxTxYttDB8wXvKue7XmcuXYaMvbvhXoLMQtiU8nXmOs2MbCXO4gSi69NpcaPbxBBSEYR4VtzZNABC_R0WrT6z-e-0d9oslZoHuljwx0rgtjxAjaQlqbzftJYUSXb5cSsB"/>
+<img alt="Cyberpunk design" class="rounded-lg h-64 w-full object-cover" data-alt="Neon blue glowing circuitry and digital data interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjABPY5aNRFcYSVI689NB2oQxk6FdDmvDD59gJw5g2kyLsUnaQs9_FwiWmkiGNbvq0JTlwbx2Sq8zl--9tsRqS0-XUMQW9g6rRhYIvMBXEKjGG7VF_3x_XeCHbnJo6w2GcRzuvUYH9Gkg4V5bS1JGh198oy7CQ9LRwqSvel77r7yXrNHoowQRF3hgZK8hUaJHGvv2cBhObCv9_fg0lByy40UGoCSaYVp4WjRzG8iLHX9y6f7KVmEKFqy78O_P7WyQ1zB1LuSr7MRgE"/>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Tại sao chúng ta không nên sợ hãi AI?</h3>
+<p>
+                        Thay vì lo lắng về việc mất việc, các nhà thiết kế hiện đại đang học cách "huấn luyện" AI. Việc sử dụng các câu lệnh (prompts) đã trở thành một kỹ năng mới đầy giá trị. Một nhà thiết kế giỏi giờ đây là người biết cách kết hợp tư duy sáng tạo cốt lõi với khả năng xử lý tốc độ cao của máy móc.
+                    </p>
+<blockquote class="my-10 border-l-4 border-primary pl-6 italic text-2xl font-light text-slate-800 dark:text-slate-200">
+                        "AI không lấy đi công việc của bạn, nhưng một người biết sử dụng AI thì có thể."
+                    </blockquote>
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white pt-4">Tương lai phía trước</h2>
+<p>
+                        Chúng ta đang tiến tới một kỷ nguyên mà ranh giới giữa thực và ảo mờ đi. Các công nghệ thực tế tăng cường (AR) và thực tế ảo (VR) kết hợp với AI sẽ tạo ra những trải nghiệm thị giác chưa từng có. Intervision tự hào là đơn vị tiên phong trong việc áp dụng những công nghệ này vào các dự án cho đối tác toàn cầu.
+                    </p>
+</div>
+<!-- Tags & Share -->
+<div class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-wrap justify-between items-center gap-6">
+<div class="flex items-center gap-3">
+<span class="text-sm font-bold text-slate-500 uppercase">Tags:</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-lg text-sm hover:text-primary cursor-pointer">AI Design</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-lg text-sm hover:text-primary cursor-pointer">Future Tech</span>
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-lg text-sm hover:text-primary cursor-pointer">Digital Arts</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-sm font-bold text-slate-500 uppercase">Chia sẻ:</span>
+<div class="flex gap-2">
+<button class="size-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined text-lg">share</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined text-lg">link</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Sidebar -->
+<aside class="lg:col-span-4 space-y-10">
+<!-- Related Posts -->
+<div class="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-200 dark:border-slate-800">
+<h4 class="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">bookmark</span>
+                        Bài viết liên quan
+                    </h4>
+<div class="space-y-6">
+<a class="group block" href="#">
+<div class="flex gap-4">
+<div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+<img alt="Tech" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Close up of high tech robotic arm moving components" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBRyb_-lNlEK9_88wbWboD4vtdla3pejEtgcidxmcfeocIq-YV5TNheM2BOw6RWMCAPEedeadgiRd8IdyFWnKDNaCWPfk0V3aIHqmYCYlwK2EPXDk2YnPy-wZvzlSBxsI4YUz5093fUNrtO7uB7KRktVccX5Qec_DLnSrG1cJGV2RYtk9Q2uyEGZBnN86i9-UU7zFxAzLwfhSiPN5SO1y_SYNiNfqFVY5SeonG-3jerATJaBK5mjURQE9cPQKBnHCZRPN3t6EWFkNe"/>
+</div>
+<div>
+<h5 class="text-sm font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors line-clamp-2">Cách tối ưu hóa UI/UX với dữ liệu từ người dùng thực</h5>
+<p class="text-xs text-slate-500 mt-2">12 tháng 10, 2023</p>
+</div>
+</div>
+</a>
+<a class="group block" href="#">
+<div class="flex gap-4">
+<div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+<img alt="Code" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Macbook screen showing React code with colorful syntax highlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvyiUPdVk1DPkjc_22_rwHyuGgT6TBRbRDyKNWL69sFwc0yqur6n8QE6kbP49wNpCr0XFc4Rnr28W_DgzARLIlGQFUtwYdnQvX7ChH1u-sx1KjirucIKXNY7YekVec3IJ8XE1yyRr6DA0X5U_uO-lwJI-vMIq26DyvUr437PYBF7-aOWEwDZNGscFZB5i2HTMmBLHFGfKlIrhV3EkzjaF-huqS1Mp673OIMoDtozSxR6YkRgFGnfkl4yHeAL5Hc5Phs5bOorciXTxa"/>
+</div>
+<div>
+<h5 class="text-sm font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors line-clamp-2">Xu hướng phát triển web năm 2024 có gì đặc biệt?</h5>
+<p class="text-xs text-slate-500 mt-2">10 tháng 10, 2023</p>
+</div>
+</div>
+</a>
+<a class="group block" href="#">
+<div class="flex gap-4">
+<div class="w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden">
+<img alt="Graph" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" data-alt="Financial data charts and analytics displayed on a screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUhOeUxB-Y16rg0MoTsxxHVHMz94wGSGCNZVu_qQTSZYW04KCL3psfD6a7rLW_gFEeNToSrY4XBzazzvVI1NBXfTGtSaPz_AXM_0Ul66E_4jphTGdtH8_ZcCdNXDFIQK55pgBS2WTEzkwqtV3YKJqPkqZ9tIIrJjlwqocHqK6gDs2YUh7sOAWglhAqtRhi13Narsg_xEv_6vNI3fcSvp52QqFclvZr3yntNT1NvEwSZoHDnmXSkjB8amfC0tPCx4vCn9CgKnC_r2gC"/>
+</div>
+<div>
+<h5 class="text-sm font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors line-clamp-2">Phân tích dữ liệu: Chìa khóa thành công của doanh nghiệp số</h5>
+<p class="text-xs text-slate-500 mt-2">08 tháng 10, 2023</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+<!-- Ad/Banner Section -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary to-blue-800 p-8 text-white">
+<div class="relative z-10">
+<h4 class="text-xl font-bold mb-4">Bạn cần giải pháp thiết kế đột phá?</h4>
+<p class="text-sm text-blue-100 mb-6">Liên hệ với đội ngũ chuyên gia của chúng tôi để được tư vấn miễn phí ngay hôm nay.</p>
+<button class="w-full py-3 bg-white text-primary font-bold rounded-lg hover:bg-blue-50 transition-colors">Liên hệ ngay</button>
+</div>
+<div class="absolute -bottom-10 -right-10 opacity-20">
+<span class="material-symbols-outlined text-[150px]">rocket_launch</span>
+</div>
+</div>
+<!-- Categories -->
+<div class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl">
+<h4 class="text-lg font-bold mb-4">Danh mục</h4>
+<ul class="space-y-3">
+<li class="flex items-center justify-between text-sm group cursor-pointer">
+<span class="text-slate-600 dark:text-slate-400 group-hover:text-primary">Công nghệ</span>
+<span class="px-2 py-0.5 bg-slate-100 dark:bg-slate-800 rounded text-xs">12</span>
+</li>
+<li class="flex items-center justify-between text-sm group cursor-pointer">
+<span class="text-slate-600 dark:text-slate-400 group-hover:text-primary">Thiết kế</span>
+<span class="px-2 py-0.5 bg-slate-100 dark:bg-slate-800 rounded text-xs">25</span>
+</li>
+<li class="flex items-center justify-between text-sm group cursor-pointer">
+<span class="text-slate-600 dark:text-slate-400 group-hover:text-primary">Marketing</span>
+<span class="px-2 py-0.5 bg-slate-100 dark:bg-slate-800 rounded text-xs">18</span>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</main>
+<!-- Newsletter CTA -->
+<section class="bg-slate-100 dark:bg-slate-900 py-16 mt-20">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<span class="material-symbols-outlined text-5xl text-primary mb-4">mail_lock</span>
+<h2 class="text-3xl font-black text-slate-900 dark:text-white mb-4">Nhận bản tin từ Intervision</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-8 max-w-lg mx-auto">Đăng ký để nhận những cập nhật mới nhất về công nghệ và xu hướng thiết kế hàng tuần trực tiếp vào hộp thư của bạn.</p>
+<form class="flex flex-col sm:flex-row gap-3">
+<input class="flex-1 px-6 py-4 rounded-xl bg-white dark:bg-slate-800 border-none focus:ring-2 focus:ring-primary text-slate-900 dark:text-white" placeholder="Địa chỉ email của bạn" required="" type="email"/>
+<button class="px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-blue-600 transition-all shadow-lg shadow-primary/20" type="submit">Đăng ký ngay</button>
+</form>
+<p class="text-xs text-slate-500 mt-4">Chúng tôi tôn trọng quyền riêng tư của bạn. Không bao giờ spam.</p>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div>
+<div class="flex items-center gap-2 text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">insight_spark</span>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold tracking-tight">Intervision</h2>
+</div>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                        Cung cấp giải pháp công nghệ và thiết kế sáng tạo hàng đầu, giúp doanh nghiệp bứt phá trong kỷ nguyên số.
+                    </p>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-white font-bold mb-6">Về chúng tôi</h4>
+<ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Giới thiệu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Đội ngũ</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tuyển dụng</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Liên hệ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-white font-bold mb-6">Dịch vụ</h4>
+<ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary transition-colors" href="#">Thiết kế UI/UX</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Phát triển Web</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Branding</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">AI Solution</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-slate-900 dark:text-white font-bold mb-6">Kết nối</h4>
+<div class="flex gap-4">
+<a class="size-10 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="size-10 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+<a class="size-10 flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">share_location</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+<p>© 2023 Intervision. Tất cả quyền được bảo lưu.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Chính sách bảo mật</a>
+<a class="hover:text-primary" href="#">Điều khoản sử dụng</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

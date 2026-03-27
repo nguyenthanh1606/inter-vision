@@ -1,7 +1,9 @@
 import './global.css'
+import { Header } from './components/Header'
+import { Footer } from './components/Footer'
 
 export const metadata = {
-  title: 'Intervision - AI Lead Generation',
+  title: 'Metatus - AI Lead Generation',
   description:
     'Create AI-powered quiz funnels that capture real customer intent, qualify prospects instantly, and skyrocket your conversion rates.'
 }
@@ -29,7 +31,9 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 transition-colors duration-300 font-body antialiased selection:bg-primary selection:text-white">
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
