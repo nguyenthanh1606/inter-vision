@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import Image from 'next/image'
 import { AnimatedSection } from './AnimatedSection'
 
 export function Footer() {
@@ -9,7 +11,7 @@ export function Footer() {
                         {/* Brand */}
                         <div className="col-span-2 lg:col-span-2">
                             <div className="flex items-center space-x-2 mb-4">
-                                <img src="/assets/logo.png" alt="Intervision Logo" className="h-8 w-auto object-contain" />
+                                <Image src="/assets/logo.png" alt="Intervision Logo" width={32} height={32} className="h-8 w-auto object-contain" />
                                 <span className="text-lg font-bold text-slate-900 dark:text-white">
                                     Metatus
                                 </span>
@@ -20,13 +22,13 @@ export function Footer() {
                             </p>
                             <div className="flex space-x-4">
                                 {['facebook', 'public', 'post_add'].map(icon => (
-                                    <a
+                                    <Link
                                         key={icon}
                                         className="text-slate-400 hover:text-primary transition-colors hover:scale-110 transform"
                                         href="#"
                                     >
                                         <span className="material-icons-outlined">{icon}</span>
-                                    </a>
+                                    </Link>
                                 ))}
                             </div>
                         </div>
@@ -53,12 +55,12 @@ export function Footer() {
                                 <ul className="space-y-2 text-sm text-slate-500 dark:text-slate-400">
                                     {items.map(item => (
                                         <li key={item}>
-                                            <a
+                                            <Link
                                                 className="hover:text-primary transition-colors"
                                                 href={item === 'Blog' ? '/blogs' : item === 'Pricing' ? '/pricing' : '#'}
                                             >
                                                 {item}
-                                            </a>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>
@@ -72,18 +74,18 @@ export function Footer() {
                             © 2024 Intervision AI Inc. All rights reserved.
                         </p>
                         <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-slate-400">
-                            <a
+                            <Link
                                 className="hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
                                 href="#"
                             >
                                 Privacy Policy
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 className="hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
                                 href="#"
                             >
                                 Terms of Service
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </AnimatedSection>

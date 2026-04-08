@@ -23,8 +23,8 @@ module.exports = {
         'accent-glow': 'rgba(37, 106, 244, 0.5)'
       },
       fontFamily: {
-        display: ['Inter', 'sans-serif'],
-        body: ['Inter', 'sans-serif']
+        display: ['var(--font-inter)', 'sans-serif'],
+        body: ['var(--font-inter)', 'sans-serif']
       },
       borderRadius: {
         '3xl': '2rem'

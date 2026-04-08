@@ -1,5 +1,5 @@
-import { AnimatedSection } from './components/AnimatedSection'
-import { CTA } from './components/CTA'
+import { AnimatedSection } from './_components/AnimatedSection'
+import { CTA } from './_components/CTA'
 
 export default function HomePage() {
   return (

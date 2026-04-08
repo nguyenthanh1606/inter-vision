@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { ThemeToggle } from './ThemeToggle'
 import { NavbarEffect } from './NavbarEffect'
@@ -24,7 +25,7 @@ export function Header() {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-3">
-                        <img src="/assets/logo.png" alt="Intervision Logo" className="h-10 w-auto object-contain" />
+                        <Image src="/assets/logo.png" alt="Intervision Logo" width={40} height={40} className="h-10 w-auto object-contain" />
                         <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
                             Metatus
                         </span>

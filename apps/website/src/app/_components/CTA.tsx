@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { AnimatedSection } from './AnimatedSection'
 
 export function CTA() {
@@ -16,18 +17,18 @@ export function CTA() {
                         conversational AI.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                        <a
+                        <Link
                             className="px-8 py-4 bg-primary hover:bg-primary-hover text-white font-semibold rounded-full shadow-neon transition-all transform hover:scale-105 active:scale-95"
                             href="#"
                         >
                             Start Free Trial
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             className="px-8 py-4 bg-transparent border border-white/30 hover:bg-white/10 text-white font-semibold rounded-full transition-all hover:scale-105 active:scale-95"
                             href="#"
                         >
                             Talk to Sales
-                        </a>
+                        </Link>
                     </div>
                     <p className="mt-6 text-sm text-blue-200/60">
                         No credit card required. 14-day free trial.

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CTA } from '../../components/CTA';
+import { CTA } from '../../_components/CTA';
 
 export default function BlogDetailPage() {
     return (
