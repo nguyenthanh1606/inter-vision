@@ -11,13 +11,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#3B82F6',
-        'primary-hover': '#2563EB',
+        primary: '#256af4',
+        'primary-hover': '#1a55d6',
         secondary: '#8B5CF6',
         'background-light': '#F8FAFC',
-        'background-dark': '#0B0F19',
-        'surface-dark': '#151B2B',
-        'accent-glow': 'rgba(59, 130, 246, 0.5)'
+        'background-dark': '#111318',
+        'surface-dark': '#1b1f27',
+        'border-dark': '#282e39',
+        'text-secondary': '#9ca6ba',
+        'neon-accent': '#00f0ff',
+        'accent-glow': 'rgba(37, 106, 244, 0.5)'
       },
       fontFamily: {
         display: ['Inter', 'sans-serif'],

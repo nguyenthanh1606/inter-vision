@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .glass-panel {
+            background: rgba(236, 91, 19, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(236, 91, 19, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center py-4">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">smart_toy</span>
+</div>
+<span class="text-2xl font-black tracking-tight text-slate-900 dark:text-white font-display">Intervision</span>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Giải pháp</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Tính năng</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Bảng giá</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Tài liệu</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-all">
+                        Bắt đầu miễn phí
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-20 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-20 pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary/40 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary/20 rounded-full blur-[100px]"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider w-fit">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                            AI for Real Estate
+                        </div>
+<h1 class="text-4xl md:text-6xl font-black leading-[1.1] tracking-tight text-slate-900 dark:text-white">
+                            Tự động phân loại và thu thập khách hàng tiềm năng <span class="text-primary">Bất động sản</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-xl">
+                            Hệ thống AI giúp môi giới nắm bắt nhu cầu nhà đất của khách hàng 24/7 mà không bỏ lỡ bất kỳ cơ hội nào.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary hover:scale-105 transition-transform text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg shadow-primary/20">
+                                Bắt đầu cho Bất động sản
+                            </button>
+<button class="glass-panel hover:bg-primary/5 text-slate-900 dark:text-white px-8 py-4 rounded-xl font-bold text-lg border border-primary/20">
+                                Xem Demo
+                            </button>
+</div>
+</div>
+<div class="relative">
+<div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/10">
+<img class="w-full h-auto object-cover aspect-video lg:aspect-square" data-alt="Modern luxury real estate office interior with high-end furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaXQpx96k6EaLB4MEepbRm1_h2yHfM5W8KAkIyOScI88xz5aXe1Ibtvb-Ruv1joXzKBfVlnsnufXYTTCB1ncIYqSHH7YzMgKkypkTDp8URVakChDScw8138k5bNMQAjWSqv6BdGgACTR1byIQ0nSEPPiM_JGg0EmJBm_gtwdHzWOWNReWpu9FUi2yKuM761jJh_WGCUBfbh6gKyVaxiRW5noCGegoYkvcVaZ7Q2y4-UhLl9TqDI52dRtS84wkbFGz08u6Yy5mV7e5Z"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white dark:bg-background-dark p-6 rounded-2xl shadow-xl border border-primary/10 hidden md:block">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center text-green-500">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<div class="text-sm font-bold opacity-60">Lead Mới Hôm Nay</div>
+<div class="text-2xl font-black text-slate-900 dark:text-white">+24 Khách Hàng</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Industry Pain Points -->
+<section class="py-24 bg-white/50 dark:bg-black/20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Thách thức lớn nhất của Môi giới</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Phản hồi nhanh là yếu tố sống còn để chốt được giao dịch bất động sản thành công.</p>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass-panel p-8 rounded-2xl border-b-4 border-b-primary hover:-translate-y-2 transition-transform">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">nights_stay</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Bỏ lỡ khách hàng buổi đêm</h3>
+<p class="text-slate-600 dark:text-slate-400">Khách hàng thường tìm kiếm nhà đất ngoài giờ hành chính, dẫn đến việc phản hồi chậm trễ và mất khách về tay đối thủ.</p>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel p-8 rounded-2xl border-b-4 border-b-primary hover:-translate-y-2 transition-transform">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">filter_list</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Tốn thời gian lọc khách</h3>
+<p class="text-slate-600 dark:text-slate-400">Phải xử lý hàng trăm tin nhắn rác hoặc khách không đủ ngân sách trước khi tìm thấy người mua thực sự có thiện chí.</p>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel p-8 rounded-2xl border-b-4 border-b-primary hover:-translate-y-2 transition-transform">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">cloud_off</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Dữ liệu khách hàng rời rạc</h3>
+<p class="text-slate-600 dark:text-slate-400">Thông tin khách hàng nằm rải rác trên nhiều nền tảng, khó quản lý và theo sát tiến độ tư vấn lâu dài.</p>
+</div>
+</div>
+</section>
+<!-- Interactive Demo Mockup -->
+<section class="py-24 relative overflow-hidden">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Trải nghiệm AI Tư vấn Nhà đất 24/7</h2>
+<p class="text-slate-600 dark:text-slate-400">Mô phỏng cách Intervision AI tương tác với khách hàng tiềm năng của bạn.</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 border border-primary/20 rounded-3xl shadow-2xl overflow-hidden max-w-md mx-auto">
+<!-- Chat Header -->
+<div class="bg-primary p-4 flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-white">
+<span class="material-symbols-outlined">smart_toy</span>
+</div>
+<div class="text-white">
+<div class="font-bold text-sm leading-none">Intervision Assistant</div>
+<div class="text-xs opacity-80 mt-1">Đang hoạt động</div>
+</div>
+</div>
+<!-- Chat Body -->
+<div class="p-6 space-y-4 h-[400px] overflow-y-auto bg-slate-50 dark:bg-zinc-900/50">
+<div class="flex gap-2">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-xs">smart_toy</span>
+</div>
+<div class="bg-white dark:bg-zinc-800 p-3 rounded-2xl rounded-tl-none text-sm shadow-sm max-w-[80%] border border-primary/5">
+                                Chào bạn! Tôi là trợ lý ảo từ Intervision. Bạn đang tìm mua hay thuê bất động sản ạ?
+                            </div>
+</div>
+<div class="flex justify-end">
+<div class="bg-primary text-white p-3 rounded-2xl rounded-tr-none text-sm shadow-md max-w-[80%]">
+                                Tôi đang tìm mua nhà phố.
+                            </div>
+</div>
+<div class="flex gap-2">
+<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-xs">smart_toy</span>
+</div>
+<div class="bg-white dark:bg-zinc-800 p-3 rounded-2xl rounded-tl-none text-sm shadow-sm max-w-[80%] border border-primary/5">
+                                Tuyệt vời ạ. Ngân sách dự kiến của bạn là bao nhiêu và khu vực nào bạn đang ưu tiên nhất?
+                            </div>
+</div>
+<!-- Quiz Options -->
+<div class="pl-10 flex flex-wrap gap-2">
+<button class="px-3 py-1.5 rounded-full border border-primary text-primary text-xs font-semibold hover:bg-primary hover:text-white transition-colors">Dưới 5 tỷ</button>
+<button class="px-3 py-1.5 rounded-full border border-primary text-primary text-xs font-semibold hover:bg-primary hover:text-white transition-colors">5 - 10 tỷ</button>
+<button class="px-3 py-1.5 rounded-full border border-primary text-primary text-xs font-semibold hover:bg-primary hover:text-white transition-colors">Trên 10 tỷ</button>
+</div>
+</div>
+<!-- Chat Footer -->
+<div class="p-4 bg-white dark:bg-background-dark border-t border-primary/10">
+<div class="bg-slate-100 dark:bg-zinc-800 rounded-xl p-2 flex items-center">
+<div class="flex-1 px-2 text-slate-400 text-sm italic">Khách hàng đang chọn...</div>
+<button class="p-2 text-primary">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits/ROI -->
+<section class="py-24 bg-primary text-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+<div>
+<div class="text-5xl font-black mb-2 tracking-tighter">40%</div>
+<div class="text-primary-100 font-bold uppercase text-sm tracking-widest opacity-80">Tăng tỷ lệ chốt đơn</div>
+</div>
+<div>
+<div class="text-5xl font-black mb-2 tracking-tighter">15h</div>
+<div class="text-primary-100 font-bold uppercase text-sm tracking-widest opacity-80">Tiết kiệm mỗi tuần</div>
+</div>
+<div>
+<div class="text-5xl font-black mb-2 tracking-tighter">100%</div>
+<div class="text-primary-100 font-bold uppercase text-sm tracking-widest opacity-80">Khách được phản hồi</div>
+</div>
+<div>
+<div class="text-5xl font-black mb-2 tracking-tighter">24/7</div>
+<div class="text-primary-100 font-bold uppercase text-sm tracking-widest opacity-80">Hoạt động không nghỉ</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial -->
+<section class="py-24">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="glass-panel p-10 md:p-16 rounded-[2rem] relative">
+<span class="material-symbols-outlined text-8xl text-primary/10 absolute top-4 left-4 select-none">format_quote</span>
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-10">
+<div class="w-32 h-32 rounded-2xl overflow-hidden shrink-0 border-4 border-primary/20 shadow-xl">
+<img class="w-full h-full object-cover" data-alt="Professional real estate agent portrait smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpdXrLLewLEhpGBZEj1HaMAMjQE4vEjAD8-clMmE_pYvbQfvVKfQNKVBL9vpdlWb98woiVnaJbAeonZH1lsMYdJUWPtbowsEvupUzNT0WtPft1i56EgYjWzJFxmwTFCnEZW7UNgwbgd2K-6FCynuSE9h9S4lVEqphEfYb4NSjpNDOxdQTg2fAUEUaDVSTDGyvUX2uiamM2Th8RIZYAW2LeGn8bMP5IhmQu3RLUo7H76Ub-vdxlM7LA8XI057OH4A6qQsZ-tehgv5tH"/>
+</div>
+<div>
+<p class="text-xl md:text-2xl font-medium italic mb-6 leading-relaxed">
+                                "Từ khi sử dụng Intervision AI, tôi không còn lo lắng việc khách hàng nhắn tin lúc nửa đêm. AI đã giúp tôi lọc sẵn những khách hàng có ngân sách phù hợp, chỉ việc gọi điện và chốt lịch xem nhà. Tiết kiệm cực kỳ nhiều thời gian!"
+                            </p>
+<div>
+<h4 class="text-xl font-bold text-primary">Anh Hoàng Nam</h4>
+<p class="text-slate-500 dark:text-slate-400">Giám đốc kinh doanh tại Luxury Home Vietnam</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section class="py-24 bg-background-light dark:bg-background-dark relative">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center glass-panel py-16 rounded-[3rem]">
+<h2 class="text-3xl md:text-5xl font-black mb-6">Sẵn sàng bứt phá doanh thu bất động sản?</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto">
+                    Tham gia cùng hơn 500+ môi giới và sàn giao dịch đang dẫn đầu thị trường nhờ công nghệ AI.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all shadow-xl shadow-primary/30">
+                        Bắt đầu miễn phí ngay
+                    </button>
+<button class="bg-transparent border-2 border-primary/20 hover:border-primary text-slate-900 dark:text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all">
+                        Liên hệ tư vấn 1-1
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/10 pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+<div class="col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">smart_toy</span>
+</div>
+<span class="text-xl font-black tracking-tight text-slate-900 dark:text-white font-display">Intervision</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-xs mb-8">
+                        Nền tảng AI hàng đầu cho ngành bất động sản Việt Nam. Kết nối khách hàng và nhà đất thông minh hơn.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div>
+<h5 class="font-bold mb-6 text-slate-900 dark:text-white uppercase text-xs tracking-widest">Sản phẩm</h5>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Chatbot AI</a></li>
+<li><a class="hover:text-primary" href="#">Lead Generation</a></li>
+<li><a class="hover:text-primary" href="#">CRM Integration</a></li>
+<li><a class="hover:text-primary" href="#">Phân tích dữ liệu</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6 text-slate-900 dark:text-white uppercase text-xs tracking-widest">Hỗ trợ</h5>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Trung tâm trợ giúp</a></li>
+<li><a class="hover:text-primary" href="#">Tài liệu API</a></li>
+<li><a class="hover:text-primary" href="#">Cộng đồng</a></li>
+<li><a class="hover:text-primary" href="#">Liên hệ</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6 text-slate-900 dark:text-white uppercase text-xs tracking-widest">Công ty</h5>
+<ul class="space-y-4 text-sm text-slate-500 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Về chúng tôi</a></li>
+<li><a class="hover:text-primary" href="#">Blog</a></li>
+<li><a class="hover:text-primary" href="#">Tuyển dụng</a></li>
+<li><a class="hover:text-primary" href="#">Chính sách bảo mật</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-primary/5 pt-10 text-center text-sm text-slate-500 dark:text-slate-600">
+<p>© 2024 Intervision Platform. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

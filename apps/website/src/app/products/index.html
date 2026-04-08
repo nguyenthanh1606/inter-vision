@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Intervision | Giải pháp AI chuyên biệt</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#571bc1",
+                    "on-error": "#690005",
+                    "on-secondary": "#3c0091",
+                    "surface-container-lowest": "#0c0e14",
+                    "primary-fixed": "#d8e2ff",
+                    "surface-tint": "#adc6ff",
+                    "primary-fixed-dim": "#adc6ff",
+                    "outline-variant": "#424754",
+                    "surface-container-low": "#191b22",
+                    "on-tertiary-container": "#461f00",
+                    "on-secondary-fixed-variant": "#5516be",
+                    "error": "#ffb4ab",
+                    "primary": "#adc6ff",
+                    "on-primary": "#002e6a",
+                    "primary-container": "#4d8eff",
+                    "background": "#111319",
+                    "tertiary-container": "#df7412",
+                    "on-primary-fixed": "#001a42",
+                    "on-surface-variant": "#c2c6d6",
+                    "surface-variant": "#33343b",
+                    "on-primary-fixed-variant": "#004395",
+                    "secondary": "#d0bcff",
+                    "on-tertiary-fixed": "#311400",
+                    "on-background": "#e2e2eb",
+                    "error-container": "#93000a",
+                    "inverse-primary": "#005ac2",
+                    "surface": "#111319",
+                    "surface-bright": "#373940",
+                    "on-error-container": "#ffdad6",
+                    "on-secondary-fixed": "#23005c",
+                    "tertiary-fixed": "#ffdcc6",
+                    "tertiary": "#ffb786",
+                    "tertiary-fixed-dim": "#ffb786",
+                    "surface-container-highest": "#33343b",
+                    "on-tertiary-fixed-variant": "#723600",
+                    "on-surface": "#e2e2eb",
+                    "inverse-on-surface": "#2e3037",
+                    "on-secondary-container": "#c4abff",
+                    "secondary-fixed": "#e9ddff",
+                    "surface-dim": "#111319",
+                    "inverse-surface": "#e2e2eb",
+                    "outline": "#8c909f",
+                    "surface-container-high": "#282a30",
+                    "on-tertiary": "#502400",
+                    "on-primary-container": "#00285d",
+                    "secondary-fixed-dim": "#d0bcff",
+                    "surface-container": "#1e1f26"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(51, 52, 59, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(140, 144, 159, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary/30">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#111319]/80 backdrop-blur-xl bg-gradient-to-b from-[#111319] to-transparent shadow-[0_20px_40px_rgba(77,142,255,0.08)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black tracking-tighter text-[#adc6ff] font-['Inter']">Intervision</div>
+<div class="hidden md:flex gap-8 items-center font-['Inter'] tracking-tight text-sm font-medium">
+<a class="text-[#adc6ff] border-b-2 border-[#adc6ff] pb-1 transition-colors duration-300" href="#">Products</a>
+<a class="text-[#e2e2eb]/70 hover:text-[#adc6ff] transition-colors duration-300" href="#">Features</a>
+<a class="text-[#e2e2eb]/70 hover:text-[#adc6ff] transition-colors duration-300" href="#">Pricing</a>
+<a class="text-[#e2e2eb]/70 hover:text-[#adc6ff] transition-colors duration-300" href="#">Resources</a>
+</div>
+<div class="flex gap-4 items-center">
+<button class="text-[#e2e2eb]/70 font-medium text-sm hover:text-[#adc6ff] transition-colors active:scale-95">Login</button>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2 rounded-xl font-semibold text-sm hover:opacity-90 active:scale-95 transition-all">Signup</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="relative mb-24 text-center md:text-left">
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl">
+<span class="inline-block py-1 px-3 mb-6 rounded-md bg-secondary-container/20 text-secondary text-xs font-bold tracking-widest uppercase">The Digital Oracle</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+                    Giải pháp AI chuyên biệt cho mọi lĩnh vực
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant leading-relaxed mb-10">
+                    Khám phá cách Intervision giúp doanh nghiệp của bạn tự động hóa quy trình, sàng lọc khách hàng và tăng trưởng doanh thu vượt trội thông qua trí tuệ nhân tạo thế hệ mới.
+                </p>
+<div class="flex flex-wrap gap-4 justify-center md:justify-start">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-bold transition-transform active:scale-95 flex items-center gap-2">
+                        Bắt đầu ngay <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-surface-variant/20 border border-outline-variant/30 text-on-surface px-8 py-4 rounded-xl font-bold backdrop-blur-md hover:bg-surface-variant/40 transition-all">
+                        Xem Demo
+                    </button>
+</div>
+</div>
+</header>
+<!-- Industry Solutions Grid (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Solution 1: Spa -->
+<div class="md:col-span-8 group relative overflow-hidden glass-card rounded-3xl p-8 transition-all hover:bg-surface-container">
+<div class="flex flex-col md:flex-row gap-8 items-center h-full">
+<div class="flex-1">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-weight="fill">spa</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Giải pháp Spa &amp; Thẩm mỹ</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Tự động đặt lịch và tư vấn 24/7. Giảm thiểu tình trạng bỏ lỡ khách hàng tiềm năng và tối ưu hóa lịch trình kỹ thuật viên một cách thông minh.</p>
+<button class="text-primary font-semibold flex items-center gap-2 hover:gap-4 transition-all">
+                            Xem chi tiết <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<div class="flex-1 w-full h-64 md:h-full min-h-[240px] relative rounded-2xl overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" data-alt="luxury spa interior with warm ambient lighting and minimalist zen aesthetic with soft focus on facial treatment products" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeyk8nunTEkdyWhy-wDK99JxPGPoAMeRaut9VBol-6URpW0cwrqv5t85hJtv0WDWDDed6o-YMvVShXZP8Px9xss7pwg_OUV9BcSdC9xLn1fSpl4_qbVgauueyTMdOFIz4coSnxJosYPIZ4EGZRL_ViwcNIeAIjZ6X5pqsHAaVBZ4hgEqTeLL5ZpgbyzjDxp2TUUyyxXUO0ms3aG6L0sHj8q5I0XCtXlUXI-wpAqWhjUyxK3HcTsT5na6Jp3yV9WFTWxdUbm4IT7Y8f"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+</div>
+</div>
+</div>
+<!-- Solution 2: Bất động sản -->
+<div class="md:col-span-4 group relative overflow-hidden glass-card rounded-3xl p-8 transition-all hover:bg-surface-container">
+<div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">real_estate_agent</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Bất động sản</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Phân loại nhu cầu nhà đất và thu thập lead tự động từ nhiều kênh digital.</p>
+<div class="mb-8 w-full h-40 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-500" data-alt="modern glass high-rise office buildings reflected in a quiet river at dusk with blue and purple city lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwZwn1oU-bzuLel0PA7moCcsGrM13JrJRiBJ65NexQA3eszv8OvJgHu8A0KT-ULBbIQUDPMdX5DDAgYCecr1mvKP4yaxd0jORXGBJXs2xFyDL6wJq4L-FxskQFn3gGRFgNJz4ynX4_w98q70hdkTnl0y56Vk8eoBtA85Dd9DgQ-RUc91YEqULIYVjfupKPCk7dckJP9XoiY0V5pYQojeBPEwx0JlT6A-vMs4AsvMSKQ6JpUk7WSPUkie8gL0mPRk2giVd9AoOaNQ--"/>
+</div>
+<button class="text-primary font-semibold flex items-center gap-2 hover:gap-4 transition-all">
+                    Xem chi tiết <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<!-- Solution 3: Coaching -->
+<div class="md:col-span-4 group relative overflow-hidden glass-card rounded-3xl p-8 transition-all hover:bg-surface-container">
+<div class="w-14 h-14 bg-tertiary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary text-3xl">psychology</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Coaching &amp; Freelancer</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Sàng lọc học viên và biến kiến thức thành cỗ máy thu hút khách hàng tự động.</p>
+<button class="text-primary font-semibold flex items-center gap-2 hover:gap-4 transition-all">
+                    Xem chi tiết <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<!-- Solution 4: Agency -->
+<div class="md:col-span-4 group relative overflow-hidden glass-card rounded-3xl p-8 transition-all hover:bg-surface-container">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">campaign</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Giải pháp Agency</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Quản lý chiến dịch và tối ưu hóa chuyển đổi cho khách hàng thông qua dữ liệu AI.</p>
+<button class="text-primary font-semibold flex items-center gap-2 hover:gap-4 transition-all">
+                    Xem chi tiết <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+<!-- Solution 5: E-commerce -->
+<div class="md:col-span-4 group relative overflow-hidden glass-card rounded-3xl p-8 transition-all hover:bg-surface-container">
+<div class="absolute top-4 right-4">
+<span class="bg-secondary-container text-on-secondary-container text-[10px] font-bold px-2 py-1 rounded-full uppercase">Hot</span>
+</div>
+<div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">shopping_cart</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Thương mại điện tử</h3>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Tăng tỷ lệ chốt đơn qua chatbot hội thoại đa ngôn ngữ và gợi ý sản phẩm cá nhân hóa.</p>
+<button class="text-primary font-semibold flex items-center gap-2 hover:gap-4 transition-all">
+                    Xem chi tiết <span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Bottom CTA Section -->
+<section class="mt-32 relative">
+<div class="glass-card rounded-[2.5rem] p-12 md:p-20 overflow-hidden relative border-none">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/20 to-secondary-container/10"></div>
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/20 blur-[100px] rounded-full"></div>
+<div class="relative z-10 text-center max-w-3xl mx-auto">
+<h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Chưa tìm thấy giải pháp phù hợp?</h2>
+<p class="text-lg text-on-surface-variant mb-10 leading-relaxed">
+                        Liên hệ với chúng tôi để xây dựng giải pháp AI tùy chỉnh, được thiết kế riêng cho mô hình kinh doanh và thách thức cụ thể của doanh nghiệp bạn.
+                    </p>
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-[0_10px_30px_rgba(173,198,255,0.3)]">
+                        Liên hệ tư vấn 1-1
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#111319] w-full py-12 px-8 border-t border-[#e2e2eb]/10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 w-full max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-lg font-bold text-[#e2e2eb]">Intervision</div>
+<p class="font-['Inter'] text-xs uppercase tracking-widest text-[#e2e2eb]/50">© 2024 Intervision. The Digital Oracle.</p>
+</div>
+<div class="flex gap-8 font-['Inter'] text-xs uppercase tracking-widest">
+<a class="text-[#e2e2eb]/50 hover:text-[#adc6ff] transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-[#e2e2eb]/50 hover:text-[#adc6ff] transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-[#e2e2eb]/50 hover:text-[#adc6ff] transition-colors opacity-80 hover:opacity-100" href="#">Contact</a>
+<a class="text-[#e2e2eb]/50 hover:text-[#adc6ff] transition-colors opacity-80 hover:opacity-100" href="#">Status</a>
+</div>
+</div>
+</footer>
+</body></html>
