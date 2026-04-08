@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Intervision - Giải pháp Marketing Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#111319",
+                        "on-secondary": "#3c0091",
+                        "surface-container-lowest": "#0c0e14",
+                        "surface-bright": "#373940",
+                        "on-error": "#690005",
+                        "surface-tint": "#adc6ff",
+                        "surface-container-low": "#191b22",
+                        "primary": "#adc6ff",
+                        "on-secondary-fixed": "#23005c",
+                        "on-background": "#e2e2eb",
+                        "on-primary-fixed-variant": "#004395",
+                        "on-tertiary-container": "#461f00",
+                        "surface-container-high": "#282a30",
+                        "on-surface-variant": "#c2c6d6",
+                        "on-tertiary-fixed": "#311400",
+                        "error": "#ffb4ab",
+                        "surface-dim": "#111319",
+                        "secondary-fixed-dim": "#d0bcff",
+                        "on-primary": "#002e6a",
+                        "on-secondary-container": "#c4abff",
+                        "error-container": "#93000a",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e2e2eb",
+                        "surface-variant": "#33343b",
+                        "surface-container-highest": "#33343b",
+                        "background": "#111319",
+                        "surface-container": "#1e1f26",
+                        "primary-container": "#4d8eff",
+                        "tertiary-container": "#df7412",
+                        "secondary-fixed": "#e9ddff",
+                        "inverse-on-surface": "#2e3037",
+                        "tertiary-fixed": "#ffdcc6",
+                        "inverse-surface": "#e2e2eb",
+                        "outline": "#8c909f",
+                        "primary-fixed": "#d8e2ff",
+                        "on-primary-container": "#00285d",
+                        "secondary": "#d0bcff",
+                        "on-primary-fixed": "#001a42",
+                        "tertiary": "#ffb786",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-tertiary-fixed-variant": "#723600",
+                        "on-secondary-fixed-variant": "#5516be",
+                        "on-tertiary": "#502400",
+                        "secondary-container": "#571bc1",
+                        "outline-variant": "#424754",
+                        "inverse-primary": "#005ac2",
+                        "tertiary-fixed-dim": "#ffb786"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-panel {
+            background: rgba(51, 52, 59, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(140, 144, 159, 0.15);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #adc6ff 0%, #4d8eff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .kinetic-button {
+            background: linear-gradient(135deg, #adc6ff 0%, #4d8eff 100%);
+            transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .kinetic-button:active { transform: scale(0.95); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#111319]/80 backdrop-blur-2xl shadow-[0_20px_50px_rgba(59,130,246,0.08)]">
+<div class="flex items-center justify-between px-8 py-4 max-w-[1440px] mx-auto w-full font-inter tracking-[-0.02em] antialiased">
+<div class="flex items-center gap-12">
+<span class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#adc6ff] to-[#4d8eff]">Intervision</span>
+<div class="hidden md:flex gap-8">
+<a class="text-slate-400 font-medium hover:text-blue-300 hover:bg-white/5 transition-all duration-300 px-3 py-1 rounded-lg" href="#">Products</a>
+<a class="text-blue-400 font-semibold border-b-2 border-blue-500/50 pb-1 px-3 py-1" href="#">Features</a>
+<a class="text-slate-400 font-medium hover:text-blue-300 hover:bg-white/5 transition-all duration-300 px-3 py-1 rounded-lg" href="#">Pricing</a>
+<a class="text-slate-400 font-medium hover:text-blue-300 hover:bg-white/5 transition-all duration-300 px-3 py-1 rounded-lg" href="#">Resources</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-400 font-medium hover:text-white transition-colors px-4 py-2">Login</button>
+<button class="kinetic-button text-on-primary-container font-bold px-6 py-2.5 rounded-xl shadow-lg shadow-primary/20">Sign Up</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-8 py-24 max-w-[1440px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-semibold mb-6">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+<span>AI-Powered Solutions for Agencies</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.1] mb-8">
+                    Tối ưu hiệu quả chuyển đổi với <span class="gradient-text">AI chuyên dụng</span> cho Agency.
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                    Nâng tầm năng lực thực thi của Marketing Agency với hệ thống trí tuệ nhân tạo thế hệ mới. Tự động hóa quy trình, tối ưu hóa lợi nhuận và kiến tạo những chiến dịch đột phá.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="kinetic-button text-on-primary-container font-bold px-8 py-4 rounded-xl text-lg flex items-center justify-center gap-2">
+                        Bắt đầu dùng thử cho Agency
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="glass-panel text-on-surface font-semibold px-8 py-4 rounded-xl border border-outline-variant/30 flex items-center justify-center gap-2 hover:bg-surface-variant/50 transition-colors">
+                        Xem bản Demo
+                    </button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/10 blur-[100px] rounded-full"></div>
+<div class="glass-panel rounded-3xl p-4 relative overflow-hidden shadow-2xl">
+<img class="rounded-2xl w-full h-auto object-cover border border-white/5" data-alt="Futuristic dark dashboard with neon blue holographic charts, glowing data nodes, and complex statistical visualizations in a high-tech style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdtKqd18Y8cozlsc6zbqNILYwBlRt7n69NI0IcglQcOKGE1RxVzealTHJQVlnnKIKBU920aETCYLSg9M6DEqpMZBmyXhUg74w4-jFW5bKXIiueBD6OkeLC2l3fq26qJEH_NZGtG8EcurIJpunFnb8KC-uw1vQat4pTsBLFnel1sIBOFiXJPVsyKX-KJKbOb_uuSHqJCUS-bFwI_BUGlYYFl7Tg0LZ8Sn8ZrvE0vIr57hWRksgXMZFPCCPYupiBo9uYWGiwsnAEXKMI"/>
+<!-- Floating Insight Card -->
+<div class="absolute bottom-10 right-10 glass-panel p-6 rounded-2xl border border-primary/30 max-w-xs animate-pulse">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">insights</span>
+</div>
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Live Insight</span>
+</div>
+<p class="text-sm font-medium text-on-surface">ROAS dự kiến tăng <span class="text-primary font-bold">24.5%</span> trong 7 ngày tới.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof Section -->
+<section class="py-16 border-t border-white/5 bg-surface-container-low/30">
+<div class="max-w-[1440px] mx-auto px-8">
+<p class="text-center text-on-surface-variant font-medium mb-10 tracking-widest uppercase text-sm">Tin dùng bởi các Global Agency hàng đầu</p>
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+<span class="text-2xl font-bold text-slate-400">OGILVY</span>
+<span class="text-2xl font-bold text-slate-400">DENTSU</span>
+<span class="text-2xl font-bold text-slate-400">WPP GROUP</span>
+<span class="text-2xl font-bold text-slate-400">OMNICOM</span>
+<span class="text-2xl font-bold text-slate-400">Havas</span>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="px-8 py-32 max-w-[1440px] mx-auto">
+<div class="mb-20 text-center">
+<h2 class="text-4xl font-bold mb-4">Hệ sinh thái <span class="text-primary">Digital Oracle</span></h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Mọi công cụ bạn cần để quản trị hiệu suất agency trên một nền tảng duy nhất, được cường hóa bởi trí tuệ nhân tạo.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1: AI Campaign Management -->
+<div class="md:col-span-2 glass-panel rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center group">
+<div class="flex-1">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">hub</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Quản lý chiến dịch thông minh</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            Hệ thống tự động phân bổ nguồn lực và điều chỉnh các biến số chiến dịch (AI Campaign Management) dựa trên mô hình dự báo hành vi người dùng.
+                        </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-sm text-on-surface/80">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Tự động A/B testing nội dung sáng tạo
+                            </li>
+<li class="flex items-center gap-2 text-sm text-on-surface/80">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                Quản lý tập trung đa nền tảng (Meta, Google, TikTok)
+                            </li>
+</ul>
+</div>
+<div class="flex-1 w-full h-full min-h-[240px] rounded-2xl overflow-hidden relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Close-up of glowing blue server rack lights and fiber optic cables in a data center, representing complex neural network connections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbDbERxJL1fi8iBuzSxhuDmZzDjY2qxQvmUNIol9TXtUIBp10nc0M8dK1N4GVnENR9EfEdW7Opr-v8X1qICuE1tjueDG7CLemXIFORK9asddUUp4gN9SIl5G67M-Pa1t75o6tpzkQgRwXfEuGcEaELfmCraACsfwFsFOcjUwDqczzlTrtwYNy5ZabB1t2Pyb1o0rVPAkN0nuy-jBWld9RaWceukwyqflczgW4bXEbq7-JPSISIP8HVhqG0zZzWtr8KxwhmR9QKZfS7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest to-transparent opacity-60"></div>
+</div>
+</div>
+<!-- Feature 2: Real-time Analysis -->
+<div class="glass-panel rounded-3xl p-8 group">
+<div class="w-14 h-14 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-6 group-hover:bg-secondary-container/40 transition-colors">
+<span class="material-symbols-outlined text-secondary text-3xl">query_stats</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Phân tích Real-time</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Theo dõi chân dung khách hàng và luồng chuyển đổi trong thời gian thực với độ trễ dưới 10ms.
+                    </p>
+<div class="mt-8 pt-8 border-t border-outline-variant/20">
+<div class="flex items-end gap-1 h-20">
+<div class="w-full bg-primary/20 h-1/2 rounded-t-sm"></div>
+<div class="w-full bg-primary/40 h-3/4 rounded-t-sm"></div>
+<div class="w-full bg-primary/60 h-2/3 rounded-t-sm"></div>
+<div class="w-full bg-primary h-full rounded-t-sm"></div>
+<div class="w-full bg-primary/30 h-1/2 rounded-t-sm"></div>
+</div>
+</div>
+</div>
+<!-- Feature 3: Budget Automation -->
+<div class="glass-panel rounded-3xl p-8 group flex flex-col justify-between">
+<div>
+<div class="w-14 h-14 rounded-2xl bg-tertiary-container/20 flex items-center justify-center mb-6 group-hover:bg-tertiary-container/40 transition-colors">
+<span class="material-symbols-outlined text-tertiary text-3xl">account_balance_wallet</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Tối ưu hóa ngân sách</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Cắt giảm 30% chi phí lãng phí bằng cách tự động tắt các quảng cáo kém hiệu quả và tái đầu tư vào các "điểm nóng" chuyển đổi.
+                        </p>
+</div>
+<div class="mt-8 flex items-center justify-between p-4 rounded-xl bg-surface-container-lowest">
+<span class="text-xs text-on-surface-variant">Efficiency Score</span>
+<span class="text-xl font-bold text-primary">98.2%</span>
+</div>
+</div>
+<!-- Feature 4: Automated Reporting -->
+<div class="md:col-span-2 glass-panel rounded-3xl p-8 flex flex-col md:flex-row-reverse gap-8 items-center group">
+<div class="flex-1">
+<div class="w-14 h-14 rounded-2xl bg-on-primary-fixed-variant/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary-container text-3xl">auto_stories</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Tự động hóa báo cáo</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            Tạo báo cáo chuyên sâu cho khách hàng chỉ với một click. AI tự động tóm tắt Insight và đề xuất kế hoạch hành động cho tháng tiếp theo.
+                        </p>
+<button class="text-primary font-semibold flex items-center gap-2 group-hover:gap-4 transition-all">
+                            Tìm hiểu về Report AI
+                            <span class="material-symbols-outlined">trending_flat</span>
+</button>
+</div>
+<div class="flex-1 w-full bg-surface-container-lowest rounded-2xl p-6 relative">
+<div class="space-y-3">
+<div class="h-2 w-3/4 bg-surface-variant rounded-full"></div>
+<div class="h-2 w-1/2 bg-surface-variant rounded-full"></div>
+<div class="h-20 w-full border border-primary/20 rounded-lg flex items-center justify-center">
+<span class="text-[10px] text-primary/50 tracking-widest font-mono">GENERATING INSIGHTS...</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="relative px-8 py-32 overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight">Sẵn sàng để Agency của bạn dẫn đầu kỷ nguyên AI?</h2>
+<p class="text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                    Gia nhập cộng đồng hơn 500+ Agency đang thay đổi cách thế giới tiếp thị vận hành.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<button class="kinetic-button text-on-primary-container font-extrabold px-12 py-5 rounded-full text-xl shadow-2xl shadow-primary/30">
+                        Bắt đầu dùng thử cho Agency
+                    </button>
+<button class="glass-panel text-on-surface font-bold px-12 py-5 rounded-full border border-outline-variant/50 hover:bg-white/10 transition-colors">
+                        Liên hệ tư vấn 1-1
+                    </button>
+</div>
+<p class="mt-8 text-sm text-on-surface-variant italic">Không yêu cầu thẻ tín dụng. Dùng thử miễn phí 14 ngày.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-[#111319] border-t border-white/5 bg-gradient-to-t from-blue-900/10 to-transparent">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-[1440px] mx-auto font-inter text-sm tracking-wide">
+<div class="mb-8 md:mb-0">
+<span class="text-lg font-bold text-slate-200">Intervision</span>
+<p class="mt-2 text-slate-500">© 2024 Intervision. The Digital Oracle. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap gap-8 justify-center">
+<a class="text-slate-500 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">API Documentation</a>
+<a class="text-slate-500 hover:text-white transition-colors opacity-80 hover:opacity-100" href="#">System Status</a>
+</div>
+</div>
+</footer>
+</body></html>

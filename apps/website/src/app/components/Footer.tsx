@@ -55,7 +55,7 @@ export function Footer() {
                                         <li key={item}>
                                             <a
                                                 className="hover:text-primary transition-colors"
-                                                href={item === 'Blog' ? '/blogs' : '#'}
+                                                href={item === 'Blog' ? '/blogs' : item === 'Pricing' ? '/pricing' : '#'}
                                             >
                                                 {item}
                                             </a>

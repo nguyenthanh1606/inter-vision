@@ -1,8 +1,20 @@
+'use client';
+
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { ThemeToggle } from './ThemeToggle'
 import { NavbarEffect } from './NavbarEffect'
 
 export function Header() {
+    const pathname = usePathname();
+
+    const navLinks = [
+        { name: 'Product', href: '/products' },
+        { name: 'Features', href: '/features' },
+        { name: 'Blog', href: '/blogs' },
+        { name: 'Pricing', href: '/pricing' },
+    ];
+
     return (
         <nav
             id="main-nav"
@@ -20,18 +32,22 @@ export function Header() {
 
                     {/* Nav links */}
                     <div className="hidden md:flex items-center space-x-8">
-                        <Link className="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors" href="/#">
-                            Product
-                        </Link>
-                        <Link className="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors" href="/#">
-                            Features
-                        </Link>
-                        <Link className="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors" href="/blogs">
-                            Blog
-                        </Link>
-                        <Link className="text-sm font-medium text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white transition-colors" href="/#">
-                            Pricing
-                        </Link>
+                        {navLinks.map((link) => {
+                            const isActive = pathname === link.href;
+                            return (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className={`text-sm font-medium transition-colors ${
+                                        isActive
+                                            ? 'text-primary dark:text-white'
+                                            : 'text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-white'
+                                    }`}
+                                >
+                                    {link.name}
+                                </Link>
+                            );
+                        })}
                     </div>
 
                     {/* CTA + Theme toggle */}
