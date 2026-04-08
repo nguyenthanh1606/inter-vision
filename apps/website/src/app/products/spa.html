@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Giải pháp cho Spa - Intervision</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#256af4",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#111318",
+                        "surface-dark": "#1b1f27",
+                        "border-dark": "#282e39",
+                        "text-secondary": "#9ca6ba"
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        body: ["Inter", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col overflow-hidden">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-border-dark bg-background-dark/80 backdrop-blur-md px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-8 text-primary">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clippath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-tight">Intervision</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Trang chủ</a>
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Tính năng</a>
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Giá cả</a>
+<a class="text-white hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Liên hệ</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-600 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Đăng nhập</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<div class="@container w-full">
+<div class="@[480px]:p-8 p-4">
+<div class="relative flex min-h-[560px] flex-col gap-6 overflow-hidden rounded-2xl bg-cover bg-center bg-no-repeat @[480px]:gap-8 items-center justify-center p-8 text-center group" data-alt="Modern luxury spa interior with warm lighting" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_Ufc_1JOKMghwChbQTNU7u2wn9ERYBLx6hvQ0e50wae4yZYb6kG1Khc2RHCuydh4UgdQq8jUsNHGAKe-ajx8IcjM3hi_n8sRjL1wyPf62X1wswz3wBzse70mOEqxh3ffReIn3VkBLy-6FzZSh5aa_AtOfYdly3-JxuF4Ii6HI8CEnlMSEAYx42xLIFpyL-M19L-AZNoh6RRURaiJ5z5snu0AuYOQrXGbSqb9OzDmrHK9lrjzRxY0f1ESgiWninBZsnyjJF3FFayF3");'>
+<div class="flex flex-col gap-4 max-w-[800px] z-10 animate-fade-in-up">
+<span class="text-primary font-bold tracking-wider uppercase text-sm">Giải pháp AI cho Spa &amp; Thẩm mỹ viện</span>
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl drop-shadow-lg">
+                                Tự động đặt lịch và tư vấn cho khách hàng Spa của bạn
+                            </h1>
+<h2 class="text-slate-200 text-lg font-normal leading-relaxed @[480px]:text-xl max-w-[640px] mx-auto">
+                                Giải pháp AI toàn diện giúp Spa và Thẩm mỹ viện tăng tỷ lệ chuyển đổi và giữ chân khách hàng 24/7 mà không cần thêm nhân sự.
+                            </h2>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 z-10">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary hover:bg-blue-600 transition-all text-white text-base font-bold shadow-lg shadow-blue-500/30">
+<span class="truncate">Bắt đầu cho Spa của bạn</span>
+</button>
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 transition-all text-white text-base font-bold">
+<span class="truncate">Xem Demo</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pain Points Section -->
+<div class="layout-content-container flex flex-col max-w-[1200px] mx-auto px-4 py-16 gap-12">
+<div class="flex flex-col items-center text-center gap-4">
+<h2 class="text-white tracking-tight text-3xl font-bold leading-tight md:text-5xl max-w-[800px]">
+                        Khách hàng rời đi vì không được tư vấn kịp thời?
+                    </h2>
+<p class="text-text-secondary text-lg font-normal leading-relaxed max-w-[720px]">
+                        Đừng để lỡ mất khách hàng tiềm năng chỉ vì phản hồi chậm trễ. Intervision giải quyết những nỗi đau lớn nhất của chủ Spa.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group flex flex-col gap-6 rounded-2xl border border-border-dark bg-surface-dark p-8 hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">schedule</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-white text-xl font-bold leading-tight">Phản hồi chậm</h3>
+<p class="text-text-secondary text-base leading-relaxed">Khách hàng chờ đợi quá lâu sẽ tìm đến đối thủ cạnh tranh. 70% khách hàng mong đợi phản hồi ngay lập tức.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col gap-6 rounded-2xl border border-border-dark bg-surface-dark p-8 hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">event_busy</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-white text-xl font-bold leading-tight">Lịch hẹn chồng chéo</h3>
+<p class="text-text-secondary text-base leading-relaxed">Quản lý thủ công qua tin nhắn dẫn đến nhầm lẫn, trùng lịch và trải nghiệm thiếu chuyên nghiệp.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col gap-6 rounded-2xl border border-border-dark bg-surface-dark p-8 hover:border-primary/50 transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">sentiment_dissatisfied</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-white text-xl font-bold leading-tight">Chăm sóc sau liệu trình kém</h3>
+<p class="text-text-secondary text-base leading-relaxed">Thiếu sự quan tâm sau khi khách hàng rời khỏi Spa làm giảm tỷ lệ quay lại và giới thiệu khách mới.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Demo / Quiz Section -->
+<div class="w-full bg-surface-dark border-y border-border-dark">
+<div class="max-w-[1000px] mx-auto px-4 py-20 flex flex-col gap-10">
+<div class="text-center space-y-2">
+<span class="text-primary font-bold text-sm tracking-widest uppercase">Trải nghiệm thực tế</span>
+<h2 class="text-white text-3xl md:text-4xl font-bold leading-tight">
+                            Demo tư vấn tự động
+                        </h2>
+<p class="text-text-secondary">AI sẽ tự động đề xuất kịch bản phù hợp dựa trên lựa chọn của khách hàng.</p>
+</div>
+<div class="bg-background-dark border border-border-dark rounded-2xl p-6 md:p-10 shadow-2xl">
+<h3 class="text-white text-xl font-semibold mb-6">Bạn đang quan tâm đến dịch vụ nào?</h3>
+<div class="space-y-4">
+<label class="group flex items-center gap-4 rounded-xl border border-border-dark bg-surface-dark/50 p-4 hover:border-primary hover:bg-surface-dark transition-all cursor-pointer">
+<div class="relative flex items-center justify-center">
+<input checked="" class="peer h-5 w-5 border-2 border-text-secondary bg-transparent text-primary focus:ring-primary focus:ring-offset-0 checked:border-primary cursor-pointer appearance-none rounded-full checked:bg-primary" name="service_interest" type="radio"/>
+<div class="absolute inset-0 hidden peer-checked:flex items-center justify-center pointer-events-none">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="text-white text-base font-semibold group-hover:text-primary transition-colors">Chăm sóc da &amp; Facial</span>
+<span class="text-text-secondary text-sm">Tư vấn các liệu trình trị mụn, nám, trẻ hóa da</span>
+</div>
+</label>
+<label class="group flex items-center gap-4 rounded-xl border border-border-dark bg-surface-dark/50 p-4 hover:border-primary hover:bg-surface-dark transition-all cursor-pointer">
+<div class="relative flex items-center justify-center">
+<input class="peer h-5 w-5 border-2 border-text-secondary bg-transparent text-primary focus:ring-primary focus:ring-offset-0 checked:border-primary cursor-pointer appearance-none rounded-full checked:bg-primary" name="service_interest" type="radio"/>
+<div class="absolute inset-0 hidden peer-checked:flex items-center justify-center pointer-events-none">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="text-white text-base font-semibold group-hover:text-primary transition-colors">Giảm béo công nghệ cao</span>
+<span class="text-text-secondary text-sm">Gói giảm mỡ bụng, đùi và săn chắc cơ thể</span>
+</div>
+</label>
+<label class="group flex items-center gap-4 rounded-xl border border-border-dark bg-surface-dark/50 p-4 hover:border-primary hover:bg-surface-dark transition-all cursor-pointer">
+<div class="relative flex items-center justify-center">
+<input class="peer h-5 w-5 border-2 border-text-secondary bg-transparent text-primary focus:ring-primary focus:ring-offset-0 checked:border-primary cursor-pointer appearance-none rounded-full checked:bg-primary" name="service_interest" type="radio"/>
+<div class="absolute inset-0 hidden peer-checked:flex items-center justify-center pointer-events-none">
+<div class="w-2 h-2 bg-white rounded-full"></div>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="text-white text-base font-semibold group-hover:text-primary transition-colors">Triệt lông vĩnh viễn</span>
+<span class="text-text-secondary text-sm">Công nghệ Laser Diode an toàn, không đau rát</span>
+</div>
+</label>
+</div>
+<div class="mt-8 pt-6 border-t border-border-dark flex flex-col md:flex-row gap-4 justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+<span class="text-sm text-text-secondary">AI đang sẵn sàng phản hồi...</span>
+</div>
+<button class="w-full md:w-auto px-6 py-2.5 rounded-lg bg-primary hover:bg-blue-600 text-white font-bold text-sm transition-colors">
+                                 Bắt đầu tư vấn ngay
+                             </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Case Study Section -->
+<div class="max-w-[1200px] mx-auto px-4 py-20">
+<div class="flex flex-col lg:flex-row gap-12 items-center rounded-3xl bg-gradient-to-br from-surface-dark to-background-dark border border-border-dark p-8 md:p-12">
+<div class="flex-1 flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-xs font-bold uppercase tracking-wider">Case Study</span>
+<span class="text-text-secondary text-sm font-medium">Lotus Spa &amp; Clinic</span>
+</div>
+<h2 class="text-white text-3xl md:text-4xl font-bold leading-tight">
+                            "Intervision giúp chúng tôi tăng <span class="text-primary">30% doanh thu</span> chỉ sau 2 tháng triển khai."
+                        </h2>
+<p class="text-text-secondary text-lg leading-relaxed">
+                            Trước đây, nhân viên lễ tân thường xuyên quá tải vào giờ cao điểm, dẫn đến việc bỏ lỡ tin nhắn khách hàng. Với Intervision, mọi tin nhắn đều được phản hồi ngay lập tức, lịch hẹn được sắp xếp tự động vào khung giờ trống.
+                        </p>
+<div class="flex flex-col gap-4 mt-2">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<strong class="text-white text-xl">Ms. Thu Hoài</strong>
+<span class="text-text-secondary text-sm">Founder, Lotus Spa</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 mt-4">
+<div class="bg-background-dark/50 border border-border-dark rounded-xl p-4">
+<div class="text-2xl font-bold text-white mb-1">24/7</div>
+<div class="text-sm text-text-secondary">Thời gian phản hồi</div>
+</div>
+<div class="bg-background-dark/50 border border-border-dark rounded-xl p-4">
+<div class="text-2xl font-bold text-white mb-1">+45%</div>
+<div class="text-sm text-text-secondary">Tỷ lệ đặt lịch</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full opacity-40"></div>
+<img alt="Spa owner smiling and checking tablet in a modern spa reception area" class="relative w-full h-auto aspect-video object-cover rounded-xl border border-border-dark shadow-2xl" data-alt="Spa manager using tablet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf7rXcOPcqlUc6D7Q0ZslMJVx11v19ydi5Qgm3JSNCUOe5OQGKZKMocUKDmhgT6JsJ0I7tCLbZ06DyPoDKmUwrMLEiAHGr5lmvZr3SM6P8yuNmRYy8zQPzRxIbIGATH4pxqrNYFwOK5a-j21m247FDHEJcuFDRHV_tfJLwpfeL9EkrK1-THGVPcVEqYO2JJYMOje8MnnTkd2h4qYs0ywcQ2ac44HMxvIdjszi1gsRk-h4NWrfdEZV_hukY6LSYY1AvN8-DlQlFqQgo"/>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="border-t border-border-dark bg-background-dark">
+<div class="max-w-[1200px] mx-auto px-4 py-24 text-center">
+<h2 class="text-white text-4xl font-black leading-tight tracking-tight mb-6 max-w-[800px] mx-auto">
+                        Sẵn sàng bùng nổ doanh số cho Spa của bạn?
+                    </h2>
+<p class="text-text-secondary text-lg mb-10 max-w-[600px] mx-auto">
+                        Đăng ký ngay hôm nay để nhận tư vấn miễn phí và trải nghiệm sức mạnh của AI trong quản lý vận hành Spa.
+                    </p>
+<button class="inline-flex min-w-[200px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-14 px-8 bg-primary hover:bg-blue-600 transition-all text-white text-lg font-bold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40">
+                        Bắt đầu cho Spa của bạn
+                    </button>
+<p class="mt-6 text-sm text-text-secondary">Dùng thử miễn phí 14 ngày. Không cần thẻ tín dụng.</p>
+</div>
+</div>
+</main>
+<footer class="bg-surface-dark border-t border-border-dark py-12 px-10">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between gap-8">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-white mb-2">
+<div class="size-6 text-primary">
+<svg class="w-full h-full" fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"></path></svg>
+</div>
+<span class="font-bold text-lg">Intervision</span>
+</div>
+<p class="text-text-secondary text-sm max-w-[300px]">Giải pháp công nghệ tiên phong cho ngành làm đẹp và chăm sóc sức khỏe.</p>
+</div>
+<div class="flex gap-16 flex-wrap">
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold">Sản phẩm</h4>
+<a class="text-text-secondary hover:text-primary text-sm" href="#">Tính năng</a>
+<a class="text-text-secondary hover:text-primary text-sm" href="#">Bảng giá</a>
+<a class="text-text-secondary hover:text-primary text-sm" href="#">Case Study</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold">Công ty</h4>
+<a class="text-text-secondary hover:text-primary text-sm" href="#">Về chúng tôi</a>
+<a class="text-text-secondary hover:text-primary text-sm" href="#">Liên hệ</a>
+<a class="text-text-secondary hover:text-primary text-sm" href="#">Tuyển dụng</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold">Hỗ trợ</h4>
+<a class="text-text-secondary hover:text-primary text-sm" href="#">Trung tâm trợ giúp</a>
+<a class="text-text-secondary hover:text-primary text-sm" href="#">Điều khoản</a>
+<a class="text-text-secondary hover:text-primary text-sm" href="#">Chính sách bảo mật</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-border-dark text-center text-text-secondary text-sm">
+                © 2023 Intervision. All rights reserved.
+            </div>
+</footer>
+</div>
+</body></html>
