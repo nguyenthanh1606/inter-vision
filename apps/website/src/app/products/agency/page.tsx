@@ -1,4 +1,5 @@
 import React from 'react';
+import { Sparkles, ArrowRight, LineChart, Network, CheckCircle, BarChart2, Wallet, BookOpen } from 'lucide-react';
 
 export const metadata = {
   title: 'AI for Agencies | Intervision',
@@ -12,7 +13,7 @@ const AgencyProductPage = () => {
       <section className="relative px-6 md:px-12 pt-40 pb-24 max-w-full mx-auto grid lg:grid-cols-2 gap-20 items-center">
         <div className="z-10">
           <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-bold mb-8 animate-fade-in-up">
-            <span className="material-symbols-outlined text-sm">auto_awesome</span>
+            <Sparkles size={14} />
             <span>AI-POWERED SOLUTIONS FOR AGENCIES</span>
           </div>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-[0.95] mb-10">
@@ -24,7 +25,7 @@ const AgencyProductPage = () => {
           <div className="flex flex-col sm:flex-row gap-6">
             <button className="bg-blue-600 hover:bg-blue-500 text-white font-black px-10 py-5 rounded-2xl text-xl shadow-2xl shadow-blue-600/30 shadow-neon flex items-center justify-center gap-3 transition-all transform active:scale-95">
               Start Trial for Agency
-              <span className="material-symbols-outlined">arrow_forward</span>
+              <ArrowRight size={20} />
             </button>
             <button className="bg-white/5 backdrop-blur-xl text-white font-bold px-10 py-5 rounded-2xl text-xl border border-white/10 hover:bg-white/10 transition-all flex items-center justify-center gap-3">
               Watch Demo
@@ -43,7 +44,7 @@ const AgencyProductPage = () => {
             <div className="absolute bottom-12 right-12 bg-zinc-900/90 backdrop-blur-2xl p-8 rounded-3xl border border-blue-500/30 max-w-xs shadow-3xl animate-pulse">
               <div className="flex items-center gap-4 mb-3">
                 <div className="w-10 h-10 rounded-xl bg-blue-600/20 flex items-center justify-center">
-                  <span className="material-symbols-outlined text-blue-500 text-xl">insights</span>
+                  <LineChart size={20} className="text-blue-500" />
                 </div>
                 <span className="text-xs font-black uppercase tracking-[0.2em] text-blue-400">Live Insight</span>
               </div>
@@ -79,7 +80,7 @@ const AgencyProductPage = () => {
           <div className="md:col-span-2 bg-white/5 backdrop-blur-3xl rounded-[3rem] p-12 border border-white/10 flex flex-col md:flex-row gap-12 items-center group shadow-3xl">
             <div className="flex-1">
               <div className="size-16 rounded-2xl bg-blue-600/10 flex items-center justify-center mb-8 group-hover:bg-blue-600/20 transition-all">
-                <span className="material-symbols-outlined text-blue-500 text-4xl">hub</span>
+                <Network size={40} className="text-blue-500" />
               </div>
               <h3 className="text-3xl font-black mb-6">Smart Campaign Management</h3>
               <p className="text-slate-400 text-lg leading-relaxed mb-8">
@@ -87,11 +88,11 @@ const AgencyProductPage = () => {
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center gap-3 text-base font-bold text-slate-300">
-                  <span className="material-symbols-outlined text-blue-500">check_circle</span>
+                  <CheckCircle size={20} className="text-blue-500" />
                   Automated Creative A/B Testing
                 </li>
                 <li className="flex items-center gap-3 text-base font-bold text-slate-300">
-                  <span className="material-symbols-outlined text-blue-500">check_circle</span>
+                  <CheckCircle size={20} className="text-blue-500" />
                   Centralized Multi-platform Management
                 </li>
               </ul>
@@ -110,7 +111,7 @@ const AgencyProductPage = () => {
           <div className="bg-white/5 backdrop-blur-3xl rounded-[3rem] p-12 border border-white/10 group shadow-3xl flex flex-col justify-between">
             <div>
               <div className="size-16 rounded-2xl bg-blue-600/10 flex items-center justify-center mb-8 group-hover:bg-blue-600/20 transition-all">
-                <span className="material-symbols-outlined text-blue-500 text-4xl">query_stats</span>
+                <BarChart2 size={40} className="text-blue-500" />
               </div>
               <h3 className="text-3xl font-black mb-6">Real-time Analysis</h3>
               <p className="text-slate-400 text-lg leading-relaxed">
@@ -132,7 +133,7 @@ const AgencyProductPage = () => {
           <div className="bg-white/5 backdrop-blur-3xl rounded-[3rem] p-12 border border-white/10 group shadow-3xl flex flex-col justify-between">
             <div>
               <div className="size-16 rounded-2xl bg-blue-600/10 flex items-center justify-center mb-8 group-hover:bg-blue-600/20 transition-all">
-                <span className="material-symbols-outlined text-blue-500 text-4xl">account_balance_wallet</span>
+                <Wallet size={40} className="text-blue-500" />
               </div>
               <h3 className="text-3xl font-black mb-6">Budget Optimization</h3>
               <p className="text-slate-400 text-lg leading-relaxed">
@@ -149,7 +150,7 @@ const AgencyProductPage = () => {
           <div className="md:col-span-2 bg-white/5 backdrop-blur-3xl rounded-[3rem] p-12 border border-white/10 flex flex-col md:flex-row-reverse gap-12 items-center group shadow-3xl">
             <div className="flex-1">
               <div className="size-16 rounded-2xl bg-blue-600/10 flex items-center justify-center mb-8 group-hover:bg-blue-600/20 transition-all">
-                <span className="material-symbols-outlined text-blue-500 text-4xl">auto_stories</span>
+                <BookOpen size={40} className="text-blue-500" />
               </div>
               <h3 className="text-3xl font-black mb-6">Automated Reporting</h3>
               <p className="text-slate-400 text-lg leading-relaxed mb-8">
@@ -157,7 +158,7 @@ const AgencyProductPage = () => {
               </p>
               <button className="text-blue-500 font-black text-lg flex items-center gap-3 group-hover:gap-6 transition-all">
                 Learn about Report AI
-                <span className="material-symbols-outlined">trending_flat</span>
+                <ArrowRight size={20} />
               </button>
             </div>
             <div className="flex-1 w-full bg-zinc-900 rounded-[2.5rem] p-10 relative border border-white/5 shadow-inner">

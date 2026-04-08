@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { Menu } from 'lucide-react'
 import { ThemeToggle } from './ThemeToggle'
 import { NavbarEffect } from './NavbarEffect'
 
@@ -71,7 +72,7 @@ export function Header() {
                     {/* Mobile menu button */}
                     <div className="md:hidden flex items-center">
                         <button className="text-slate-500 dark:text-slate-300 hover:text-white focus:outline-none">
-                            <span className="material-icons-outlined text-2xl">menu</span>
+                            <Menu size={24} />
                         </button>
                     </div>
                 </div>

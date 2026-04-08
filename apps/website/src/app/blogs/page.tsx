@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 import { CTA } from '../_components/CTA';
 
 export default function BlogsPage() {
@@ -23,7 +24,7 @@ export default function BlogsPage() {
                             <div className="flex items-center gap-4">
                                 <button className="flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-bold text-white shadow-[0_0_20px_rgba(37,106,244,0.4)] hover:shadow-[0_0_30px_rgba(37,106,244,0.6)] transition-all">
                                     <span>Read article now</span>
-                                    <span className="material-icons-outlined">arrow_forward</span>
+                                    <ArrowRight size={18} />
                                 </button>
                             </div>
                         </div>

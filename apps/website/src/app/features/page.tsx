@@ -1,3 +1,20 @@
+import {
+  ArrowRight,
+  UserPlus,
+  ClipboardList,
+  GitBranch,
+  TrendingUp,
+  Award,
+  LineChart,
+  ArrowLeftRight,
+  Bot,
+  Mail,
+  Webhook,
+  Network,
+  Bug,
+  MessageSquare
+} from 'lucide-react'
+
 export const metadata = {
   title: 'Features | Intervision',
   description: 'Accelerate your business growth with a comprehensive toolkit from data collection to process automation.'
@@ -23,7 +40,7 @@ export default function FeaturesPage() {
           <div className="flex flex-wrap gap-4 mt-2">
             <button className="h-11 px-6 rounded-lg bg-primary text-white text-base font-bold hover:bg-blue-600 transition-all shadow-lg shadow-blue-500/25 flex items-center gap-2">
               <span>Start for Free</span>
-              <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
+              <ArrowRight size={18} />
             </button>
             <button className="h-11 px-6 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-surface-dark text-slate-900 dark:text-slate-200 text-base font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
               View Demo
@@ -33,7 +50,6 @@ export default function FeaturesPage() {
         {/* Hero Decorative Image/Graphic */}
         <div className="relative w-full md:w-5/12 aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 border border-slate-200 dark:border-border-dark group">
           <div className="absolute inset-0 bg-gradient-to-tr from-slate-900 to-blue-950/50 z-10"></div>
-          {/* Abstract visual representation of data flow */}
           <div
             className="w-full h-full bg-cover bg-center opacity-60 group-hover:scale-105 transition-transform duration-700"
             style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcGlm9ssvo8UbpSoZ4vyGXIjSdioel0gCSvBABbWCawV0gRtLCBqdRy0sSIaynjB1HcQaiUMcW3keOB7w5f442QmG3bwd3j3RM57EAp5rtIL8Sg9Tquo1Jrp2J7QfLHaw1OOec9mJCiiRELCCExjC_E1j5mXFq83ulQrmiQqDH47xlJb4WMQNX9_CxOh8yGN-VMDTQ2ansyUKf7OTVk-bcB6Pdr-0ZQc6K1YaOz9qoslntvKYnxdH4NURQMi1kY7MxFFkNCk9tvyxC')" }}
@@ -60,7 +76,7 @@ export default function FeaturesPage() {
       <section className="mb-20">
         <div className="flex items-center gap-4 mb-8">
           <div className="flex items-center justify-center size-10 rounded-lg bg-blue-500/20 text-primary">
-            <span className="material-symbols-outlined">person_add</span>
+            <UserPlus size={22} />
           </div>
           <h2 className="text-slate-900 dark:text-white text-2xl font-bold tracking-tight">1. Lead Capture</h2>
           <div className="h-px flex-1 bg-slate-200 dark:bg-border-dark"></div>
@@ -71,7 +87,7 @@ export default function FeaturesPage() {
             <div className="p-6 flex flex-col h-full">
               <div className="flex items-center justify-between mb-4">
                 <div className="p-2 rounded-lg bg-blue-500/10 text-primary">
-                  <span className="material-symbols-outlined text-2xl">assignment</span>
+                  <ClipboardList size={24} />
                 </div>
                 <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">AI Powered</span>
               </div>
@@ -92,7 +108,7 @@ export default function FeaturesPage() {
             <div className="p-6 flex flex-col h-full">
               <div className="flex items-center justify-between mb-4">
                 <div className="p-2 rounded-lg bg-indigo-500/10 text-indigo-400">
-                  <span className="material-symbols-outlined text-2xl">alt_route</span>
+                  <GitBranch size={24} />
                 </div>
               </div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">Conditional Logic</h3>
@@ -120,7 +136,7 @@ export default function FeaturesPage() {
       <section className="mb-20">
         <div className="flex items-center gap-4 mb-8">
           <div className="flex items-center justify-center size-10 rounded-lg bg-purple-500/20 text-purple-400">
-            <span className="material-symbols-outlined">trending_up</span>
+            <TrendingUp size={22} />
           </div>
           <h2 className="text-slate-900 dark:text-white text-2xl font-bold tracking-tight">2. Optimization</h2>
           <div className="h-px flex-1 bg-slate-200 dark:bg-border-dark"></div>
@@ -130,7 +146,7 @@ export default function FeaturesPage() {
           <div className="group relative overflow-hidden rounded-xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark hover:border-purple-500/50 transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.15)]">
             <div className="p-6">
               <div className="mb-4 text-purple-400">
-                <span className="material-symbols-outlined text-3xl">score</span>
+                <Award size={30} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">AI Scoring</h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
@@ -149,7 +165,7 @@ export default function FeaturesPage() {
           <div className="group relative overflow-hidden rounded-xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark hover:border-purple-500/50 transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.15)]">
             <div className="p-6">
               <div className="mb-4 text-purple-400">
-                <span className="material-symbols-outlined text-3xl">insights</span>
+                <LineChart size={30} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">Conversion Tracking</h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
@@ -168,7 +184,7 @@ export default function FeaturesPage() {
           <div className="group relative overflow-hidden rounded-xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark hover:border-purple-500/50 transition-all duration-300 hover:shadow-[0_0_15px_rgba(168,85,247,0.15)]">
             <div className="p-6">
               <div className="mb-4 text-purple-400">
-                <span className="material-symbols-outlined text-3xl">compare_arrows</span>
+                <ArrowLeftRight size={30} />
               </div>
               <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">A/B Testing</h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
@@ -187,7 +203,7 @@ export default function FeaturesPage() {
       <section className="mb-20">
         <div className="flex items-center gap-4 mb-8">
           <div className="flex items-center justify-center size-10 rounded-lg bg-green-500/20 text-green-400">
-            <span className="material-symbols-outlined">smart_toy</span>
+            <Bot size={22} />
           </div>
           <h2 className="text-slate-900 dark:text-white text-2xl font-bold tracking-tight">3. Automation</h2>
           <div className="h-px flex-1 bg-slate-200 dark:bg-border-dark"></div>
@@ -197,14 +213,14 @@ export default function FeaturesPage() {
           <div className="lg:col-span-1 group relative overflow-hidden rounded-xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-6 hover:border-green-500/50 transition-all duration-300 hover:shadow-[0_0_15px_rgba(34,197,94,0.15)]">
             <div className="flex items-start justify-between">
               <div className="p-3 rounded-full bg-slate-100 dark:bg-slate-800 text-green-500 mb-4">
-                <span className="material-symbols-outlined text-2xl">mail</span>
+                <Mail size={24} />
               </div>
               <div className="size-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_8px_rgba(34,197,94,0.6)]"></div>
             </div>
             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Email Marketing</h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm mb-4">Send automatic email sequences as soon as new leads arrive. Nurture potential customers without manual effort.</p>
             <a className="text-green-500 text-sm font-semibold hover:text-green-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
-              Set up now <span className="material-symbols-outlined text-base">arrow_right_alt</span>
+              Set up now <ArrowRight size={16} />
             </a>
           </div>
           {/* Automation Feature - Webhook & CRM */}
@@ -212,7 +228,7 @@ export default function FeaturesPage() {
             {/* Webhook Card */}
             <div className="rounded-xl border border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-slate-800/50 p-6 flex flex-col justify-center items-center text-center hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer group">
               <div className="mb-3 p-3 bg-white dark:bg-surface-dark rounded-full shadow-lg group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-blue-400 text-3xl">webhook</span>
+                <Webhook size={30} className="text-blue-400" />
               </div>
               <h4 className="text-slate-900 dark:text-white font-bold mb-1">Webhook API</h4>
               <p className="text-slate-500 dark:text-slate-400 text-xs">Connect real-time data with any application.</p>
@@ -220,7 +236,7 @@ export default function FeaturesPage() {
             {/* CRM Card */}
             <div className="rounded-xl border border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-slate-800/50 p-6 flex flex-col justify-center items-center text-center hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer group">
               <div className="mb-3 p-3 bg-white dark:bg-surface-dark rounded-full shadow-lg group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-orange-400 text-3xl">hub</span>
+                <Network size={30} className="text-orange-400" />
               </div>
               <h4 className="text-slate-900 dark:text-white font-bold mb-1">CRM Integration</h4>
               <p className="text-slate-500 dark:text-slate-400 text-xs">Sync leads directly into Salesforce, HubSpot, Zoho.</p>
@@ -240,10 +256,10 @@ export default function FeaturesPage() {
                 <img alt="Google" className="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCujotimDqm69Pd-4zTZAyzpCOb4Hsox187ogoPk8n9Hqo03-ry9DgJor4JbVP8vZAxzZrp6kuayelenVhtgpsN8XNy1K5dBdewJ6bUvREk6aaIye9RmascjFDzRET_yyzZBf7GppCVn2T2ZhIbIKItXpYDvnk8-FKLG0xpuzjXUm4ojC6gsQPI-P7OBulELg1KClNagZTxQw8OdOdYOz-l3sbBK2MzM0Du1WJgXjPpLkvyDk66AvHZoDZCb-lLu1vUpL2Ylwqkk1qO" />
               </div>
               <div className="size-10 rounded-full bg-[#0061f2] flex items-center justify-center shadow-lg z-20" title="Jira">
-                <span className="material-symbols-outlined text-white text-xl">bug_report</span>
+                <Bug size={20} className="text-white" />
               </div>
               <div className="size-10 rounded-full bg-[#ff3366] flex items-center justify-center shadow-lg z-10" title="Slack">
-                <span className="material-symbols-outlined text-white text-xl">forum</span>
+                <MessageSquare size={20} className="text-white" />
               </div>
               <div className="size-10 rounded-full bg-slate-700 flex items-center justify-center shadow-lg border border-slate-600 text-white text-xs font-bold pl-2">
                 +497

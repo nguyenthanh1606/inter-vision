@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Users, Globe, FilePlus } from 'lucide-react'
 import { AnimatedSection } from './AnimatedSection'
 
 export function Footer() {
@@ -21,13 +22,17 @@ export function Footer() {
                                 technology. Turn traffic into revenue.
                             </p>
                             <div className="flex space-x-4">
-                                {['facebook', 'public', 'post_add'].map(icon => (
+                                {[
+                                    { icon: <Users size={20} />, key: 'facebook' },
+                                    { icon: <Globe size={20} />, key: 'globe' },
+                                    { icon: <FilePlus size={20} />, key: 'post' }
+                                ].map(({ icon, key }) => (
                                     <Link
-                                        key={icon}
+                                        key={key}
                                         className="text-slate-400 hover:text-primary transition-colors hover:scale-110 transform"
                                         href="#"
                                     >
-                                        <span className="material-icons-outlined">{icon}</span>
+                                        {icon}
                                     </Link>
                                 ))}
                             </div>

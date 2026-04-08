@@ -1,3 +1,5 @@
+import { Clock, CalendarX2, Frown } from 'lucide-react'
+
 export const metadata = {
   title: 'AI Solutions for Spas & Aesthetics | Intervision',
   description: 'Comprehensive AI solutions helping Spas and Aesthetics Clinics increase conversion rates and customer retention 24/7.'
@@ -48,7 +50,7 @@ export default function SpaProductPage() {
           {/* Card 1 */}
           <div className="group flex flex-col gap-6 rounded-2xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-8 hover:border-primary/50 transition-all duration-300">
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-              <span className="material-symbols-outlined text-3xl">schedule</span>
+              <Clock size={30} />
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-slate-900 dark:text-white text-xl font-bold leading-tight">Slow Response</h3>
@@ -58,7 +60,7 @@ export default function SpaProductPage() {
           {/* Card 2 */}
           <div className="group flex flex-col gap-6 rounded-2xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-8 hover:border-primary/50 transition-all duration-300">
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-              <span className="material-symbols-outlined text-3xl">event_busy</span>
+              <CalendarX2 size={30} />
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-slate-900 dark:text-white text-xl font-bold leading-tight">Overlapping Appointments</h3>
@@ -68,7 +70,7 @@ export default function SpaProductPage() {
           {/* Card 3 */}
           <div className="group flex flex-col gap-6 rounded-2xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-8 hover:border-primary/50 transition-all duration-300">
             <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-              <span className="material-symbols-outlined text-3xl">sentiment_dissatisfied</span>
+              <Frown size={30} />
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-slate-900 dark:text-white text-xl font-bold leading-tight">Poor Post-Treatment Care</h3>

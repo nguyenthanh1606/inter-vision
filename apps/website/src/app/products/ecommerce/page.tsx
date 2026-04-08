@@ -1,4 +1,5 @@
 import React from 'react';
+import { ShoppingCart, MessageCircle, Bot, MessageSquare, Search, CheckCircle, TrendingUp, ArrowRight } from 'lucide-react';
 
 export const metadata = {
   title: 'AI for E-commerce | Intervision',
@@ -66,7 +67,7 @@ const EcommerceProductPage = () => {
               <div className="flex items-center justify-between p-5 bg-white/5 rounded-2xl border border-white/5 shadow-xl transform transition-all hover:translate-x-2">
                 <div className="flex items-center gap-5">
                   <div className="size-12 rounded-2xl bg-zinc-800 flex items-center justify-center shadow-lg">
-                    <span className="material-symbols-outlined text-blue-500 text-2xl" style={{ fontVariationSettings: "'FILL' 1" }}>shopping_cart_checkout</span>
+                    <ShoppingCart size={24} className="text-blue-500" />
                   </div>
                   <div>
                     <div className="text-base font-black text-white">New Order #8291</div>
@@ -79,7 +80,7 @@ const EcommerceProductPage = () => {
               <div className="flex items-center justify-between p-5 bg-white/5 rounded-2xl border border-white/5 opacity-60 shadow-xl transform transition-all hover:translate-x-2">
                 <div className="flex items-center gap-5">
                   <div className="size-12 rounded-2xl bg-zinc-800 flex items-center justify-center shadow-lg">
-                    <span className="material-symbols-outlined text-blue-400 text-2xl">chat_bubble</span>
+                    <MessageCircle size={24} className="text-blue-400" />
                   </div>
                   <div>
                     <div className="text-base font-black text-white">Sales Inquiry</div>
@@ -114,7 +115,7 @@ const EcommerceProductPage = () => {
           <div className="md:col-span-2 bg-white/5 backdrop-blur-3xl rounded-[3rem] p-12 border border-white/10 group hover:border-blue-500/30 transition-all duration-700 overflow-hidden relative shadow-3xl">
             <div className="flex flex-col h-full justify-between relative z-10">
               <div>
-                <span className="material-symbols-outlined text-blue-500 text-5xl mb-8 block transition-transform group-hover:scale-110" style={{ fontVariationSettings: "'FILL' 1" }}>smart_toy</span>
+                <Bot size={48} className="text-blue-500 mb-8 block transition-transform group-hover:scale-110" />
                 <h3 className="text-3xl font-black mb-6">24/7 Automated Order Closing Chatbot</h3>
                 <p className="text-slate-400 text-lg leading-relaxed max-w-md font-medium">Never miss a customer again. Our AI understands context, provides product advice, and creates orders directly within the chat interface.</p>
               </div>
@@ -124,14 +125,14 @@ const EcommerceProductPage = () => {
               </div>
             </div>
             <div className="absolute -right-20 -bottom-20 opacity-5 group-hover:opacity-10 transition-opacity">
-              <span className="material-symbols-outlined text-[320px] select-none">forum</span>
+              <MessageSquare size={320} className="select-none" />
             </div>
           </div>
           
           {/* Feature 2 */}
           <div className="bg-white/5 backdrop-blur-3xl rounded-[3rem] p-12 border border-white/10 hover:border-blue-500/30 transition-all duration-700 flex flex-col justify-between shadow-3xl group">
             <div>
-              <span className="material-symbols-outlined text-blue-400 text-5xl mb-8 block group-hover:rotate-12 transition-transform">person_search</span>
+              <Search size={48} className="text-blue-400 mb-8 block group-hover:rotate-12 transition-transform" />
               <h3 className="text-3xl font-black mb-6">Personalized Recommendations</h3>
               <p className="text-slate-400 text-lg leading-relaxed font-medium">Predict accurately what users want based on real-time browsing patterns and purchase history.</p>
             </div>
@@ -156,11 +157,11 @@ const EcommerceProductPage = () => {
               <p className="text-slate-400 text-xl leading-relaxed font-medium">Proactively connect with bounced customers using subtle, personalized reminders and dynamic offers via automated messaging.</p>
               <ul className="mt-10 space-y-5">
                 <li className="flex items-center gap-4 text-lg font-bold text-slate-300 transition-all group-hover:translate-x-2">
-                  <span className="material-symbols-outlined text-blue-500 font-black">check_circle</span>
+                  <CheckCircle size={20} className="text-blue-500" />
                   Increase checkout completion by 35%
                 </li>
                 <li className="flex items-center gap-4 text-lg font-bold text-slate-300 transition-all group-hover:translate-x-2" style={{ animationDelay: '0.1s' }}>
-                  <span className="material-symbols-outlined text-blue-500 font-black">check_circle</span>
+                  <CheckCircle size={20} className="text-blue-500" />
                    Dynamic discounts based on cart value
                 </li>
               </ul>
@@ -212,7 +213,7 @@ const EcommerceProductPage = () => {
           <div className="lg:w-1/2 w-full animate-fade-in-up">
             <div className="bg-white/5 backdrop-blur-3xl p-12 md:p-16 rounded-[4rem] border border-blue-500/20 shadow-3xl relative overflow-hidden transform hover:-rotate-1 transition-transform">
               <div className="absolute top-0 right-0 p-10 opacity-10 pointer-events-none">
-                <span className="material-symbols-outlined text-[160px]">trending_up</span>
+                <TrendingUp size={160} />
               </div>
               <div className="text-center mb-12">
                 <div className="text-slate-400 text-xs font-black uppercase tracking-[0.3em] mb-4">Estimated Revenue Growth (Year 1)</div>
@@ -248,7 +249,7 @@ const EcommerceProductPage = () => {
             </button>
             <button className="text-white flex items-center gap-4 text-2xl group py-4">
               Consulting for Enterprise
-              <span className="material-symbols-outlined font-black group-hover:translate-x-4 transition-transform text-blue-500">arrow_forward</span>
+              <ArrowRight size={20} className="group-hover:translate-x-4 transition-transform text-blue-500" />
             </button>
           </div>
         </div>
