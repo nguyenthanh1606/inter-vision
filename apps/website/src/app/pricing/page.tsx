@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Pricing - Intervision',
@@ -63,21 +64,15 @@ export default function PricingPage() {
             </button>
             <div className="space-y-4 flex-1">
               <div className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
-                <span className="material-symbols-outlined text-primary text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-primary shrink-0" />
                 <span>100 visitors</span>
               </div>
               <div className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
-                <span className="material-symbols-outlined text-primary text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-primary shrink-0" />
                 <span>5 unlocked leads</span>
               </div>
               <div className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
-                <span className="material-symbols-outlined text-primary text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-primary shrink-0" />
                 <span>Intervision branding</span>
               </div>
             </div>
@@ -107,27 +102,19 @@ export default function PricingPage() {
             </button>
             <div className="space-y-4 flex-1">
               <div className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-200">
-                <span className="material-symbols-outlined text-neon-accent text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-neon-accent shrink-0" />
                 <span className="font-medium">3,000 visitors</span>
               </div>
               <div className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-200">
-                <span className="material-symbols-outlined text-neon-accent text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-neon-accent shrink-0" />
                 <span className="font-medium">Unlimited leads unlocked</span>
               </div>
               <div className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-200">
-                <span className="material-symbols-outlined text-neon-accent text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-neon-accent shrink-0" />
                 <span>Remove branding</span>
               </div>
               <div className="flex items-start gap-3 text-sm text-slate-700 dark:text-slate-200">
-                <span className="material-symbols-outlined text-neon-accent text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-neon-accent shrink-0" />
                 <span>Advanced automation</span>
               </div>
             </div>
@@ -152,33 +139,23 @@ export default function PricingPage() {
             </button>
             <div className="space-y-4 flex-1">
               <div className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
-                <span className="material-symbols-outlined text-primary text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-primary shrink-0" />
                 <span>10,000+ visitors</span>
               </div>
               <div className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
-                <span className="material-symbols-outlined text-primary text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-primary shrink-0" />
                 <span>Webhook &amp; API access</span>
               </div>
               <div className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
-                <span className="material-symbols-outlined text-primary text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-primary shrink-0" />
                 <span>CRM Integrations</span>
               </div>
               <div className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
-                <span className="material-symbols-outlined text-primary text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-primary shrink-0" />
                 <span>AI Lead Scoring</span>
               </div>
               <div className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
-                <span className="material-symbols-outlined text-primary text-[20px]">
-                  check_circle
-                </span>
+                <CheckCircle size={20} className="text-primary shrink-0" />
                 <span>White label support</span>
               </div>
             </div>

@@ -1,0 +1,34 @@
+{
+  "name": "icons",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/icons/src",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:ui"],
+  "targets": {
+    "build-sprite": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node scripts/build-sprite.mjs",
+        "cwd": "packages/icons"
+      },
+      "inputs": [
+        "{projectRoot}/src/svg/**/*.svg",
+        "{projectRoot}/scripts/build-sprite.mjs"
+      ],
+      "outputs": [
+        "{projectRoot}/src/generated-sprite.ts",
+        "{projectRoot}/src/types.ts"
+      ]
+    },
+    "build": {
+      "dependsOn": ["build-sprite"]
+    },
+    "watch-sprite": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node scripts/build-sprite.mjs --watch",
+        "cwd": "packages/icons"
+      }
+    }
+  }
+}

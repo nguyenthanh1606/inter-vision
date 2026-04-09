@@ -1,4 +1,5 @@
 import React from 'react';
+import { TrendingUp, Moon, ListFilter, CloudOff, Bot, Send, Quote } from 'lucide-react';
 
 export const metadata = {
   title: 'AI for Real Estate | Intervision',
@@ -52,7 +53,7 @@ const RealEstateProductPage = () => {
               <div className="absolute -bottom-8 -left-8 bg-white dark:bg-zinc-900 p-8 rounded-3xl shadow-2xl border border-[#ec5b13]/10 hidden md:block animate-fade-in-up">
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-2xl bg-green-500/20 flex items-center justify-center text-green-500">
-                    <span className="material-symbols-outlined text-3xl">trending_up</span>
+                    <TrendingUp size={30} />
                   </div>
                   <div>
                     <div className="text-sm font-bold text-slate-500 uppercase tracking-widest">New Leads Today</div>
@@ -77,7 +78,7 @@ const RealEstateProductPage = () => {
         <div className="max-w-full mx-auto px-6 md:px-12 grid md:grid-cols-3 gap-8">
           <div className="bg-white dark:bg-zinc-900/50 p-10 rounded-3xl border border-slate-200 dark:border-white/10 border-b-4 border-b-[#ec5b13] hover:-translate-y-2 transition-transform shadow-xl">
             <div className="w-16 h-16 bg-[#ec5b13]/10 rounded-2xl flex items-center justify-center text-[#ec5b13] mb-8">
-              <span className="material-symbols-outlined text-4xl">nights_stay</span>
+              <Moon size={40} />
             </div>
             <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Missing Nighttime Leads</h3>
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -87,7 +88,7 @@ const RealEstateProductPage = () => {
           
           <div className="bg-white dark:bg-zinc-900/50 p-10 rounded-3xl border border-slate-200 dark:border-white/10 border-b-4 border-b-[#ec5b13] hover:-translate-y-2 transition-transform shadow-xl">
             <div className="w-16 h-16 bg-[#ec5b13]/10 rounded-2xl flex items-center justify-center text-[#ec5b13] mb-8">
-              <span className="material-symbols-outlined text-4xl">filter_list</span>
+              <ListFilter size={40} />
             </div>
             <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Time-Consuming Filtering</h3>
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -97,7 +98,7 @@ const RealEstateProductPage = () => {
           
           <div className="bg-white dark:bg-zinc-900/50 p-10 rounded-3xl border border-slate-200 dark:border-white/10 border-b-4 border-b-[#ec5b13] hover:-translate-y-2 transition-transform shadow-xl">
             <div className="w-16 h-16 bg-[#ec5b13]/10 rounded-2xl flex items-center justify-center text-[#ec5b13] mb-8">
-              <span className="material-symbols-outlined text-4xl">cloud_off</span>
+              <CloudOff size={40} />
             </div>
             <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Fragmented Data</h3>
             <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
@@ -121,7 +122,7 @@ const RealEstateProductPage = () => {
             {/* Chat Header */}
             <div className="bg-[#ec5b13] p-6 flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white backdrop-blur-md">
-                <span className="material-symbols-outlined text-2xl">smart_toy</span>
+                <Bot size={24} />
               </div>
               <div className="text-white">
                 <div className="font-bold text-lg leading-none">Intervision Assistant</div>
@@ -136,7 +137,7 @@ const RealEstateProductPage = () => {
             <div className="p-8 space-y-6 h-[480px] overflow-y-auto bg-slate-50 dark:bg-zinc-950">
               <div className="flex gap-3 animate-fade-in-up">
                 <div className="w-10 h-10 rounded-xl bg-[#ec5b13]/20 flex items-center justify-center text-[#ec5b13] shrink-0 border border-[#ec5b13]/10">
-                  <span className="material-symbols-outlined text-xl">smart_toy</span>
+                  <Bot size={20} />
                 </div>
                 <div className="bg-white dark:bg-zinc-900 p-4 rounded-2xl rounded-tl-none text-sm shadow-sm max-w-[85%] border border-[#ec5b13]/5">
                   Hello! I am your AI assistant from Intervision. Are you looking to buy or rent property?
@@ -151,7 +152,7 @@ const RealEstateProductPage = () => {
               
               <div className="flex gap-3 animate-fade-in-up" style={{ animationDelay: '2s' }}>
                 <div className="w-10 h-10 rounded-xl bg-[#ec5b13]/20 flex items-center justify-center text-[#ec5b13] shrink-0 border border-[#ec5b13]/10">
-                  <span className="material-symbols-outlined text-xl">smart_toy</span>
+                  <Bot size={20} />
                 </div>
                 <div className="bg-white dark:bg-zinc-900 p-4 rounded-2xl rounded-tl-none text-sm shadow-sm max-w-[85%] border border-[#ec5b13]/5">
                   Great. What is your expected budget and which area is your top priority?
@@ -171,7 +172,7 @@ const RealEstateProductPage = () => {
               <div className="bg-slate-100 dark:bg-zinc-950 rounded-2xl p-3 flex items-center border border-[#ec5b13]/5">
                 <div className="flex-1 px-4 text-slate-400 text-sm italic">User is choosing...</div>
                 <button className="p-2 text-[#ec5b13] hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined font-bold">send</span>
+                  <Send size={18} />
                 </button>
               </div>
             </div>
@@ -207,7 +208,7 @@ const RealEstateProductPage = () => {
       <section className="py-40">
         <div className="max-w-5xl mx-auto px-6 md:px-12">
           <div className="bg-white/5 dark:bg-white/5 backdrop-blur-3xl p-12 md:p-20 rounded-[3rem] relative border border-slate-200 dark:border-white/10 shadow-3xl">
-            <span className="material-symbols-outlined text-9xl text-[#ec5b13]/10 absolute top-10 left-10 select-none">format_quote</span>
+            <Quote size={90} className="text-[#ec5b13]/10 absolute top-10 left-10 select-none" />
             <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
               <div className="w-40 h-40 rounded-[2rem] overflow-hidden shrink-0 border-4 border-[#ec5b13]/20 shadow-2xl transform -rotate-3">
                 <img 

@@ -18,6 +18,10 @@
     "lint": "nx lint website"
   },
   "private": true,
+  "packageManager": "pnpm@10.30.2",
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
     "@biomejs/biome": "2.4.4",
     "@nx/js": "22.5.2",
@@ -54,6 +58,7 @@
   "dependencies": {
     "@tanstack/react-query": "^5.90.21",
     "@tanstack/react-table": "^8.21.3",
+    "lucide-react": "^1.7.0",
     "next": "~16.0.1",
     "next-intl": "^4.8.3",
     "react": "^19.0.0",

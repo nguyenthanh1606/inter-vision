@@ -1,5 +1,23 @@
-import { AnimatedSection } from './components/AnimatedSection'
-import { CTA } from './components/CTA'
+import {
+  ArrowRight,
+  PlayCircle,
+  TrendingUp,
+  Bot,
+  User,
+  Check,
+  Lock,
+  Wand2,
+  Code,
+  Rocket,
+  Quote,
+  CreditCard,
+  Cloud,
+  MessageSquare,
+  Network,
+  Zap
+} from 'lucide-react'
+import { AnimatedSection } from './_components/AnimatedSection'
+import { CTA } from './_components/CTA'
 
 export default function HomePage() {
   return (
@@ -52,17 +70,13 @@ export default function HomePage() {
               href="#"
             >
               Start Free
-              <span className="material-icons-outlined ml-2 group-hover:translate-x-1 transition-transform text-lg">
-                arrow_forward
-              </span>
+              <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               className="px-8 py-4 bg-white dark:bg-transparent border border-gray-300 dark:border-white/20 text-slate-700 dark:text-white font-semibold rounded-full hover:bg-gray-50 dark:hover:bg-white/5 transition-all flex items-center justify-center"
               href="#"
             >
-              <span className="material-icons-outlined mr-2 text-lg">
-                play_circle_filled
-              </span>
+              <PlayCircle size={18} className="mr-2" />
               See Demo
             </a>
           </div>
@@ -110,9 +124,7 @@ export default function HomePage() {
                         {value}
                       </div>
                       <div className="text-xs text-green-400 mt-2 flex items-center">
-                        <span className="material-icons-outlined text-sm mr-1">
-                          trending_up
-                        </span>
+                        <TrendingUp size={14} className="mr-1" />
                         {change}
                       </div>
                     </div>
@@ -156,9 +168,7 @@ export default function HomePage() {
                       style={{ animationDelay: '950ms' }}
                     >
                       <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shrink-0">
-                        <span className="material-icons-outlined text-white text-xs">
-                          smart_toy
-                        </span>
+                        <Bot size={12} className="text-white" />
                       </div>
                       <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-slate-700 dark:text-slate-200 shadow-sm">
                         Hi! I see you&apos;re looking to scale your sales. What
@@ -175,9 +185,7 @@ export default function HomePage() {
                         Lead qualification takes too much time.
                       </div>
                       <div className="w-8 h-8 rounded-full bg-gray-200 dark:bg-white/20 flex items-center justify-center shrink-0">
-                        <span className="material-icons-outlined text-gray-500 dark:text-white text-xs">
-                          person
-                        </span>
+                        <User size={12} className="text-gray-500 dark:text-white" />
                       </div>
                     </div>
 
@@ -187,9 +195,7 @@ export default function HomePage() {
                       style={{ animationDelay: '1500ms' }}
                     >
                       <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-secondary flex items-center justify-center shrink-0">
-                        <span className="material-icons-outlined text-white text-xs">
-                          smart_toy
-                        </span>
+                        <Bot size={12} className="text-white" />
                       </div>
                       <div className="bg-white dark:bg-surface-dark border border-gray-200 dark:border-white/10 p-3 rounded-2xl rounded-tl-none text-sm text-slate-700 dark:text-slate-200 shadow-sm">
                         Understood. Based on our data, automating initial
@@ -214,17 +220,17 @@ export default function HomePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
               {[
-                { icon: 'token', name: 'Stripe' },
-                { icon: 'cloud', name: 'Google' },
-                { icon: 'workspaces', name: 'Slack' },
-                { icon: 'hub', name: 'HubSpot' },
-                { icon: 'bolt', name: 'Zapier' }
+                { icon: <CreditCard size={22} />, name: 'Stripe' },
+                { icon: <Cloud size={22} />, name: 'Google' },
+                { icon: <MessageSquare size={22} />, name: 'Slack' },
+                { icon: <Network size={22} />, name: 'HubSpot' },
+                { icon: <Zap size={22} />, name: 'Zapier' }
               ].map(({ icon, name }) => (
                 <div
                   key={name}
                   className="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white"
                 >
-                  <span className="material-icons-outlined">{icon}</span>
+                  {icon}
                   <span>{name}</span>
                 </div>
               ))}
@@ -272,9 +278,7 @@ export default function HomePage() {
                       className="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all duration-200 text-left flex items-center space-x-3 hover:scale-[1.02] active:scale-[0.98]"
                     >
                       <span className="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary flex items-center justify-center transition-all duration-200">
-                        <span className="material-icons-outlined text-white text-[10px] opacity-0 group-hover:opacity-100 transition-opacity">
-                          check
-                        </span>
+                        <Check size={10} className="text-white opacity-0 group-hover:opacity-100 transition-opacity" />
                       </span>
                       <span className="text-slate-700 dark:text-slate-200 font-medium">
                         {option}
@@ -284,9 +288,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="mt-8 text-sm text-slate-400 dark:text-slate-500 flex items-center">
-                  <span className="material-icons-outlined text-sm mr-1">
-                    lock
-                  </span>
+                  <Lock size={14} className="mr-1" />
                   Powered by Intervision AI
                 </div>
               </div>
@@ -311,21 +313,21 @@ export default function HomePage() {
             {[
               {
                 step: '1',
-                icon: 'auto_fix_high',
+                icon: <Wand2 size={30} />,
                 color: 'bg-blue-100 dark:bg-primary/20 text-primary',
                 title: 'Generate with AI',
                 desc: 'Simply describe your business. Our AI engine builds the perfect conversation flow, questions, and logic instantly.'
               },
               {
                 step: '2',
-                icon: 'code',
+                icon: <Code size={30} />,
                 color: 'bg-purple-100 dark:bg-secondary/20 text-secondary',
                 title: 'Embed with 1 Line',
                 desc: 'Copy a single line of JavaScript and paste it onto your website, landing page, or within your app.'
               },
               {
                 step: '3',
-                icon: 'rocket_launch',
+                icon: <Rocket size={30} />,
                 color:
                   'bg-green-100 dark:bg-green-500/20 text-green-600 dark:text-green-400',
                 title: 'Get Qualified Leads',
@@ -340,9 +342,7 @@ export default function HomePage() {
                   <div
                     className={`w-16 h-16 rounded-full ${color} flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110`}
                   >
-                    <span className="material-icons-outlined text-3xl">
-                      {icon}
-                    </span>
+                    {icon}
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
                     {title}
@@ -361,9 +361,7 @@ export default function HomePage() {
       <section className="py-20 bg-background-light dark:bg-background-dark relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <AnimatedSection>
-            <span className="material-icons-outlined text-6xl text-primary/20 mb-6">
-              format_quote
-            </span>
+            <Quote size={60} className="text-primary/20 mb-6 mx-auto" />
             <blockquote className="text-2xl md:text-3xl font-medium text-slate-800 dark:text-slate-100 leading-relaxed mb-8">
               &quot;We replaced our static contact forms with Intervision&apos;s
               AI chat. Our lead volume doubled in the first week, and the sales
@@ -371,9 +369,7 @@ export default function HomePage() {
             </blockquote>
             <div className="flex items-center justify-center space-x-4">
               <div className="w-12 h-12 rounded-full border-2 border-primary bg-gradient-to-tr from-primary to-secondary flex items-center justify-center">
-                <span className="material-icons-outlined text-white text-sm">
-                  person
-                </span>
+                <User size={14} className="text-white" />
               </div>
               <div className="text-left">
                 <div className="font-bold text-slate-900 dark:text-white">

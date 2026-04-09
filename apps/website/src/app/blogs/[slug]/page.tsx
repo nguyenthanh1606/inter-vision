@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { CTA } from '../../components/CTA';
+import { ChevronRight, CalendarDays, Clock, Share2, Link as LinkIcon, Bookmark, Rocket } from 'lucide-react';
+import { CTA } from '../../_components/CTA';
 
 export default function BlogDetailPage() {
     return (
@@ -8,9 +9,9 @@ export default function BlogDetailPage() {
                 {/* Breadcrumbs */}
                 <nav className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-8">
                     <Link className="hover:text-primary" href="/">Home</Link>
-                    <span className="material-icons-outlined text-xs">chevron_right</span>
+                    <ChevronRight size={14} />
                     <Link className="hover:text-primary" href="/blogs">Blog</Link>
-                    <span className="material-icons-outlined text-xs">chevron_right</span>
+                    <ChevronRight size={14} />
                     <span className="text-slate-900 dark:text-slate-200 font-medium">Article Detail</span>
                 </nav>
 
@@ -35,11 +36,11 @@ export default function BlogDetailPage() {
                                 </div>
                                 <div className="flex items-center gap-4 text-slate-500 dark:text-slate-400 text-sm">
                                     <div className="flex items-center gap-1">
-                                        <span className="material-icons-outlined text-lg">calendar_today</span>
+                                        <CalendarDays size={18} />
                                         <span>October 15, 2023</span>
                                     </div>
                                     <div className="flex items-center gap-1">
-                                        <span className="material-icons-outlined text-lg">schedule</span>
+                                        <Clock size={18} />
                                         <span>8 min read</span>
                                     </div>
                                 </div>
@@ -95,10 +96,10 @@ export default function BlogDetailPage() {
                                 <span className="text-sm font-bold text-slate-500 uppercase">Share:</span>
                                 <div className="flex gap-2">
                                     <button className="size-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white transition-all">
-                                        <span className="material-icons-outlined text-lg">share</span>
+                                        <Share2 size={18} />
                                     </button>
                                     <button className="size-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-primary hover:text-white transition-all">
-                                        <span className="material-icons-outlined text-lg">link</span>
+                                        <LinkIcon size={18} />
                                     </button>
                                 </div>
                             </div>
@@ -110,7 +111,7 @@ export default function BlogDetailPage() {
                         {/* Related Posts */}
                         <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-xl border border-slate-200 dark:border-slate-800">
                             <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-                                <span className="material-icons-outlined text-primary">bookmark</span>
+                                <Bookmark size={20} className="text-primary" />
                                 Related Articles
                             </h4>
                             <div className="space-y-6">
@@ -158,7 +159,7 @@ export default function BlogDetailPage() {
                                 <button className="w-full py-3 bg-white text-primary font-bold rounded-lg hover:bg-blue-50 transition-colors">Contact now</button>
                             </div>
                             <div className="absolute -bottom-10 -right-10 opacity-20">
-                                <span className="material-icons-outlined text-[150px]">rocket_launch</span>
+                                <Rocket size={150} />
                             </div>
                         </div>
 
