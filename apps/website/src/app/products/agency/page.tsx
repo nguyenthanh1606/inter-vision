@@ -1,4 +1,3 @@
-import { Icon } from '@repo/icons'
 import {
   ArrowRight,
   BarChart2,
@@ -21,7 +20,6 @@ const AgencyProductPage = () => {
   return (
     <main className="flex-grow bg-zinc-950 text-slate-100 antialiased overflow-x-hidden">
       {/* Hero Section */}
-      <Icon name="facebook" />
       <section className="relative px-6 md:px-12 pt-40 pb-24 max-w-full mx-auto grid lg:grid-cols-2 gap-20 items-center">
         <div className="z-10">
           <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-bold mb-8 animate-fade-in-up">
