@@ -15,7 +15,9 @@
       "!**/dist-widget",
       "!**/node_modules",
       "!**/*.html",
-      "!pnpm-lock.yaml"
+      "!pnpm-lock.yaml",
+      "!packages/icons/src/generated-sprite.ts",
+      "!packages/icons/src/types.ts"
     ]
   },
   "linter": {

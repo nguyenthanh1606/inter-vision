@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import Script from 'next/script'
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { getMessages, setRequestLocale } from 'next-intl/server'
+import { SpriteSheet } from '@repo/icons'
 import { routing } from '@/i18n/routing'
 import './globals.css'
 import FloatingButtons from '@/components/FloatingButtons'
@@ -54,6 +55,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={roboto.className}>
+        <SpriteSheet />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main>{children}</main>

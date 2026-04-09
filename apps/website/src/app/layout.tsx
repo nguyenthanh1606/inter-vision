@@ -1,4 +1,5 @@
 import './global.css'
+import { SpriteSheet } from '@repo/icons'
 import Script from 'next/script'
 import { Footer } from './_components/Footer'
 import { Header } from './_components/Header'
@@ -22,10 +23,8 @@ export default function RootLayout({
         <Script
           id="theme-init"
           strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark');}}catch(e){}})();`
-          }}
-        />
+        >{`(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark');}}catch(e){}})();`}</Script>
+        <SpriteSheet />
         <Header />
         {children}
         <Footer />

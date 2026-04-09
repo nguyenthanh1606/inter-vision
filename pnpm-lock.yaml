@@ -114,6 +114,9 @@ importers:
 
   apps/sites/dental:
     dependencies:
+      '@repo/icons':
+        specifier: workspace:*
+        version: link:../../../packages/icons
       next:
         specifier: 16.1.6
         version: 16.1.6(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(sass@1.97.3)
@@ -160,6 +163,9 @@ importers:
 
   apps/smart:
     dependencies:
+      '@repo/icons':
+        specifier: workspace:*
+        version: link:../../packages/icons
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -194,6 +200,9 @@ importers:
 
   apps/website:
     dependencies:
+      '@repo/icons':
+        specifier: workspace:*
+        version: link:../../packages/icons
       next:
         specifier: ~16.0.1
         version: 16.0.11(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(sass@1.97.3)
@@ -203,6 +212,12 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.2.4(react@19.2.4)
+
+  packages/icons:
+    dependencies:
+      react:
+        specifier: ^19.0.0
+        version: 19.2.4
 
 packages:
 
