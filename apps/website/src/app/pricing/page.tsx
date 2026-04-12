@@ -1,9 +1,10 @@
-import type { Metadata } from 'next'
 import { CheckCircle } from 'lucide-react'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Pricing - Intervision',
-  description: 'Choose the perfect plan to scale your business. Start for free, upgrade as you grow.',
+  description:
+    'Choose the perfect plan to scale your business. Start for free, upgrade as you grow.'
 }
 
 export default function PricingPage() {
@@ -31,7 +32,12 @@ export default function PricingPage() {
               Monthly
             </span>
             <label className="relative inline-flex items-center cursor-pointer">
-              <input readOnly checked className="sr-only peer" type="checkbox" />
+              <input
+                readOnly
+                checked
+                className="sr-only peer"
+                type="checkbox"
+              />
               <div className="w-11 h-6 bg-slate-200 dark:bg-border-dark peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
             </label>
             <span className="text-sm font-bold text-slate-900 dark:text-white pr-3 flex items-center gap-2">
@@ -48,18 +54,25 @@ export default function PricingPage() {
           {/* Free Plan */}
           <div className="flex flex-col rounded-2xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-8 hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md relative group">
             <div className="mb-6">
-              <h3 className="text-slate-900 dark:text-white text-sm font-bold mb-2 uppercase tracking-widest">Free</h3>
+              <h3 className="text-slate-900 dark:text-white text-sm font-bold mb-2 uppercase tracking-widest">
+                Free
+              </h3>
               <div className="flex items-baseline gap-1">
                 <span className="text-4xl font-black text-slate-900 dark:text-white tracking-tight">
                   $0
                 </span>
-                <span className="text-slate-500 dark:text-text-secondary font-medium">/month</span>
+                <span className="text-slate-500 dark:text-text-secondary font-medium">
+                  /month
+                </span>
               </div>
               <p className="text-slate-500 dark:text-text-secondary text-sm mt-3">
                 For individuals just starting out.
               </p>
             </div>
-            <button className="w-full py-3 px-4 rounded-xl bg-slate-100 dark:bg-border-dark hover:bg-slate-200 dark:hover:bg-border-dark/80 text-slate-900 dark:text-white font-bold text-sm mb-8 transition-colors border border-transparent">
+            <button
+              type="button"
+              className="w-full py-3 px-4 rounded-xl bg-slate-100 dark:bg-border-dark hover:bg-slate-200 dark:hover:bg-border-dark/80 text-slate-900 dark:text-white font-bold text-sm mb-8 transition-colors border border-transparent"
+            >
               Start for Free
             </button>
             <div className="space-y-4 flex-1">
@@ -91,13 +104,18 @@ export default function PricingPage() {
                 <span className="text-4xl font-black text-slate-900 dark:text-white tracking-tight">
                   $39
                 </span>
-                <span className="text-slate-500 dark:text-text-secondary font-medium">/month</span>
+                <span className="text-slate-500 dark:text-text-secondary font-medium">
+                  /month
+                </span>
               </div>
               <p className="text-slate-500 dark:text-text-secondary text-sm mt-3">
                 For growing teams and startups.
               </p>
             </div>
-            <button className="w-full py-3 px-4 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-sm mb-8 transition-all shadow-[0_0_20px_rgba(37,106,244,0.2)] dark:shadow-[0_0_20px_rgba(37,106,244,0.3)] hover:shadow-[0_0_30px_rgba(37,106,244,0.4)]">
+            <button
+              type="button"
+              className="w-full py-3 px-4 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-sm mb-8 transition-all shadow-[0_0_20px_rgba(37,106,244,0.2)] dark:shadow-[0_0_20px_rgba(37,106,244,0.3)] hover:shadow-[0_0_30px_rgba(37,106,244,0.4)]"
+            >
               Get Started Now
             </button>
             <div className="space-y-4 flex-1">
@@ -123,18 +141,25 @@ export default function PricingPage() {
           {/* Max Plan */}
           <div className="flex flex-col rounded-2xl border border-slate-200 dark:border-border-dark bg-white dark:bg-surface-dark p-8 hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md relative group">
             <div className="mb-6">
-              <h3 className="text-slate-900 dark:text-white text-sm font-bold mb-2 uppercase tracking-widest">Max</h3>
+              <h3 className="text-slate-900 dark:text-white text-sm font-bold mb-2 uppercase tracking-widest">
+                Max
+              </h3>
               <div className="flex items-baseline gap-1">
                 <span className="text-4xl font-black text-slate-900 dark:text-white tracking-tight">
                   $99
                 </span>
-                <span className="text-slate-500 dark:text-text-secondary font-medium">/month</span>
+                <span className="text-slate-500 dark:text-text-secondary font-medium">
+                  /month
+                </span>
               </div>
               <p className="text-slate-500 dark:text-text-secondary text-sm mt-3">
                 For large scale enterprises.
               </p>
             </div>
-            <button className="w-full py-3 px-4 rounded-xl bg-slate-100 dark:bg-border-dark hover:bg-slate-200 dark:hover:bg-border-dark/80 text-slate-900 dark:text-white font-bold text-sm mb-8 transition-colors border border-transparent">
+            <button
+              type="button"
+              className="w-full py-3 px-4 rounded-xl bg-slate-100 dark:bg-border-dark hover:bg-slate-200 dark:hover:bg-border-dark/80 text-slate-900 dark:text-white font-bold text-sm mb-8 transition-colors border border-transparent"
+            >
               Contact Sales
             </button>
             <div className="space-y-4 flex-1">
@@ -169,10 +194,14 @@ export default function PricingPage() {
               Need a custom solution?
             </h3>
             <p className="text-slate-500 dark:text-text-secondary">
-              We offer Enterprise plans with custom SLAs and 24/7 dedicated support.
+              We offer Enterprise plans with custom SLAs and 24/7 dedicated
+              support.
             </p>
           </div>
-          <button className="whitespace-nowrap px-6 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary-hover transition-colors shadow-lg shadow-primary/10">
+          <button
+            type="button"
+            className="whitespace-nowrap px-6 py-3 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary-hover transition-colors shadow-lg shadow-primary/10"
+          >
             Contact Us
           </button>
         </div>
