@@ -1,20 +1,16 @@
+import { Icon } from '@repo/icons'
 import {
   ArrowRight,
   Bot,
   Check,
-  Cloud,
   Code,
-  CreditCard,
   Lock,
-  MessageSquare,
-  Network,
   PlayCircle,
   Quote,
   Rocket,
   TrendingUp,
   User,
-  Wand2,
-  Zap
+  Wand2
 } from 'lucide-react'
 import { AnimatedSection } from './_components/AnimatedSection'
 import { CTA } from './_components/CTA'
@@ -224,20 +220,32 @@ export default function HomePage() {
             <p className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-8">
               Trusted by growth teams at
             </p>
-            <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-16">
               {[
-                { icon: <CreditCard size={22} />, name: 'Stripe' },
-                { icon: <Cloud size={22} />, name: 'Google' },
-                { icon: <MessageSquare size={22} />, name: 'Slack' },
-                { icon: <Network size={22} />, name: 'HubSpot' },
-                { icon: <Zap size={22} />, name: 'Zapier' }
+                {
+                  icon: <Icon name="brands-stripe" size={22} />,
+                  name: 'Stripe'
+                },
+                {
+                  icon: <Icon name="brands-google" size={22} />,
+                  name: 'Google'
+                },
+                { icon: <Icon name="brands-slack" size={22} />, name: 'Slack' },
+                {
+                  icon: <Icon name="brands-hubspot" size={22} />,
+                  name: 'HubSpot'
+                },
+                {
+                  icon: <Icon name="brands-zapier" size={22} />,
+                  name: 'Zapier'
+                }
               ].map(({ icon, name }) => (
                 <div
                   key={name}
                   className="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white"
                 >
                   {icon}
-                  <span>{name}</span>
+                  <span className="text-slate-500">{name}</span>
                 </div>
               ))}
             </div>

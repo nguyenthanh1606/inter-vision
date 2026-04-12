@@ -270,6 +270,8 @@ export default function SpaProductPage() {
               alt="Spa owner using tablet"
               className="relative w-full h-auto aspect-video object-cover rounded-xl border border-slate-200 dark:border-border-dark shadow-2xl"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf7rXcOPcqlUc6D7Q0ZslMJVx11v19ydi5Qgm3JSNCUOe5OQGKZKMocUKDmhgT6JsJ0I7tCLbZ06DyPoDKmUwrMLEiAHGr5lmvZr3SM6P8yuNmRYy8zQPzRxIbIGATH4pxqrNYFwOK5a-j21m247FDHEJcuFDRHV_tfJLwpfeL9EkrK1-THGVPcVEqYO2JJYMOje8MnnTkd2h4qYs0ywcQ2ac44HMxvIdjszi1gsRk-h4NWrfdEZV_hukY6LSYY1AvN8-DlQlFqQgo"
+              width={1280}
+              height={720}
             />
           </div>
         </div>

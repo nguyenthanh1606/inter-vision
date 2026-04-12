@@ -139,7 +139,8 @@ const EcommerceProductPage = () => {
 
             <div className="mt-10 relative h-32 rounded-2xl overflow-hidden border border-white/5">
               <Image
-                className="w-full h-full object-cover opacity-40 mix-blend-screen scale-110"
+                fill
+                className="object-cover opacity-40 mix-blend-screen scale-110"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfXkyMmdq3Oh1RQL9P7fIJjvd6IM8YLEVgxb7Ob-IO_GJZiIUS1q0QeE5vF1C0ihIGHwMJYvjrqCNbBZaEDlnjviWEWTTBLX1Tb-YFpOOIMW6-Pndx48Fuk1h03ByzknJnhUJJi-Ylndgq7pyf_8rOP8fD8aKRD7g46iLuGitEc4hPJzRLgUGaPUWGYB6QdVnIvGcoUdlpTjd1sIlrhEPSXNzL-MIvO647D0nD7Ar_M_QDrbGch300vK7o9sROqPjNgCKBfzMNK0QL"
                 alt="AI Data Visualization"
               />
@@ -257,7 +258,8 @@ const EcommerceProductPage = () => {
             </div>
             <div className="w-full md:w-2/5 aspect-[4/5] rounded-[3rem] overflow-hidden bg-zinc-900 flex items-center justify-center relative border border-white/5 shadow-2xl">
               <Image
-                className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-1000"
+                fill
+                className="object-cover opacity-40 group-hover:scale-110 transition-transform duration-1000"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbDmD7jFNUx6NaMgWIUDRZjNOXx4-Stmng_L0nLQzltsU58oAb8io8_SKQo1I8KF1-q6AEIC8YrtPXRmKFGNNDFkXEdOYUnYF3PWPrx32AgJa9tll9HVGWuLwVgmXR78kEtk-BYPBT6uQbXipMBnwdv9Se2belK5xRY0G7jTgm4TYuPxjgNqjBM5OSBqIYdsZjapBcvXX7B0gDWZ32yoitwPyYEomfwDcDMDZO7gYpT15_p8JuwF-1Tdet9dyovC5NmJAJc8nuPJ-J"
                 alt="Smartphone checkout success"
               />

@@ -79,6 +79,8 @@ export default function ProductsPage() {
                 className="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeyk8nunTEkdyWhy-wDK99JxPGPoAMeRaut9VBol-6URpW0cwrqv5t85hJtv0WDWDDed6o-YMvVShXZP8Px9xss7pwg_OUV9BcSdC9xLn1fSpl4_qbVgauueyTMdOFIz4coSnxJosYPIZ4EGZRL_ViwcNIeAIjZ6X5pqsHAaVBZ4hgEqTeLL5ZpgbyzjDxp2TUUyyxXUO0ms3aG6L0sHj8q5I0XCtXlUXI-wpAqWhjUyxK3HcTsT5na6Jp3yV9WFTWxdUbm4IT7Y8f"
                 alt="luxury spa interior"
+                width={550}
+                height={550}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent group-hover:opacity-0 transition-opacity duration-300"></div>
             </div>
@@ -100,6 +102,8 @@ export default function ProductsPage() {
               className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-500 group-hover:opacity-100"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwZwn1oU-bzuLel0PA7moCcsGrM13JrJRiBJ65NexQA3eszv8OvJgHu8A0KT-ULBbIQUDPMdX5DDAgYCecr1mvKP4yaxd0jORXGBJXs2xFyDL6wJq4L-FxskQFn3gGRFgNJz4ynX4_w98q70hdkTnl0y56Vk8eoBtA85Dd9DgQ-RUc91YEqULIYVjfupKPCk7dckJP9XoiY0V5pYQojeBPEwx0JlT6A-vMs4AsvMSKQ6JpUk7WSPUkie8gL0mPRk2giVd9AoOaNQ--"
               alt="modern high-rise buildings"
+              width={400}
+              height={250}
             />
           </div>
           <Link

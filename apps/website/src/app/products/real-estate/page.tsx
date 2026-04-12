@@ -65,6 +65,8 @@ const RealEstateProductPage = () => {
                   className="w-full h-auto object-cover aspect-square"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaXQpx96k6EaLB4MEepbRm1_h2yHfM5W8KAkIyOScI88xz5aXe1Ibtvb-Ruv1joXzKBfVlnsnufXYTTCB1ncIYqSHH7YzMgKkypkTDp8URVakChDScw8138k5bNMQAjWSqv6BdGgACTR1byIQ0nSEPPiM_JGg0EmJBm_gtwdHzWOWNReWpu9FUi2yKuM761jJh_WGCUBfbh6gKyVaxiRW5noCGegoYkvcVaZ7Q2y4-UhLl9TqDI52dRtS84wkbFGz08u6Yy5mV7e5Z"
                   alt="Modern luxury real estate office"
+                  width={600}
+                  height={600}
                 />
               </div>
               <div className="absolute -bottom-8 -left-8 bg-white dark:bg-zinc-900 p-8 rounded-3xl shadow-2xl border border-[#ec5b13]/10 hidden md:block animate-fade-in-up">
@@ -311,6 +313,8 @@ const RealEstateProductPage = () => {
                   className="w-full h-full object-cover"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpdXrLLewLEhpGBZEj1HaMAMjQE4vEjAD8-clMmE_pYvbQfvVKfQNKVBL9vpdlWb98woiVnaJbAeonZH1lsMYdJUWPtbowsEvupUzNT0WtPft1i56EgYjWzJFxmwTFCnEZW7UNgwbgd2K-6FCynuSE9h9S4lVEqphEfYb4NSjpNDOxdQTg2fAUEUaDVSTDGyvUX2uiamM2Th8RIZYAW2LeGn8bMP5IhmQu3RLUo7H76Ub-vdxlM7LA8XI057OH4A6qQsZ-tehgv5tH"
                   alt="Mr. Hoang Nam"
+                  width={160}
+                  height={160}
                 />
               </div>
               <div>

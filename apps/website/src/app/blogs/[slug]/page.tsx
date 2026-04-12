@@ -50,6 +50,8 @@ export default function BlogDetailPage() {
                       className="w-full h-full object-cover"
                       data-alt="Portrait photo of a creative professional man"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNyVCcPNImSpGELay52Z8QO2suYTvlvhIV3d05WHBIPXZ-__7SAQbwhDE8sS71Mt11gAU7JHgezTl_vOtFkGDwOzPf8TyYhe6AE1Q1C7aB0BxxQHVFFj4YD2GQL2nlLKTAgYz2HZ608Ia2WmSWm3LlzstZ8Tx_piEif0kY8zOOi28gmlCiHgiSF2BndsbgNPnHBptHMkLg039rtjq_WtUvaYQuc6iB_8cvDui2p805jg9Gs2uZW7NOeNL6aPWs-vaIlrArdFu6YhSk"
+                      width={48}
+                      height={48}
                     />
                   </div>
                   <div>
@@ -81,6 +83,8 @@ export default function BlogDetailPage() {
                 className="w-full h-auto object-cover max-h-[500px]"
                 data-alt="Futuristic digital art representing artificial intelligence neural networks"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzs3dY0RR0sOlwBCxf0rgzrc6569Nc-N0hEwgQaCEPguv08f1ymJSUX6ZH3jwWKOgbTYJj-FjokI58BHoA_aB3fHp9yjsazwyyEyP7d3ZogKwEteoD_dtfRZRoQUlRDx7GaGGuuU1zGR9DIrt6w9oMNslyoP0fZmzNSE8w1QIFBL63SR5jkpGQsK129NiQruyyEKQC5HwrzYEuULHYrO2QM-MMl-t18sM21OgghN5oinWOIvC6G27EDfhQDzDjSU-xSQrXCUhnVuSl"
+                width={1200}
+                height={630}
               />
             </div>
 
@@ -108,12 +112,16 @@ export default function BlogDetailPage() {
                   className="rounded-lg h-64 w-full object-cover"
                   data-alt="Close up of a digital designer working with AI software"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcdEuP4MbOSsTDHWk07AyDBa7o6iv4tehXgHbVqCAS-ac9s2Geu8VOHcJ7wuGSEJWzCPVSsFbRcQls2O3gQeFNbAw7g52wm3nwmMcVtOW5Qs3w3hykggeA0MDN7LKRBGhPLVWI3aNRTACHxTxYttDB8wXvKue7XmcuXYaMvbvhXoLMQtiU8nXmOs2MbCXO4gSi69NpcaPbxBBSEYR4VtzZNABC_R0WrT6z-e-0d9oslZoHuljwx0rgtjxAjaQlqbzftJYUSXb5cSsB"
+                  width={600}
+                  height={256}
                 />
                 <Image
                   alt="Cyberpunk design"
                   className="rounded-lg h-64 w-full object-cover"
                   data-alt="Neon blue glowing circuitry and digital data interface"
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjABPY5aNRFcYSVI689NB2oQxk6FdDmvDD59gJw5g2kyLsUnaQs9_FwiWmkiGNbvq0JTlwbx2Sq8zl--9tsRqS0-XUMQW9g6rRhYIvMBXEKjGG7VF_3x_XeCHbnJo6w2GcRzuvUYH9Gkg4V5bS1JGh198oy7CQ9LRwqSvel77r7yXrNHoowQRF3hgZK8hUaJHGvv2cBhObCv9_fg0lByy40UGoCSaYVp4WjRzG8iLHX9y6f7KVmEKFqy78O_P7WyQ1zB1LuSr7MRgE"
+                  width={600}
+                  height={256}
                 />
               </div>
 
@@ -204,6 +212,8 @@ export default function BlogDetailPage() {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         data-alt="Close up of high tech robotic arm moving components"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBRyb_-lNlEK9_88wbWboD4vtdla3pejEtgcidxmcfeocIq-YV5TNheM2BOw6RWMCAPEedeadgiRd8IdyFWnKDNaCWPfk0V3aIHqmYCYlwK2EPXDk2YnPy-wZvzlSBxsI4YUz5093fUNrtO7uB7KRktVccX5Qec_DLnSrG1cJGV2RYtk9Q2uyEGZBnN86i9-UU7zFxAzLwfhSiPN5SO1y_SYNiNfqFVY5SeonG-3jerATJaBK5mjURQE9cPQKBnHCZRPN3t6EWFkNe"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div>
@@ -227,6 +237,8 @@ export default function BlogDetailPage() {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         data-alt="Macbook screen showing React code with colorful syntax highlighting"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvyiUPdVk1DPkjc_22_rwHyuGgT6TBRbRDyKNWL69sFwc0yqur6n8QE6kbP49wNpCr0XFc4Rnr28W_DgzARLIlGQFUtwYdnQvX7ChH1u-sx1KjirucIKXNY7YekVec3IJ8XE1yyRr6DA0X5U_uO-lwJI-vMIq26DyvUr437PYBF7-aOWEwDZNGscFZB5i2HTMmBLHFGfKlIrhV3EkzjaF-huqS1Mp673OIMoDtozSxR6YkRgFGnfkl4yHeAL5Hc5Phs5bOorciXTxa"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div>
@@ -247,6 +259,8 @@ export default function BlogDetailPage() {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         data-alt="Financial data charts and analytics displayed on a screen"
                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUhOeUxB-Y16rg0MoTsxxHVHMz94wGSGCNZVu_qQTSZYW04KCL3psfD6a7rLW_gFEeNToSrY4XBzazzvVI1NBXfTGtSaPz_AXM_0Ul66E_4jphTGdtH8_ZcCdNXDFIQK55pgBS2WTEzkwqtV3YKJqPkqZ9tIIrJjlwqocHqK6gDs2YUh7sOAWglhAqtRhi13Narsg_xEv_6vNI3fcSvp52QqFclvZr3yntNT1NvEwSZoHDnmXSkjB8amfC0tPCx4vCn9CgKnC_r2gC"
+                        width={96}
+                        height={96}
                       />
                     </div>
                     <div>

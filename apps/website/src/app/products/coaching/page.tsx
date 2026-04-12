@@ -67,6 +67,8 @@ const CoachingProductPage = () => {
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNdXpqNqfsHJ4aWgcEB-m29X_CI7VSAyMfth16TFkflPiEWRJ_IHR8TuchYwhT1UdkBSgu33ivt9FyL79KQoDMcv4bXRFQn5p_nvpLSaS21R73RGI3-lMplW1_CGxdfBRKSEvJebLX6OWHQ873xCQjolmYL1Zz45el70sfDTeem3t9hdLV65q3dNF2VOp6EUbeU2BL1WhS_lA3QbcdM6Nd7FQjsFBHJ1pQf63Utrx9PE407tYab6r5ZL9Meue8L8GFLVhMZxt7kivW"
                 alt="Professional coaching workspace"
+                width={800}
+                height={600}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 to-transparent"></div>
               <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-xl p-6 rounded-2xl border border-white/20 transform translate-y-4 group-hover:translate-y-0 transition-transform">

@@ -9,7 +9,15 @@ const { composePlugins, withNx } = require('@nx/next')
 const nextConfig = {
   // Use this to set Nx-specific options
   // See: https://nx.dev/recipes/next/next-config-setup
-  nx: {}
+  nx: {},
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'lh3.googleusercontent.com'
+      }
+    ]
+  }
 }
 
 const plugins = [

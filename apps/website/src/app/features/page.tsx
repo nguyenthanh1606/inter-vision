@@ -325,6 +325,8 @@ export default function FeaturesPage() {
                 <Image
                   alt="Google"
                   className="w-6 h-6"
+                  width={24}
+                  height={24}
                   src="https://lh3.googleusercontent.com/aida-public/AB6AXuCujotimDqm69Pd-4zTZAyzpCOb4Hsox187ogoPk8n9Hqo03-ry9DgJor4JbVP8vZAxzZrp6kuayelenVhtgpsN8XNy1K5dBdewJ6bUvREk6aaIye9RmascjFDzRET_yyzZBf7GppCVn2T2ZhIbIKItXpYDvnk8-FKLG0xpuzjXUm4ojC6gsQPI-P7OBulELg1KClNagZTxQw8OdOdYOz-l3sbBK2MzM0Du1WJgXjPpLkvyDk66AvHZoDZCb-lLu1vUpL2Ylwqkk1qO"
                 />
               </div>

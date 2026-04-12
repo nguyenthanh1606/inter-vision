@@ -6,8 +6,8 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { optimize } from 'svgo'
 import fg from 'fast-glob'
+import { optimize } from 'svgo'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const SVG_DIR = path.join(__dirname, '../src/svg')
@@ -21,12 +21,12 @@ const SVGO_CONFIG = {
       params: {
         overrides: {
           removeViewBox: false, // keep viewBox — required for <symbol> scaling
-          removeUselessDefs: false,
-        },
-      },
+          removeUselessDefs: false
+        }
+      }
     },
-    'removeDimensions', // removes width/height so <symbol> inherits size from <use> container
-  ],
+    'removeDimensions' // removes width/height so <symbol> inherits size from <use> container
+  ]
 }
 
 function buildSprite() {
@@ -34,17 +34,19 @@ function buildSprite() {
     fs.mkdirSync(SVG_DIR, { recursive: true })
   }
 
-  const svgFiles = fg.sync('*.svg', { cwd: SVG_DIR, absolute: true })
+  const svgFiles = fg.sync('**/*.svg', { cwd: SVG_DIR, absolute: true })
 
   if (svgFiles.length === 0) {
-    console.warn('[icons] No SVG files found in src/svg/ — creating empty sprite')
+    console.warn(
+      '[icons] No SVG files found in src/svg/ — creating empty sprite'
+    )
     fs.writeFileSync(
       OUT_SPRITE,
       [
         '// AUTO-GENERATED — do not edit by hand.',
         '// Add .svg files to packages/icons/src/svg/ and run: pnpm nx run icons:build-sprite',
         "export const SPRITE_CONTENT = ''",
-        '',
+        ''
       ].join('\n')
     )
     fs.writeFileSync(
@@ -54,7 +56,7 @@ function buildSprite() {
         '// Add .svg files to packages/icons/src/svg/ and run: pnpm nx run icons:build-sprite',
         'export type IconName = never',
         'export const ICON_NAMES: readonly string[] = []',
-        '',
+        ''
       ].join('\n')
     )
     return
@@ -64,7 +66,8 @@ function buildSprite() {
   const symbols = []
 
   for (const file of svgFiles.sort()) {
-    const name = path.basename(file, '.svg')
+    const rel = path.relative(SVG_DIR, file)
+    const name = rel.replace(/\.svg$/, '').replace(/[\\/]/g, '-')
     const raw = fs.readFileSync(file, 'utf-8')
 
     let optimized
@@ -93,7 +96,7 @@ function buildSprite() {
   const spriteContent = [
     '<svg xmlns="http://www.w3.org/2000/svg" style="display:none">',
     ...symbols,
-    '</svg>',
+    '</svg>'
   ].join('\n')
 
   fs.writeFileSync(
@@ -102,7 +105,7 @@ function buildSprite() {
       '// AUTO-GENERATED — do not edit by hand.',
       '// Add .svg files to packages/icons/src/svg/ and run: pnpm nx run icons:build-sprite',
       `export const SPRITE_CONTENT = ${JSON.stringify(spriteContent)}`,
-      '',
+      ''
     ].join('\n')
   )
 
@@ -115,7 +118,7 @@ function buildSprite() {
       '// Add .svg files to packages/icons/src/svg/ and run: pnpm nx run icons:build-sprite',
       `export type IconName = ${nameUnion}`,
       `export const ICON_NAMES = [${namesList}] as const`,
-      '',
+      ''
     ].join('\n')
   )
 
@@ -128,17 +131,20 @@ if (process.argv.includes('--watch')) {
   const { default: chokidar } = await import('chokidar')
   buildSprite()
   chokidar
-    .watch(`${SVG_DIR}/*.svg`, { ignoreInitial: true })
+    .watch(SVG_DIR, { ignoreInitial: true })
     .on('add', f => {
-      console.log(`[icons] Added ${path.basename(f)}`)
+      if (!f.endsWith('.svg')) return
+      console.log(`[icons] Added ${path.relative(SVG_DIR, f)}`)
       buildSprite()
     })
     .on('change', f => {
-      console.log(`[icons] Changed ${path.basename(f)}`)
+      if (!f.endsWith('.svg')) return
+      console.log(`[icons] Changed ${path.relative(SVG_DIR, f)}`)
       buildSprite()
     })
     .on('unlink', f => {
-      console.log(`[icons] Removed ${path.basename(f)}`)
+      if (!f.endsWith('.svg')) return
+      console.log(`[icons] Removed ${path.relative(SVG_DIR, f)}`)
       buildSprite()
     })
 } else {
