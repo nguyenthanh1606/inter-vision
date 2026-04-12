@@ -1,20 +1,16 @@
+import { Icon } from '@repo/icons'
 import {
   ArrowRight,
-  PlayCircle,
-  TrendingUp,
   Bot,
-  User,
   Check,
-  Lock,
-  Wand2,
   Code,
-  Rocket,
+  Lock,
+  PlayCircle,
   Quote,
-  CreditCard,
-  Cloud,
-  MessageSquare,
-  Network,
-  Zap
+  Rocket,
+  TrendingUp,
+  User,
+  Wand2
 } from 'lucide-react'
 import { AnimatedSection } from './_components/AnimatedSection'
 import { CTA } from './_components/CTA'
@@ -67,14 +63,17 @@ export default function HomePage() {
           >
             <a
               className="px-8 py-4 bg-primary hover:bg-primary-hover text-white font-semibold rounded-full shadow-neon-strong transition-all transform hover:scale-105 flex items-center justify-center group"
-              href="#"
+              href="/"
             >
               Start Free
-              <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight
+                size={18}
+                className="ml-2 group-hover:translate-x-1 transition-transform"
+              />
             </a>
             <a
               className="px-8 py-4 bg-white dark:bg-transparent border border-gray-300 dark:border-white/20 text-slate-700 dark:text-white font-semibold rounded-full hover:bg-gray-50 dark:hover:bg-white/5 transition-all flex items-center justify-center"
-              href="#"
+              href="/"
             >
               <PlayCircle size={18} className="mr-2" />
               See Demo
@@ -185,7 +184,10 @@ export default function HomePage() {
                         Lead qualification takes too much time.
                       </div>
                       <div className="w-8 h-8 rounded-full bg-gray-200 dark:bg-white/20 flex items-center justify-center shrink-0">
-                        <User size={12} className="text-gray-500 dark:text-white" />
+                        <User
+                          size={12}
+                          className="text-gray-500 dark:text-white"
+                        />
                       </div>
                     </div>
 
@@ -218,20 +220,32 @@ export default function HomePage() {
             <p className="text-sm font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-8">
               Trusted by growth teams at
             </p>
-            <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="flex flex-wrap justify-center gap-8 md:gap-16">
               {[
-                { icon: <CreditCard size={22} />, name: 'Stripe' },
-                { icon: <Cloud size={22} />, name: 'Google' },
-                { icon: <MessageSquare size={22} />, name: 'Slack' },
-                { icon: <Network size={22} />, name: 'HubSpot' },
-                { icon: <Zap size={22} />, name: 'Zapier' }
+                {
+                  icon: <Icon name="brands-stripe" size={22} />,
+                  name: 'Stripe'
+                },
+                {
+                  icon: <Icon name="brands-google" size={22} />,
+                  name: 'Google'
+                },
+                { icon: <Icon name="brands-slack" size={22} />, name: 'Slack' },
+                {
+                  icon: <Icon name="brands-hubspot" size={22} />,
+                  name: 'HubSpot'
+                },
+                {
+                  icon: <Icon name="brands-zapier" size={22} />,
+                  name: 'Zapier'
+                }
               ].map(({ icon, name }) => (
                 <div
                   key={name}
                   className="flex items-center space-x-2 text-xl font-bold text-slate-700 dark:text-white"
                 >
                   {icon}
-                  <span>{name}</span>
+                  <span className="text-slate-500">{name}</span>
                 </div>
               ))}
             </div>
@@ -274,11 +288,15 @@ export default function HomePage() {
                     'Reduce Churn'
                   ].map(option => (
                     <button
+                      type="button"
                       key={option}
                       className="group p-4 rounded-xl border border-gray-200 dark:border-white/10 hover:border-primary dark:hover:border-primary hover:bg-blue-50 dark:hover:bg-primary/10 transition-all duration-200 text-left flex items-center space-x-3 hover:scale-[1.02] active:scale-[0.98]"
                     >
                       <span className="w-6 h-6 rounded-full border border-gray-300 dark:border-gray-600 group-hover:border-primary group-hover:bg-primary flex items-center justify-center transition-all duration-200">
-                        <Check size={10} className="text-white opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <Check
+                          size={10}
+                          className="text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                        />
                       </span>
                       <span className="text-slate-700 dark:text-slate-200 font-medium">
                         {option}

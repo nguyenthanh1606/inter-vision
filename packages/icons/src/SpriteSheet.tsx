@@ -19,6 +19,7 @@ export function SpriteSheet() {
       aria-hidden="true"
       style={{ display: 'none' }}
       // Content is static, build-time generated — no user input, no XSS vector
+      // biome-ignore lint/security/noDangerouslySetInnerHtml: static build-time SVG sprite
       dangerouslySetInnerHTML={{ __html: SPRITE_CONTENT }}
     />
   )

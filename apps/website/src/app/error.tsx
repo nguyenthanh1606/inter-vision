@@ -1,11 +1,11 @@
 'use client'
 
-import { useEffect } from 'react'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 export default function Error({
   error,
-  reset,
+  reset
 }: {
   error: Error & { digest?: string }
   reset: () => void
@@ -24,6 +24,7 @@ export default function Error({
       </p>
       <div className="flex gap-4">
         <button
+          type="button"
           onClick={reset}
           className="px-6 py-3 bg-primary text-white font-semibold rounded-full hover:bg-primary-hover transition-colors"
         >

@@ -64,6 +64,8 @@ const AgencyProductPage = () => {
               className="rounded-[2.5rem] w-full h-auto object-cover border border-white/5 opacity-80"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdtKqd18Y8cozlsc6zbqNILYwBlRt7n69NI0IcglQcOKGE1RxVzealTHJQVlnnKIKBU920aETCYLSg9M6DEqpMZBmyXhUg74w4-jFW5bKXIiueBD6OkeLC2l3fq26qJEH_NZGtG8EcurIJpunFnb8KC-uw1vQat4pTsBLFnel1sIBOFiXJPVsyKX-KJKbOb_uuSHqJCUS-bFwI_BUGlYYFl7Tg0LZ8Sn8ZrvE0vIr57hWRksgXMZFPCCPYupiBo9uYWGiwsnAEXKMI"
               alt="Futuristic AI Dashboard"
+              width={800}
+              height={600}
             />
             {/* Floating Insight Card */}
             <div className="absolute bottom-12 right-12 bg-zinc-900/90 backdrop-blur-2xl p-8 rounded-3xl border border-blue-500/30 max-w-xs shadow-3xl animate-pulse">
@@ -147,7 +149,8 @@ const AgencyProductPage = () => {
             </div>
             <div className="flex-1 w-full h-full min-h-[300px] rounded-[2.5rem] overflow-hidden relative border border-white/10 group-hover:border-blue-500/30 transition-colors">
               <Image
-                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
+                fill
+                className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbDbERxJL1fi8iBuzSxhuDmZzDjY2qxQvmUNIol9TXtUIBp10nc0M8dK1N4GVnENR9EfEdW7Opr-v8X1qICuE1tjueDG7CLemXIFORK9asddUUp4gN9SIl5G67M-Pa1t75o6tpzkQgRwXfEuGcEaELfmCraACsfwFsFOcjUwDqczzlTrtwYNy5ZabB1t2Pyb1o0rVPAkN0nuy-jBWld9RaWceukwyqflczgW4bXEbq7-JPSISIP8HVhqG0zZzWtr8KxwhmR9QKZfS7"
                 alt="AI Neural Network cables"
               />

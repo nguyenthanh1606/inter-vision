@@ -218,6 +218,16 @@ importers:
       react:
         specifier: ^19.0.0
         version: 19.2.4
+    devDependencies:
+      chokidar:
+        specifier: ^3.6.0
+        version: 3.6.0
+      fast-glob:
+        specifier: ^3.3.3
+        version: 3.3.3
+      svgo:
+        specifier: ^3.3.3
+        version: 3.3.3
 
 packages:
 
